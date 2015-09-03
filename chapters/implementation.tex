@@ -4,9 +4,11 @@
 
 \section{Networking Components}
 
+These are general C++ components that are used in both the audio plugin and the processing nodes. They encapsulate the network communicatation handling.
+
 \subsection{Socket Monitor}
 
-The socket monitor class uses a posix select() function to montitor the status of a collection of socket file descriptors. When a file descriptor is ready to read from or write to the socket monitor can notify a registered delegate class via a specified callback.
+The socket monitor class uses a posix select() function to montitor the status of a collection of socket file descriptors. When a file descriptor becomes ready to read from or write to the socket monitor can notify a registered delegate class via a specified callback.
 
 \begin{itemize}
 
@@ -18,3 +20,11 @@ The socket monitor class uses a posix select() function to montitor the status o
 
 
 \end{itemize}
+
+\subsection{ZeroConf Manager}
+
+The ZeroConf Manager class encapsulates calls to the system's bonjour/zeroconf deamon.
+
+\subsection{AudioStream Manager}
+
+This class is responsible for streaming audio data to or from a specified udp port. It implements

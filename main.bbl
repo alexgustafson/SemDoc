@@ -5,6 +5,11 @@ Richard Boulanger and Victor Lazzarini.
 \newblock {\em The Audio Programming Book}.
 \newblock The MIT Press, 2011.
 
+\bibitem{zeroconf}
+Stuart Cheshire and Daniel~H. Steinberg.
+\newblock {\em Zero Configuration Networking: The Definitive Guide}.
+\newblock O'Reilly Media, Inc., first edition edition, 2006.
+
 \bibitem{AES67-2013}
 AES Standards~Committee Gross, Kevin.
 \newblock {\em AES standard for audio applications of networks -
