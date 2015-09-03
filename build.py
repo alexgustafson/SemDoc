@@ -8,3 +8,5 @@ os.system("pdflatex main.tex")
 os.system("bibtex main")
 os.system("pdflatex main.tex")
 os.system("pdflatex main.tex")
+
+os.system("open main.pdf")

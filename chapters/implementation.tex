@@ -1,0 +1,20 @@
+\section{Architektur}
+
+\section{Developement Environment}
+
+\section{Networking Components}
+
+\subsection{Socket Monitor}
+
+The socket monitor class uses a posix select() function to montitor the status of a collection of socket file descriptors. When a file descriptor is ready to read from or write to the socket monitor can notify a registered delegate class via a specified callback.
+
+\begin{itemize}
+
+\item runs as a thread, blocks on select() until one of the managed filedescriptors becomes ready to read then notifies corresponding listener
+
+\item define abstract listener class: FileDescriptorListener
+\item select can be configured with a timeout, unblocking the call, inorder to check status of application ( everything ok? should i shut down? should i update? etc.. ) but it is more effiecient to use a control socket that can be trigged by the app to unblock the select call when needed.
+\item
+
+
+\end{itemize}

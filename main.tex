@@ -1,6 +1,14 @@
 \documentclass{report}
 \usepackage{times}
 \usepackage{cite}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
 \begin{document}
 
 \title{Distributed Audio Processing}
@@ -22,15 +30,16 @@ I declare that..
 
 \chapter{Introduction}
 \input{chapters/introduction}
+\input{chapters/GlossaryOfTerms}
 
-\chapter{Chapter Two Title}
-\input{chapters/chapter02}
+\chapter{Einführung ins Thema}
+\input{chapters/einfuerung}
 
-\chapter{Chapter Three Title}
-\input{chapters/chapter03}
+\chapter{Anforderungsanalyse}
+\input{chapters/anforderungsanalyse}
 
-\chapter{Chapter Four Title}
-\input{chapters/chapter04}
+\chapter{Implementation}
+\input{chapters/implementation}
 
 \chapter{Conclusion}
 \input{chapters/conclusion}

@@ -1,0 +1,33 @@
+\section{General Application Requirements}
+
+The Application has two components, the audio plugin hosted on the main CPU machine, and the processing node which runs on a networked SoC device. The audio plugin forwards midi control and audio data to the processing nodes. The nodes stream the processed audio data back to the audio plugin, which in turn streams it back to the host audio application. The total round-trip time, including processing, should not exceed 10ms. This is the maxium allowed latency for live sound applications. \cite{AES67-2013}
+
+The applications must be self contained and work without the user needing to install any system libraries, frameworks or servers.
+
+\subsection{Audio Plugin}
+
+The audio plugin has the following requirements:
+
+\begin{itemize}
+
+\item runnable as a VST plugin in a standard audio application
+\item locate and connect with one or processing nodes on the network
+\item forward midi and audio data from the host audio application to the networked nodes
+\item receives audio data from the networked nodes and streams this back to the host application
+
+\end{itemize}
+
+\subsection{Processing Node}
+
+The processing node has the following requirements:
+\begin{itemize}
+
+\item broadcasts its availability and location on the network
+\item accepts session initiated by the audio plugin
+\item accepts controll data from the audio plugin
+\item processes incoming audio data and midi data from the audio plugin
+\item streams audio and midi data back to the audio plugin or to the next node in the processing chain
+
+\end{itemize}
+
+

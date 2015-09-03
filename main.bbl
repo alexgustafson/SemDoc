@@ -1,3 +1,15 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{Boulanger:2011}
+Richard Boulanger and Victor Lazzarini.
+\newblock {\em The Audio Programming Book}.
+\newblock The MIT Press, 2011.
+
+\bibitem{AES67-2013}
+AES Standards~Committee Gross, Kevin.
+\newblock {\em AES standard for audio applications of networks -
+  High-performance streaming audio-over-IP interoperability}.
+\newblock Audio Engineering Society, Inc., 60 East 42nd Street, New York, NY.,
+  US., 2013.
 
 \end{thebibliography}

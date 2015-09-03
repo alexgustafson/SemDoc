@@ -8,7 +8,11 @@ ZeroConf:
 
 AES67: 
 
-Latency: 
+Latency:
+
+VST:
+
+SoC:
 
 General Application Requirements
 
