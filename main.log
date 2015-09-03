@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.5)  3 SEP 2015 12:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.5)  3 SEP 2015 13:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -89,39 +89,39 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
 ) [4
 
-]
+] [5]
 Chapter 2.
 (./chapters/chapter02.tex
 
-LaTeX Warning: Citation `frank2011' on page 5 undefined on input line 3.
+LaTeX Warning: Citation `frank2011' on page 6 undefined on input line 3.
 
-) [5
+) [6
 
 ]
 Chapter 3.
 (./chapters/chapter03.tex
 
-LaTeX Warning: Citation `susy2014' on page 6 undefined on input line 3.
+LaTeX Warning: Citation `susy2014' on page 7 undefined on input line 3.
 
-) [6
+) [7
 
 ]
 Chapter 4.
 (./chapters/chapter04.tex
 
-LaTeX Warning: Citation `bob2004' on page 7 undefined on input line 3.
+LaTeX Warning: Citation `bob2004' on page 8 undefined on input line 3.
 
-) [7
+) [8
 
 ]
 Chapter 5.
-(./chapters/conclusion.tex) (./main.bbl [8
+(./chapters/conclusion.tex) (./main.bbl [9
 
 ]
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
-) [9
+) [10
 
 ] (./main.aux)
 
@@ -139,10 +139,10 @@ Here is how much of TeX's memory you used:
 {/usr/local/texlive/2015basic/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/lo
 cal/texlive/2015basic/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/t
 exlive/2015basic/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on main.pdf (10 pages, 35352 bytes).
+Output written on main.pdf (11 pages, 36152 bytes).
 PDF statistics:
- 46 PDF objects out of 1000 (max. 8388607)
- 31 compressed objects within 1 object stream
+ 49 PDF objects out of 1000 (max. 8388607)
+ 33 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
