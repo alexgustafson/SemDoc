@@ -1,0 +1,104 @@
+requirements
+
+Glossery:
+
+MIDI - The Musical Instrument Digital Interface specification, first introduced in 1983 defines an 8-bit standard for encoding and transmitting music notes. It's original purpose was to allow one keyboard based synthesizer to controll other music devices.\cite{Boulanger:2011} Allthough the specification also describes the hardware and wiring for daisy chaining instruments in a midi "network" most midi communication today transmitted via usb or virtually between audio software.
+
+ZeroConf:
+
+AES67: 
+
+Latency: 
+
+General Application Requirements
+
+	The Application has 2 components
+	Component 1: the audio plugin
+
+		- runs within a host audio application on the main CPU
+		- can run alone without a node on the network
+		- browses for processing nodes on the network
+		- initiates network session with the nodes
+		- send controll data to the nodes
+		- accepts audio data and midi data from the host software
+		- streams audio data and midi data to the nodes
+		
+	Component 2: the Processing Node
+
+		- broadcasts its availability and location on the network
+		- accepts session initiated by the audio plugin
+		- accepts controll data from the audio plugin
+		- processes incoming audio data and midi data from the audio plugin
+		- streams audio and midi data back to the audio plugin or to the next node in the processing chain
+
+	General Requirements
+
+		- the round-trip time, including processing, should not exceede 10ms. This is the maximum allowed latency for live sound applications. \cite{AES67-2013} 
+
+		- applications must be self contained and will work without the user needing to install any system libraries frameworks or servers.
+
+Networking Requirements
+
+	Component 1: audio plugin
+
+		- the audio plugin needs to manage several sockets
+			- Zeroconf / Bonjour sockets 
+				- browser for service
+					when DNSServiceBrowser finds a result, store the result and resolve the host and port
+				- resolve service to host and port
+					
+
+			- TCP sockets for session and control information
+			- UDP sockets for audio and midi data transmission
+
+		- the processing node must also manage several socket
+
+			- Zeroconf / Bonjour socket -> register its services, availability, and location
+			- TCP sockets for session and control information (from multiple plugins!)
+			- UDP sockets for audio and midi data tranmission
+
+
+Development Checklist
+
+	Socket Monitor 
+
+		description : monitors socket filedescriptors and notifies listener classes of incoming messages.
+
+		- runs as a thread, blocks on select() until one of the managed filedescriptors becomes ready to read
+			then notifies corresponding listener
+		- function : register file descriptor and listener
+			store pointer to listener in a collection mapped to the file descriptor ( HashMap)
+		- function : notify listener for file descriptor
+		- define abstract listener class: FileDescriptorListener
+		- select can be configured with a timeout, unblocking the call, inorder to check status of application
+			( everything ok? should i shut down? should i update? etc..) but it would be more elegant to use a control socket that can be trigged by the app to unblock the select call when needed.
+
+	ZeroConf Manager
+
+		description : encapsulates calls too the system's bonjour/zeroconf deamon 
+
+			OSX has bonjour integrated. 
+			Linux needs to install Avahi: sudo apt-get install avahi-daemon
+			Windows might have it installed ( some application require it and install it automatically )
+				otherwise : https://support.apple.com/kb/DL999?locale=en_US
+
+		- inherits from FileDescriptorListener
+		- registers itself as a listener to the Socket Monitor class
+		- define abstract listener class : ZeroConfListener
+		- function : addListener
+		- notify listener asynchronously if zerocon/bonjour service has updated
+			it is important to notify asynchronously so as not to unneccessarily delay the socket monitor's
+			return to select() mode.
+
+		- function : browse for network service
+		- function : register network service
+
+	AudioStream Manager
+
+		description : Reads audio stream packets from a upd port or Writes packets to a stream
+		at one end, on the other end it writes to or reads from a circular sample buffer. The
+		sample buffer is provided so that network read/write activity does not have to block
+		other realtime audio processing. 
+	
+		- can either stream to or recieve from a specific udp port	
+
