@@ -16,4 +16,7 @@ os.system("pdflatex main.tex")
 
 os.system("open main.pdf")
 
-
+os.system("rm main.aux")
+os.system("rm main.bbl")
+os.system("rm main.blg")
+os.system("rm main.out")
