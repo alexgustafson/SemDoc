@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.5)  3 SEP 2015 16:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.5)  3 SEP 2015 17:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -315,24 +315,24 @@ Chapter 5.
 
 ]
 Chapter 6.
-(./chapters/bonjour.tex)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 54.
+(./chapters/compileFromSource.tex) (./chapters/bonjour.tex)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 55.
  [14
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 54.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 55.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 54.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 54.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 55.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 55.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 71D62A85432A594AEC686939507F1058;1333.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 54.
+(rerunfilecheck)             Checksum: 86F997AE1F9DD9CF064211DD49DACCE5;1405.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 55.
  ) 
 Here is how much of TeX's memory you used:
- 5107 strings out of 494501
- 75781 string characters out of 6167031
- 153405 words of memory out of 5000000
- 8295 multiletter control sequences out of 15000+600000
+ 5112 strings out of 494501
+ 75884 string characters out of 6167031
+ 154405 words of memory out of 5000000
+ 8296 multiletter control sequences out of 15000+600000
  27221 words of font info for 50 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
  29i,8n,28p,889b,382s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -341,10 +341,10 @@ cal/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
 r/local/texlive/2015basic/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/loc
 al/texlive/2015basic/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/te
 xlive/2015basic/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (15 pages, 70638 bytes).
+Output written on main.pdf (15 pages, 71074 bytes).
 PDF statistics:
- 228 PDF objects out of 1000 (max. 8388607)
- 204 compressed objects within 3 object streams
- 49 named destinations out of 1000 (max. 500000)
- 177 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 233 PDF objects out of 1000 (max. 8388607)
+ 209 compressed objects within 3 object streams
+ 50 named destinations out of 1000 (max. 500000)
+ 185 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -19,4 +19,5 @@
 \contentsline {subsection}{\numberline {4.3.3}AudioStream Manager}{11}{subsection.4.3.3}
 \contentsline {chapter}{\numberline {5}Conclusion}{12}{chapter.5}
 \contentsline {chapter}{\numberline {6}Appendix A}{14}{chapter.6}
-\contentsline {section}{\numberline {6.1}Bonjour}{14}{section.6.1}
+\contentsline {section}{\numberline {6.1}Compiling the Source Code}{14}{section.6.1}
+\contentsline {section}{\numberline {6.2}Bonjour}{14}{section.6.2}
