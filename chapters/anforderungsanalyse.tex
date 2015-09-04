@@ -10,7 +10,7 @@ The audio plugin has the following requirements:
 
 \begin{itemize}
 
-\item runnable as a VST plugin in a standard audio application
+\item runnable as a realtime VST audio plugin in a standard audio application
 \item locate and connect with one or processing nodes on the network
 \item forward midi and audio data from the host audio application to the networked nodes
 \item receives audio data from the networked nodes and streams this back to the host application
@@ -29,5 +29,13 @@ The processing node has the following requirements:
 \item streams audio and midi data back to the audio plugin or to the next node in the processing chain
 
 \end{itemize}
+
+\subsection{Specific Software Requirements}
+
+\subsubsection{Audio Software Requirements}
+
+In realtime audio applications timing is critical. This may sound obvious, but to a programmer it means giving up many of the comforts of modern programming made available working with high level interpreted languages such as java or python. Most audio application interfaces and SDKs such as the VST SDK require a knowledge of C and C++.
+
+Professional audio applications generally run on Mac OSX or Windows Operating Systems.
 
 
