@@ -30,12 +30,57 @@ The processing node has the following requirements:
 
 \end{itemize}
 
-\subsection{Specific Software Requirements}
-
-\subsubsection{Audio Software Requirements}
+\subsection{Software Requirements}
 
 In realtime audio applications timing is critical. This may sound obvious, but to a programmer it means giving up many of the comforts of modern programming made available working with high level interpreted languages such as java or python. Most audio application interfaces and SDKs such as the VST SDK require a knowledge of C and C++.
 
-Professional audio applications generally run on Mac OSX or Windows Operating Systems.
+Professional audio applications generally run on Mac OSX or Windows Operating Systems, therefore the audio plugin must be compileable on these systems. The processing node will be run on SoC devices which typically run with a Linux based OS. Yet both applications should share much of thier codebase since they must do similar things and be compatible.
+
+\subsection{Evaluated C++ Frameworks}
+
+There are many C++ libraries and frameworks that..\\
+
+Software Framework Criteria:
+
+\begin{itemize}
+
+\item Crossplatform for OSX, Linux, and Windows
+\item Offers high level constructs like smart pointers
+\item Support for crossplatform audio integration
+\item Should be well documented and have an active community
+\item Support for crossplatform network streaming
+
+\end{itemize}
+
+Several C++ Frameworks were evaluated for this project. The criteria used to evaluate the frameworks are the ease of
+integration, size of community and degree of acceptence. Does the framework cover the software requirements defined
+above?
+
+WDL : http://www.cockos.com/wdl/ ( +iplug library ) \\
+Juce : http://www.juce.com \\
+Open Frameworks : http://openframeworks.cc \\
+Boost : http://www.boost.org \\
+Cinder : http://libcinder.org \\
+LibSourcey : http://sourcey.com/libsourcey/ \\
+Qt : http://www.qt.io \\
+
+\begin{table}
+\begin{center}
+\begin{tabular}{ |p{3cm}||p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|  }
+ \hline
+ Framework & High Level Utilities & Audio Utilities & Network Utilities & VST Utilities & Community\\
+ \hline
+ Juce            & ja  & ja  & ja\tablefootnote{basic networking utilities, not appyable to this project though} & ja  & gross \\
+ WDL             & ja  & ja  & nein & ja\tablefootnote{enabled using one of the additional iplug libraries} & klein \\
+ Open Frameworks & ja  & ja  & ja\tablefootnote{the ofxNetwork addon allow simple management of TCP or UDP sockets}&
+ nein& gross \\
+ Boost           & ja  & nein& ja   & nein & gross \\
+ Cinder          & ja  & ja  & ja   & nein & klein \\
+ LibSourcey      & nein& nein & ja & nein & nein \\
+ Qt              & ja  & nein & ja & nein & gross \\
+ \hline
+\end{tabular}
+\end{center}
+\end{table}
 
 
