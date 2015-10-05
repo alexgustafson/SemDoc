@@ -8,7 +8,7 @@ In 1996 Steinberg GmbH, the developers of Cubase, a popular audio production app
 
 The number of realtime plugins that could run on a CPU was limited by several factors, hard disc access speeds, bus speeds, amount of ram, OS schedulers for instance\cite{latency98}. User's didn't expect to be able to run more that 10 plugin instances at a time. Simply playing back multiple tracks of digital audio in realtime was so taxinig on the CPU that an application's graphical interface would quickly become unresponsive.
 
-Today it's possible to playback hundreds of channels of audio and hundreds of plugins in realtime. But as the performance threshhold has risen, so to have the expectations. The algorithms driving today's plugins are much more complex that those from 1996. Plugins are available today that model physical systems or emulate the analog circutry of popular vintage synthsizers. So, even though CPU performance has risen significantly, it's still easy to reach the limits, especially with the more complex high qualtiy plugins.
+Today it's possible to playback hundreds of channels of audio and hundreds of plugins in realtime. But as the performance threshhold has risen, so to have the expectations. The algorithms driving today's plugins are much more complex that those from 1996. Plugins are available today that model physical systems or emulate the analog circutry of popular vintage synthsizers. So, even though CPU performance has increased significantly, it's still easy to reach the limits, especially with the more complex high qualtiy plugins.
 
 Serval DSP based systems exist that can alleviate the load on the CPU much in the same way that GPU accelerator cards work. Audio processing jobs are delegated to external specialized hardware via PCIe or Thunderbolt interfaces. However, these DSP based accelerators are proprietary and expensive. Developing plugins for a DSP chip is also significatly more complex than developing for the CPU.
 
@@ -27,16 +27,17 @@ implmeneted, the most common standard being Steinberg's VST standard.
 
 Regardless of the standard most audio plugins function in a similar fashion. The host application will periodically
 poll the plugin via a callback, providing access to the source audio data stream and expecting the plugin to return the
- processed data. The size of the data provided at each callback is determined by the host application. By increasing the
- buffer size sent during each callback the CPU has more time to process the data, but also increases the latency of
- the signal.
+ processed data.
 
  Audio plugins can also provide a gui to the user that allows processing parameters to be modified, saved, and
  sequenced as well. This might be the cutoff frequency of a low pass filter, or the delay time of a reverb effect,
  for example.
 
- On the Windows platform plugins are compiled as muti-threaded Dynamic Link Libraries, on Mac OSX they are Mach-O
- Bundles.
+ On the Windows platform VST plugins are compiled as muti-threaded Dynamic Link Libraries, on Mac OSX they are Mach-O
+ Bundles. The native apple Audio Unit plugins are also compiled as Mach-O bundles, they have almost identical
+ functionality, but differ in their API implementation. Other alternative plugin formats are Avid's RTAS and AAX plugin formats, Microsoft's DirectX architecture, or LADSPA, DSSI and LV2 on Linux. From a programmer's point of view audio plugins are
+ compiled as dynamically loadable libraries that stricly conform to a defined API. The host application can load
+ then at run time and pass audio data through them to be processed.
 
 \section{Audio Over Ethernet}
 
