@@ -2,11 +2,12 @@
 
 An audio engineer's typical job is to manage the balance of multiple tracks of audio signals. The dynamic range of a signal can be compressed, in order to give quiter passages more presence. Loud peaks can be limited to balance the overall loudness of a musical piece. Using equalizers an audio engineer can make enhance or supress specific frequencies of a track to make it more present in a mix. Effects like reverb, echo, or chorus can be used to give a track more space in a mix effecting the mood or ambience of a music piece. It is typcial that each track in a recording session will be processed by a chain of several specific audio processors.
 
-20 years ago the equipment responsible for these kinds of processes filled large racks. Today all of these tasks run as plugins on the CPU.
+20 years ago the equipment needed for this kind of processing filled large racks. Today all of these tasks run as
+plugins on the CPU.
 
-In 1996 Steinberg GmbH, the developers of Cubase, a popular audio production application released the VST interface specification and SDK.\cite{VST-wikipedia} The VST plugin standard was special because it allowed realtime processing of audio in the CPU and it allowed other developers to programm plugins which could be run from within Cubase. The VST plugin standard quickly had widespread industry acceptance and was adopted by most developers of audio production applications. Although alternative standards exist on Apple and Linux Operating Systems, VST is still the most widely adopted crossplatform standard.
+In 1996 Steinberg GmbH, the developers of Cubase, a popular audio production application, released the VST interface specification and SDK.\cite{VST-wikipedia} The VST plugin standard was special because it allowed realtime processing of audio in the CPU and it allowed other developers to programm plugins which could be run from within Cubase. The VST plugin standard quickly had widespread industry acceptance and was adopted by most developers of audio production applications. Although alternative standards exist, VST is still the most widely adopted crossplatform standard.
 
-The number of realtime plugins that could run on a CPU was limited by several factors, hard disc access speeds, bus speeds, amount of ram, OS schedulers for instance\cite{latency98}. User's didn't expect to be able to run more that 10 plugin instances at a time. Simply playing back multiple tracks of digital audio in realtime was so taxinig on the CPU that an application's graphical interface would quickly become unresponsive.
+The number of realtime plugins that could run on a CPU was limited by several factors, hard disc access speeds, bus speeds, amount of ram, OS schedulers for instance\cite{latency98}. User's didn't expect to be able to run more than 10 plugin instances at a time. Simply playing back multiple tracks of digital audio in realtime was so taxinig on the CPU that an application's graphical interface would quickly become unresponsive.
 
 Today it's possible to playback hundreds of channels of audio and hundreds of plugins in realtime. But as the performance threshhold has risen, so to have the expectations. The algorithms driving today's plugins are much more complex that those from 1996. Plugins are available today that model physical systems or emulate the analog circutry of popular vintage synthsizers. So, even though CPU performance has increased significantly, it's still easy to reach the limits, especially with the more complex high qualtiy plugins.
 
@@ -29,16 +30,14 @@ Regardless of the standard most audio plugins function in a similar fashion. The
 poll the plugin via a callback, providing access to the source audio data stream and expecting the plugin to return the
  processed data.
 
- Audio plugins can also provide a gui to the user that allows processing parameters to be modified, saved, and
- sequenced as well. This might be the cutoff frequency of a low pass filter, or the delay time of a reverb effect,
- for example.
+Audio plugins can also provide a gui to the user that allows processing parameters to be modified, saved, and sequenced as well. This might be the cutoff frequency of a low pass filter, or the delay time of a reverb effect, for example.
 
- On the Windows platform VST plugins are compiled as muti-threaded Dynamic Link Libraries, on Mac OSX they are Mach-O
- Bundles. The native apple Audio Unit plugins are also compiled as Mach-O bundles, they have almost identical
- functionality, but differ in their API implementation. Other alternative plugin formats are Avid's RTAS and AAX plugin formats, Microsoft's DirectX architecture, or LADSPA, DSSI and LV2 on Linux. From a programmer's point of view audio plugins are
- compiled as dynamically loadable libraries that stricly conform to a defined API. The host application can load
- then at run time and pass audio data through them to be processed.
+ On the Windows platform VST plugins are compiled to Dynamic Link Libraries, on Mac OSX they are Mach-O Bundles. The native apple Audio Unit plugins are also compiled as Mach-O bundles, they have almost identical functionality, but differ in their API implementation. Other alternative plugin formats are Avid's RTAS and AAX plugin formats, Microsoft's DirectX architecture, or LADSPA, DSSI and LV2 on Linux. From a programmer's point of view audio plugins are always compiled as dynamically loadable libraries that stricly conform to a format's specific API. The host application can load then at run time and stream audio data through them.
+
+ Additionally Realtime Audio Plugins, as the name implies, must be able to complete thier tasks fast enough to comply with realtime audio requirements. How fast is fast enough? Well, that depends how you define "real time". In audio applications, real time is defined in terms of an audio system's latency. The total delay between the time an audio signal enters the system \(at the analog to digital converter for example\), is processed, and leaves the system \(at the digital to analog conterver\) is the latency. If a musicial is performing live and simultaneously hearing the result of the performance after being processed digitally the system's latency must be low enough to feel instantaneous. The maximum acceptable latency is considered to be around 10ms\cite{AES67-2013}.
 
 \section{Audio Over Ethernet}
 
 \section{Single Board Computers}
+
+\section{Virtual Analog Synthesis}
