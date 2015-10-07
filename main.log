@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.5)  6 OCT 2015 23:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.5)  7 OCT 2015 12:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -534,10 +534,10 @@ Chapter 2.
 ])
 (./chapters/einfuehrung/realtime.tex [8])
 (./chapters/einfuehrung/audio_over_ethernet.tex)
-(./chapters/einfuehrung/single_board_computers.tex)
-(./chapters/einfuehrung/virtual_analog_synthesis.tex) [9]
+(./chapters/einfuehrung/single_board_computers.tex [9])
+(./chapters/einfuehrung/virtual_analog_synthesis.tex) [10]
 Chapter 3.
-(./chapters/anforderungsanalyse.tex [10
+(./chapters/anforderungsanalyse.tex [11
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 41--42
@@ -579,17 +579,17 @@ Overfull \hbox (27.75388pt too wide) in paragraph at lines 69--83
  [] 
  []
 
-) [11] [12
+) [12] [13
 
 ]
 Chapter 4.
-(./chapters/implementation.tex) [13
+(./chapters/implementation.tex) [14
 
-] [14]
+] [15]
 Chapter 5.
-(./chapters/conclusion.tex) (./main.bbl [15
+(./chapters/conclusion.tex) (./main.bbl [16
 
-]) [16
+]) [17
 
 ]
 Chapter 6.
@@ -613,7 +613,7 @@ ro=none --with-systemdsystemunitdir=no
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 61.
- [17
+ [18
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 61.
@@ -625,10 +625,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 61.
  ) 
 Here is how much of TeX's memory you used:
- 5921 strings out of 494501
- 86229 string characters out of 6167031
- 175775 words of memory out of 5000000
- 9031 multiletter control sequences out of 15000+600000
+ 5924 strings out of 494501
+ 86257 string characters out of 6167031
+ 175804 words of memory out of 5000000
+ 9032 multiletter control sequences out of 15000+600000
  27221 words of font info for 50 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
  29i,16n,28p,946b,383s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -637,10 +637,10 @@ cal/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
 r/local/texlive/2015basic/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/loc
 al/texlive/2015basic/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/te
 xlive/2015basic/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (18 pages, 85178 bytes).
+Output written on main.pdf (19 pages, 87977 bytes).
 PDF statistics:
- 298 PDF objects out of 1000 (max. 8388607)
- 271 compressed objects within 3 object streams
- 69 named destinations out of 1000 (max. 500000)
+ 305 PDF objects out of 1000 (max. 8388607)
+ 277 compressed objects within 3 object streams
+ 71 named destinations out of 1000 (max. 500000)
  233 words of extra memory for PDF output out of 10000 (max. 10000000)
 
