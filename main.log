@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.5)  7 OCT 2015 22:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.5)  7 OCT 2015 23:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -578,15 +578,19 @@ Package pdftex.def Info: assets/synth_voice_block.pdf used on input line 11.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[10] <plots/graphics/sawtooth.png, id=233, 1067.4279pt x 417.7206pt>
-File: plots/graphics/sawtooth.png Graphic file (type png)
+[10] <plots/graphics/sawtooth.pdf, id=233, 722.7pt x 433.62pt>
+File: plots/graphics/sawtooth.pdf Graphic file (type pdf)
 
-<use plots/graphics/sawtooth.png>
-Package pdftex.def Info: plots/graphics/sawtooth.png used on input line 22.
-(pdftex.def)             Requested size: 345.0pt x 135.01184pt.
-) [11 <./assets/synth_voice_block.pdf> <./plots/graphics/sawtooth.png>]
+<use plots/graphics/sawtooth.pdf>
+Package pdftex.def Info: plots/graphics/sawtooth.pdf used on input line 22.
+(pdftex.def)             Requested size: 345.0pt x 206.9972pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [11 <./assets/synth_voice_block.pdf>] [12 <./plots/graphics/sawtooth.pdf>]
 Chapter 3.
-(./chapters/anforderungsanalyse.tex [12
+(./chapters/anforderungsanalyse.tex [13
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 41--42
@@ -628,17 +632,17 @@ Overfull \hbox (27.75388pt too wide) in paragraph at lines 69--83
  [] 
  []
 
-) [13] [14
+) [14] [15
 
 ]
 Chapter 4.
-(./chapters/implementation.tex) [15
+(./chapters/implementation.tex) [16
 
-] [16]
+] [17]
 Chapter 5.
-(./chapters/conclusion.tex) (./main.bbl [17
+(./chapters/conclusion.tex) (./main.bbl [18
 
-]) [18
+]) [19
 
 ]
 Chapter 6.
@@ -662,7 +666,7 @@ ro=none --with-systemdsystemunitdir=no
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 62.
- [19
+ [20
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 62.
@@ -675,21 +679,21 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 62.
  ) 
 Here is how much of TeX's memory you used:
  6214 strings out of 494501
- 91120 string characters out of 6167031
+ 91123 string characters out of 6167031
  179490 words of memory out of 5000000
  9292 multiletter control sequences out of 15000+600000
  27221 words of font info for 50 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 29i,16n,28p,1071b,383s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,16n,28p,1073b,383s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015basic/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/lo
 cal/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
 r/local/texlive/2015basic/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/loc
 al/texlive/2015basic/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/te
 xlive/2015basic/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (20 pages, 153675 bytes).
+Output written on main.pdf (21 pages, 354860 bytes).
 PDF statistics:
- 334 PDF objects out of 1000 (max. 8388607)
- 300 compressed objects within 3 object streams
- 75 named destinations out of 1000 (max. 500000)
+ 372 PDF objects out of 1000 (max. 8388607)
+ 308 compressed objects within 4 object streams
+ 76 named destinations out of 1000 (max. 500000)
  243 words of extra memory for PDF output out of 10000 (max. 10000000)
 

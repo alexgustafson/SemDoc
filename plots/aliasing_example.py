@@ -2,10 +2,15 @@
 This code is adapted from the following URL:
 https://plot.ly/matplotlib/fft/
 '''
+import matplotlib
+matplotlib.use('PDF')
 
 from scipy import signal
 import matplotlib.pyplot as plt
+
 import numpy as np
+
+plt.rcParams['figure.figsize'] = 10, 6
 
 Fs = 441000.0
 Ts = 1.0/Fs
@@ -28,9 +33,11 @@ fig, ax = plt.subplots(2, 2)
 ax[0,0].plot(t[0:200], y[0:200])
 ax[0,0].set_xlabel('Time')
 ax[0,0].set_ylabel('Amplitude')
+ax[0,0].set_xticks(np.arange(0.0, 0.0005, 0.0002))
 ax[1,0].plot(frq, abs(Y), 'r') # plotting the spectrum
 ax[1,0].set_xlabel('Freq (Hz)')
 ax[1,0].set_ylabel('|Y(freq)|')
+ax[1,0].set_xticks(np.arange(0.0, 250000, 100000))
 
 Fs = 44100.0
 Ts = 1.0/Fs
@@ -51,8 +58,14 @@ Y = Y[range(n/2)]
 ax[0,1].plot(t[0:20], y[0:20])
 ax[0,1].set_xlabel('Time')
 ax[0,1].set_ylabel('Amplitude')
+ax[0,1].set_xticks(np.arange(0.0, 0.0005, 0.0002))
 ax[1,1].plot(frq, abs(Y), 'r') # plotting the spectrum
 ax[1,1].set_xlabel('Freq (Hz)')
-ax[1,1s].set_ylabel('|Y(freq)|')
+ax[1,1].set_ylabel('|Y(freq)|')
+ax[1,1].set_xticks(np.arange(0.0, 25000, 10000))
 
+fig_size = plt.rcParams["figure.figsize"]
+print "Current size:", fig_size
+plt.tight_layout()
+plt.savefig('graphics/sawtooth.pdf')
 plt.show()
