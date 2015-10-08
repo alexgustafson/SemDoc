@@ -2,7 +2,7 @@
 
 Virtual analog synthesis is the term used to describe the emulation of analog synthsizers of the 60s and 70s digitally in real time. The complexity and goals of an emulation can vary. Some emulations go so far as to simulate the actual electronic components of vintage synthesis circuits, others just model ths signal flow loosly.
 
-Regardless of the type of emulation, and model of analog systhesis has two primary concerns. Latency and aliasing. The problem of latency has already been described above. Any processing will introduce a delay in the signal, the complexity of the processing can increase the delay, or use more CPU cycles. Aliasing is audible distortion introduced by signals that have a higher frequency content than the sampling rate of the system allows for\cite{virtual_analog_synthesis}.
+Regardless of the type of emulation, and model of analog systhesis has two primary concerns. Latency and aliasing. The problem of latency has already been described above. Any processing will introduce a delay in the signal, the complexity of the processing can increase the delay, or use more CPU cycles. Aliasing is audible distortion introduced by signals that have a higher frequency content than the sampling rate of the system allows for.
 
 Analog synthsizers usually employed what is refered to as subtractive synthsis. One or more sound generators or oscillators would create signals with particular harmonic qualities. These signals would then go through filters that would "subtract" frequencies from the signal. The oscillators and filters can be modulated as well as the amplitude of the filtered signal. Figure~\ref{fig:synth_voice_block} is a simple block diagram of a typical subtractive synth voice.
 
@@ -23,3 +23,6 @@ One's first impression might be that modeling the oscillator would be simple. A 
     \caption{Ideal and Aliased 5kHz Sawtooth waveform}
     \label{fig:aliasing_sawtooth}
 \end{figure}
+
+There are various methods to eliminate or reduce aliasing. The most effective is to generate the harmonics using a series of sin waves up to the nyquist limit or half of the system's sampling rate, but this also very processing intensive. Other less CPU intensive strategies involve using oversampling, bandlimiting, or other alias-supressing methods\cite{virtual_analog_synthesis}.
+
