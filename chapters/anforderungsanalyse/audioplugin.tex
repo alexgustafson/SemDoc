@@ -4,8 +4,9 @@ The audio plugin must provide transparent functionality to its host audio applic
 
 The audio plugins typically have a state that will include parameter settings controlled by the audio host or the user. The state will also include information about the current coefficient settings of filters and other algorithms, and the state of notes being performed if applicable. This is important in order to allow an audio plugin to hand over an on-going process to a newly conected node. It could also be used to allow a networked node to be responsible for the processing of more that one audio plugin by switching it's active state accordingly.
 
-Depending on the type of parallelisation implemented the audio plugin might distribute its entire job to one node or parcel out sub tasks to nodes.
-
+Depending on the type of parallelisation implemented the audio plugin might distribute its entire job to one node or parcel out sub tasks to nodes.\\
+\\
+\noindent
 The audio plugin has the following requirements:
 
 \begin{itemize}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.5)  8 OCT 2015 13:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.5)  8 OCT 2015 15:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -526,10 +526,8 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
 tifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.31 \chapter
-             *{Declaration} [1
-
-] [2
+l.32 \tableofcontents
+                      [1
 
 ] (./main.toc
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
@@ -542,16 +540,16 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
- [3
+ [2
 
-] [4]
+] [3]
 Chapter 1.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20.74> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 36.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 34.
 (./chapters/introduction.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
- [5
+ [4
 
 ]
 LaTeX Font Info:    Try loading font information for OMS+ptm on input line 19.
@@ -565,14 +563,14 @@ LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
 (./chapters/GlossaryOfTerms.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
- [6]) [7]
+ [5]) [6]
 Chapter 2.
-(./chapters/einfuehrung/background.tex [8
+(./chapters/einfuehrung/background.tex [7
 
 ])
-(./chapters/einfuehrung/realtime.tex [9])
+(./chapters/einfuehrung/realtime.tex [8])
 (./chapters/einfuehrung/audio_over_ethernet.tex)
-(./chapters/einfuehrung/single_board_computers.tex [10])
+(./chapters/einfuehrung/single_board_computers.tex [9])
 (./chapters/einfuehrung/virtual_analog_synthesis.tex
 <assets/synth_voice_block.pdf, id=232, 694.595pt x 323.2075pt>
 File: assets/synth_voice_block.pdf Graphic file (type pdf)
@@ -580,30 +578,30 @@ File: assets/synth_voice_block.pdf Graphic file (type pdf)
 <use assets/synth_voice_block.pdf>
 Package pdftex.def Info: assets/synth_voice_block.pdf used on input line 11.
 (pdftex.def)             Requested size: 345.0pt x 160.53809pt.
- [11]
+ [10]
 <plots/graphics/sawtooth.pdf, id=240, 722.7pt x 433.62pt>
 File: plots/graphics/sawtooth.pdf Graphic file (type pdf)
 
 <use plots/graphics/sawtooth.pdf>
 Package pdftex.def Info: plots/graphics/sawtooth.pdf used on input line 22.
 (pdftex.def)             Requested size: 345.0pt x 206.9972pt.
- [12pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+ [11pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.26 
-      <./assets/synth_voice_block.pdf>]) [13pdfTeX warning (ext4): destination 
+      <./assets/synth_voice_block.pdf>]) [12pdfTeX warning (ext4): destination 
 with the same identifier (name{figure.2.2}) has been already used, duplicate ig
 nored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.47 \chapter
+l.45 \chapter
              {Anforderungsanalyse} <./plots/graphics/sawtooth.pdf>]
 Chapter 3.
 (./chapters/anforderungsanalyse/general.tex)
-(./chapters/anforderungsanalyse/parallelisation.tex [14
+(./chapters/anforderungsanalyse/parallelisation.tex [13
 
 ]
 <assets/distribution_1to1.pdf, id=315, 829.0975pt x 257.96375pt>
@@ -627,7 +625,7 @@ File: assets/distribute_byvoice.pdf Graphic file (type pdf)
 <use assets/distribute_byvoice.pdf>
 Package pdftex.def Info: assets/distribute_byvoice.pdf used on input line 28.
 (pdftex.def)             Requested size: 345.0pt x 133.33472pt.
- [15pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+ [14pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -640,67 +638,68 @@ l.32
                                                   \fi \fi 
 l.32 
       <./assets/distribution_1to1.pdf> <./assets/distribution_perprocessor.pdf>
-]) (./chapters/anforderungsanalyse/audioplugin.tex)
-(./chapters/anforderungsanalyse/remotenodes.tex [16pdfTeX warning (ext4): desti
-nation with the same identifier (name{figure.3.3}) has been already used, dupli
-cate ignored
+]) (./chapters/anforderungsanalyse/audioplugin.tex
+Underfull \hbox (badness 10000) in paragraph at lines 7--11
+
+ []
+
+[15pdfTeX warning (ext4): destination with the same identifier (name{figure.3.3
+}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.10 \item s
-            treams audio and midi data back to the audio plugin or to the ne...
+l.18 \item i
+            n the absence of a coressponding node on the network perform the...
  <./assets/distribute_byvoice.pdf>])
-(./chapters/anforderungsanalyse/software.tex
-Underfull \hbox (badness 10000) in paragraph at lines 9--10
+(./chapters/anforderungsanalyse/remotenodes.tex
+Underfull \hbox (badness 10000) in paragraph at lines 5--9
+
+ []
+
+) (./chapters/anforderungsanalyse/software.tex [16]
+Underfull \hbox (badness 10000) in paragraph at lines 11--15
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--34
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 39--39
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
 []\OT1/ptm/m/n/10 High
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--39
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
 \OT1/ptm/m/n/10 Level
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--39
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
 []\OT1/ptm/m/n/10 Audio
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--39
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
 []\OT1/ptm/m/n/10 Network
  []
 
 
-Overfull \hbox (5.11037pt too wide) in paragraph at lines 39--40
+Overfull \hbox (5.11037pt too wide) in paragraph at lines 31--32
 []\OT1/ptm/m/n/10 Community| 
  []
 
 
-Overfull \hbox (27.75388pt too wide) in paragraph at lines 37--51
+Overfull \hbox (27.75388pt too wide) in paragraph at lines 29--43
  [] 
  []
 
-) [17] [18
-
-]
+) [17]
 Chapter 4.
-(./chapters/implementation.tex) [19
+(./chapters/implementation.tex) [18
 
-] [20]
+] [19]
 Chapter 5.
-(./chapters/conclusion.tex) (./main.bbl [21
+(./chapters/conclusion.tex) (./main.bbl [20
 
-]) [22
+]) [21
 
 ]
 Chapter 6.
@@ -722,36 +721,40 @@ Overfull \hbox (57.40556pt too wide) in paragraph at lines 8--9
 ro=none --with-systemdsystemunitdir=no 
  []
 
-)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 68.
- [23
+) (./chapters/evaluated_frameworks.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 3--66
 
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 68.
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 67.
+[22
+
+] [23]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 67.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 68.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 68.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 67.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 67.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: B05F1A01D3C7D543092BEB4776A86388;1875.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 68.
+(rerunfilecheck)             Checksum: 78CD58A698D30F3D3B166E841744A3B7;1942.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 67.
  ) 
 Here is how much of TeX's memory you used:
- 6309 strings out of 494501
- 92922 string characters out of 6167031
- 181037 words of memory out of 5000000
- 9360 multiletter control sequences out of 15000+600000
+ 6314 strings out of 494501
+ 93033 string characters out of 6167031
+ 180037 words of memory out of 5000000
+ 9362 multiletter control sequences out of 15000+600000
  27221 words of font info for 50 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 29i,16n,28p,1073b,383s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,16n,28p,1073b,381s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015basic/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/lo
 cal/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
 r/local/texlive/2015basic/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/loc
 al/texlive/2015basic/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/te
 xlive/2015basic/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (24 pages, 387976 bytes).
+Output written on main.pdf (24 pages, 390195 bytes).
 PDF statistics:
- 451 PDF objects out of 1000 (max. 8388607)
- 371 compressed objects within 4 object streams
+ 455 PDF objects out of 1000 (max. 8388607)
+ 375 compressed objects within 4 object streams
  83 named destinations out of 1000 (max. 500000)
- 266 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 274 words of extra memory for PDF output out of 10000 (max. 10000000)
 
