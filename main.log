@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.5)  8 OCT 2015 11:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.5)  8 OCT 2015 13:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -425,31 +425,37 @@ File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 \Gin@req@height=\dimen109
 \Gin@req@width=\dimen110
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 15.
-
-(./main.aux)
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count104
+\float@exts=\toks17
+\float@box=\box26
+\@float@everytoks=\toks18
+\@floatcapt=\box27
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 16.
+ (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 16.
-
-(/usr/local/texlive/2015basic/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 17.
+ (/usr/local/texlive/2015basic/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
-\AtBeginShipoutBox=\box26
+\AtBeginShipoutBox=\box28
 
 (/usr/local/texlive/2015basic/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2014/10/28 v1.1a Standard LaTeX Color (DPC)
@@ -459,7 +465,7 @@ File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 142.
 )
-Package hyperref Info: Link coloring ON on input line 16.
+Package hyperref Info: Link coloring ON on input line 17.
 
 (/usr/local/texlive/2015basic/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -468,11 +474,11 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 y
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count104
+\c@section@level=\count105
 )
-LaTeX Info: Redefining \ref on input line 16.
-LaTeX Info: Redefining \pageref on input line 16.
-LaTeX Info: Redefining \nameref on input line 16.
+LaTeX Info: Redefining \ref on input line 17.
+LaTeX Info: Redefining \pageref on input line 17.
+LaTeX Info: Redefining \nameref on input line 17.
  (./main.out) (./main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
@@ -480,17 +486,17 @@ LaTeX Info: Redefining \nameref on input line 16.
 
 (/usr/local/texlive/2015basic/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count105
+\scratchcounter=\count106
 \scratchdimen=\dimen111
-\scratchbox=\box27
-\nofMPsegments=\count106
-\nofMParguments=\count107
-\everyMPshowfont=\toks17
-\MPscratchCnt=\count108
+\scratchbox=\box29
+\nofMPsegments=\count107
+\nofMParguments=\count108
+\everyMPshowfont=\toks19
+\MPscratchCnt=\count109
 \MPscratchDim=\dimen112
-\MPnumerator=\count109
-\makeMPintoPDFobject=\count110
-\everyMPtoPDFconversion=\toks18
+\MPnumerator=\count110
+\makeMPintoPDFobject=\count111
+\everyMPtoPDFconversion=\toks20
 ) (/usr/local/texlive/2015basic/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 (/usr/local/texlive/2015basic/texmf-dist/tex/latex/oberdiek/grfext.sty
@@ -506,21 +512,21 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 26.
+(Font)              <12> on input line 27.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 26.
+(Font)              <8> on input line 27.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 26.
+(Font)              <6> on input line 27.
  [1
 
 {/usr/local/texlive/2015basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 27.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 28.
  (./chapters/abstract.tex)pdfTeX warning (ext4): destination with the same iden
 tifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.30 \chapter
+l.31 \chapter
              *{Declaration} [1
 
 ] [2
@@ -541,7 +547,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 ] [4]
 Chapter 1.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20.74> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 35.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 36.
 (./chapters/introduction.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
@@ -568,46 +574,83 @@ Chapter 2.
 (./chapters/einfuehrung/audio_over_ethernet.tex)
 (./chapters/einfuehrung/single_board_computers.tex [10])
 (./chapters/einfuehrung/virtual_analog_synthesis.tex
-<assets/synth_voice_block.pdf, id=232, 694.595pt x 412.54124pt>
+<assets/synth_voice_block.pdf, id=232, 694.595pt x 323.2075pt>
 File: assets/synth_voice_block.pdf Graphic file (type pdf)
 
 <use assets/synth_voice_block.pdf>
 Package pdftex.def Info: assets/synth_voice_block.pdf used on input line 11.
-(pdftex.def)             Requested size: 345.0pt x 204.91042pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[11] <plots/graphics/sawtooth.pdf, id=240, 722.7pt x 433.62pt>
+(pdftex.def)             Requested size: 345.0pt x 160.53809pt.
+ [11]
+<plots/graphics/sawtooth.pdf, id=240, 722.7pt x 433.62pt>
 File: plots/graphics/sawtooth.pdf Graphic file (type pdf)
 
 <use plots/graphics/sawtooth.pdf>
 Package pdftex.def Info: plots/graphics/sawtooth.pdf used on input line 22.
 (pdftex.def)             Requested size: 345.0pt x 206.9972pt.
+ [12pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+1}) has been already used, duplicate ignored
 
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.26 
+      <./assets/synth_voice_block.pdf>]) [13pdfTeX warning (ext4): destination 
+with the same identifier (name{figure.2.2}) has been already used, duplicate ig
+nored
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) [12 <./assets/synth_voice_block.pdf>] [13 <./plots/graphics/sawtooth.pdf>]
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.47 \chapter
+             {Anforderungsanalyse} <./plots/graphics/sawtooth.pdf>]
 Chapter 3.
 (./chapters/anforderungsanalyse/general.tex)
-(./chapters/anforderungsanalyse/parallelisation.tex
-<assets/distribution_1to1.pdf, id=302, 829.0975pt x 328.22626pt>
+(./chapters/anforderungsanalyse/parallelisation.tex [14
+
+]
+<assets/distribution_1to1.pdf, id=315, 829.0975pt x 257.96375pt>
 File: assets/distribution_1to1.pdf Graphic file (type pdf)
 
 <use assets/distribution_1to1.pdf>
-Package pdftex.def Info: assets/distribution_1to1.pdf used on input line 12.
-(pdftex.def)             Requested size: 345.0pt x 136.57695pt.
+Package pdftex.def Info: assets/distribution_1to1.pdf used on input line 14.
+(pdftex.def)             Requested size: 345.0pt x 107.34029pt.
 
+<assets/distribution_perprocessor.pdf, id=316, 820.06375pt x 324.21124pt>
+File: assets/distribution_perprocessor.pdf Graphic file (type pdf)
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+<use assets/distribution_perprocessor.pdf>
+Package pdftex.def Info: assets/distribution_perprocessor.pdf used on input lin
+e 21.
+(pdftex.def)             Requested size: 345.0pt x 136.4003pt.
 
-) (./chapters/anforderungsanalyse/audioplugin.tex [14
+<assets/distribute_byvoice.pdf, id=317, 831.105pt x 321.2pt>
+File: assets/distribute_byvoice.pdf Graphic file (type pdf)
 
-])
-(./chapters/anforderungsanalyse/remotenodes.tex)
-(./chapters/anforderungsanalyse/software.tex [15 <./assets/distribution_1to1.pd
-f>]
+<use assets/distribute_byvoice.pdf>
+Package pdftex.def Info: assets/distribute_byvoice.pdf used on input line 28.
+(pdftex.def)             Requested size: 345.0pt x 133.33472pt.
+ [15pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.32 
+     pdfTeX warning (ext4): destination with the same identifier (name{figure.3
+.2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.32 
+      <./assets/distribution_1to1.pdf> <./assets/distribution_perprocessor.pdf>
+]) (./chapters/anforderungsanalyse/audioplugin.tex)
+(./chapters/anforderungsanalyse/remotenodes.tex [16pdfTeX warning (ext4): desti
+nation with the same identifier (name{figure.3.3}) has been already used, dupli
+cate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.10 \item s
+            treams audio and midi data back to the audio plugin or to the ne...
+ <./assets/distribute_byvoice.pdf>])
+(./chapters/anforderungsanalyse/software.tex
 Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
  []
@@ -647,15 +690,17 @@ Overfull \hbox (27.75388pt too wide) in paragraph at lines 37--51
  [] 
  []
 
-) [16] [17]
+) [17] [18
+
+]
 Chapter 4.
-(./chapters/implementation.tex) [18
+(./chapters/implementation.tex) [19
 
-] [19]
+] [20]
 Chapter 5.
-(./chapters/conclusion.tex) (./main.bbl [20
+(./chapters/conclusion.tex) (./main.bbl [21
 
-]) [21
+]) [22
 
 ]
 Chapter 6.
@@ -678,35 +723,35 @@ ro=none --with-systemdsystemunitdir=no
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 67.
- [22
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 68.
+ [23
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 67.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 68.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 67.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 67.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 68.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 68.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: B05F1A01D3C7D543092BEB4776A86388;1875.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 67.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 68.
  ) 
 Here is how much of TeX's memory you used:
- 6238 strings out of 494501
- 91749 string characters out of 6167031
- 178555 words of memory out of 5000000
- 9298 multiletter control sequences out of 15000+600000
+ 6309 strings out of 494501
+ 92922 string characters out of 6167031
+ 181037 words of memory out of 5000000
+ 9360 multiletter control sequences out of 15000+600000
  27221 words of font info for 50 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 29i,16n,28p,1073b,377s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,16n,28p,1073b,383s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015basic/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/lo
 cal/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
 r/local/texlive/2015basic/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/loc
 al/texlive/2015basic/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/te
 xlive/2015basic/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (23 pages, 366121 bytes).
+Output written on main.pdf (24 pages, 387976 bytes).
 PDF statistics:
- 404 PDF objects out of 1000 (max. 8388607)
- 334 compressed objects within 4 object streams
- 80 named destinations out of 1000 (max. 500000)
- 256 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 451 PDF objects out of 1000 (max. 8388607)
+ 371 compressed objects within 4 object streams
+ 83 named destinations out of 1000 (max. 500000)
+ 266 words of extra memory for PDF output out of 10000 (max. 10000000)
 
