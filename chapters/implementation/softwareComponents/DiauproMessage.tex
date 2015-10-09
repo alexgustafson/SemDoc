@@ -1,3 +1,34 @@
 \subsection{DiauproMessage}
 
-The DiauproMessage class manager the serialisation and deserialisation of data to datagram packets. There datagrams themselves are comprised of a fixed length header, and a varible length payload that contains the audio, midi, and state information.
+The DiauproMessage class manages the serialisation and deserialisation of data to datagram packets. The datagrams themselves are comprised of a fixed length header, and a varible length payload that contains the audio, midi, and state information.\\
+\\
+The header is defined as follows:
+
+\begin{lstlisting}
+    struct diapro_header {
+        uint16 sequenceNumber;
+        uint16 numSamples;
+        uint16 numChannels;
+        double sampleRate;
+        uint16 audioDataSize;
+        uint16 midiDataSize;
+        uint16 stateDataSize;
+        double cpuUsage;
+    };
+\end{lstlisting}
+
+\noindent
+Given a socket that is ready to read from, message data can be retreived and deserialized using the following methods:
+
+\begin{lstlisting}
+int readFromSocket(DatagramSocket *sock, String &targetHost, int &targetPort);
+
+void getAudioData(AudioSampleBuffer *buffer);
+
+void getMidiData(MidiBuffer &buffer);
+
+void getStateData(void* state, &stateSize);
+\end{lstlisting}
+
+
+

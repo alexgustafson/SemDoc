@@ -26,14 +26,9 @@
 \contentsline {subsection}{\numberline {4.2.4}DiauproProcessor}{21}{subsection.4.2.4}
 \contentsline {subsection}{\numberline {4.2.5}DiauproVCOProcessor}{21}{subsection.4.2.5}
 \contentsline {subsection}{\numberline {4.2.6}DiauproVCAProcessor}{21}{subsection.4.2.6}
-\contentsline {section}{\numberline {4.3}Developement Environment}{21}{section.4.3}
-\contentsline {section}{\numberline {4.4}Networking Components}{21}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Socket Monitor}{21}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}ZeroConf Manager}{21}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}AudioStream Manager}{22}{subsection.4.4.3}
-\contentsline {chapter}{\numberline {5}Conclusion}{23}{chapter.5}
-\contentsline {section}{\numberline {5.1}Glossary}{23}{section.5.1}
-\contentsline {chapter}{\numberline {6}Appendix A}{25}{chapter.6}
-\contentsline {section}{\numberline {6.1}Compiling the Source Code}{25}{section.6.1}
-\contentsline {section}{\numberline {6.2}Bonjour}{25}{section.6.2}
-\contentsline {section}{\numberline {6.3}Evaluated Frameworks}{25}{section.6.3}
+\contentsline {chapter}{\numberline {5}Conclusion}{22}{chapter.5}
+\contentsline {chapter}{\numberline {6}Glossary}{23}{chapter.6}
+\contentsline {chapter}{\numberline {7}Appendix A}{25}{chapter.7}
+\contentsline {section}{\numberline {7.1}Compiling the Source Code}{25}{section.7.1}
+\contentsline {section}{\numberline {7.2}Bonjour}{25}{section.7.2}
+\contentsline {section}{\numberline {7.3}Evaluated Frameworks}{25}{section.7.3}
