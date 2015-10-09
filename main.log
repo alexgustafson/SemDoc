@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.5)  9 OCT 2015 21:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.5)  9 OCT 2015 21:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -559,39 +559,35 @@ File: omsptm.fd
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 19.
-)
-(./chapters/GlossaryOfTerms.tex
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
- [5]) [6]
+) [5]
 Chapter 2.
-(./chapters/einfuehrung/background.tex [7
+(./chapters/einfuehrung/background.tex [6
 
 ])
-(./chapters/einfuehrung/realtime.tex [8])
+(./chapters/einfuehrung/realtime.tex [7])
 (./chapters/einfuehrung/audio_over_ethernet.tex)
-(./chapters/einfuehrung/single_board_computers.tex [9])
+(./chapters/einfuehrung/single_board_computers.tex [8])
 (./chapters/einfuehrung/virtual_analog_synthesis.tex
-<assets/synth_voice_block.pdf, id=279, 694.595pt x 323.2075pt>
+<assets/synth_voice_block.pdf, id=259, 694.595pt x 323.2075pt>
 File: assets/synth_voice_block.pdf Graphic file (type pdf)
 
 <use assets/synth_voice_block.pdf>
 Package pdftex.def Info: assets/synth_voice_block.pdf used on input line 11.
 (pdftex.def)             Requested size: 345.0pt x 160.53809pt.
- [10]
-<plots/graphics/sawtooth.pdf, id=287, 722.7pt x 433.62pt>
+ [9]
+<plots/graphics/sawtooth.pdf, id=267, 722.7pt x 433.62pt>
 File: plots/graphics/sawtooth.pdf Graphic file (type pdf)
 
 <use plots/graphics/sawtooth.pdf>
 Package pdftex.def Info: plots/graphics/sawtooth.pdf used on input line 22.
 (pdftex.def)             Requested size: 345.0pt x 206.9972pt.
- [11pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+ [10pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.26 
-      <./assets/synth_voice_block.pdf>]) [12pdfTeX warning (ext4): destination 
+      <./assets/synth_voice_block.pdf>]) [11pdfTeX warning (ext4): destination 
 with the same identifier (name{figure.2.2}) has been already used, duplicate ig
 nored
 
@@ -601,17 +597,17 @@ l.45 \chapter
              {Anforderungsanalyse} <./plots/graphics/sawtooth.pdf>]
 Chapter 3.
 (./chapters/anforderungsanalyse/general.tex)
-(./chapters/anforderungsanalyse/parallelisation.tex [13
+(./chapters/anforderungsanalyse/parallelisation.tex [12
 
 ]
-<assets/distribution_1to1.pdf, id=363, 829.0975pt x 257.96375pt>
+<assets/distribution_1to1.pdf, id=343, 829.0975pt x 257.96375pt>
 File: assets/distribution_1to1.pdf Graphic file (type pdf)
 
 <use assets/distribution_1to1.pdf>
 Package pdftex.def Info: assets/distribution_1to1.pdf used on input line 14.
 (pdftex.def)             Requested size: 345.0pt x 107.34029pt.
 
-<assets/distribution_perprocessor.pdf, id=364, 820.06375pt x 324.21124pt>
+<assets/distribution_perprocessor.pdf, id=344, 820.06375pt x 324.21124pt>
 File: assets/distribution_perprocessor.pdf Graphic file (type pdf)
 
 <use assets/distribution_perprocessor.pdf>
@@ -619,13 +615,13 @@ Package pdftex.def Info: assets/distribution_perprocessor.pdf used on input lin
 e 21.
 (pdftex.def)             Requested size: 345.0pt x 136.4003pt.
 
-<assets/distribute_byvoice.pdf, id=365, 831.105pt x 321.2pt>
+<assets/distribute_byvoice.pdf, id=345, 831.105pt x 321.2pt>
 File: assets/distribute_byvoice.pdf Graphic file (type pdf)
 
 <use assets/distribute_byvoice.pdf>
 Package pdftex.def Info: assets/distribute_byvoice.pdf used on input line 28.
 (pdftex.def)             Requested size: 345.0pt x 133.33472pt.
- [14pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+ [13pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -643,7 +639,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--11
 
  []
 
-[15pdfTeX warning (ext4): destination with the same identifier (name{figure.3.3
+[14pdfTeX warning (ext4): destination with the same identifier (name{figure.3.3
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -656,7 +652,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--9
 
  []
 
-) (./chapters/anforderungsanalyse/software.tex [16]
+) (./chapters/anforderungsanalyse/software.tex [15]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 9.
+
 Underfull \hbox (badness 10000) in paragraph at lines 11--15
 
  []
@@ -691,17 +690,17 @@ Overfull \hbox (27.75388pt too wide) in paragraph at lines 29--43
  [] 
  []
 
-) [17]
+) [16]
 Chapter 4.
 (./chapters/implementation/architecture.tex
-<assets/architecture_01.pdf, id=439, 1705.37125pt x 697.60625pt>
+<assets/architecture_01.pdf, id=419, 1705.37125pt x 697.60625pt>
 File: assets/architecture_01.pdf Graphic file (type pdf)
 
 <use assets/architecture_01.pdf>
 Package pdftex.def Info: assets/architecture_01.pdf used on input line 9.
 (pdftex.def)             Requested size: 345.0pt x 141.1261pt.
 )
-(./chapters/implementation/architecture/hostCPU.tex [18
+(./chapters/implementation/architecture/hostCPU.tex [17
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1}) 
 has been already used, duplicate ignored
@@ -710,13 +709,13 @@ has been already used, duplicate ignored
                                                   \fi \fi 
 l.4 
      <./assets/architecture_01.pdf>]
-<assets/architecture_02.pdf, id=520, 607.26875pt x 348.30125pt>
+<assets/architecture_02.pdf, id=499, 607.26875pt x 348.30125pt>
 File: assets/architecture_02.pdf Graphic file (type pdf)
 
 <use assets/architecture_02.pdf>
 Package pdftex.def Info: assets/architecture_02.pdf used on input line 13.
 (pdftex.def)             Requested size: 345.0pt x 197.88007pt.
- [19pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+ [18pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
 2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -725,13 +724,13 @@ l.22 W
       hen a request for audio data is passed from the audio production softw...
  <./assets/architecture_02.pdf>])
 (./chapters/implementation/architecture/networkedSBCs.tex
-<assets/architecture_03.pdf, id=583, 476.78125pt x 253.94875pt>
+<assets/architecture_03.pdf, id=563, 476.78125pt x 253.94875pt>
 File: assets/architecture_03.pdf Graphic file (type pdf)
 
 <use assets/architecture_03.pdf>
 Package pdftex.def Info: assets/architecture_03.pdf used on input line 7.
 (pdftex.def)             Requested size: 345.0pt x 183.76906pt.
- [20pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+ [19pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
 3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -740,16 +739,17 @@ l.15
       <./assets/architecture_03.pdf>])
 (./chapters/implementation/softwareComponents.tex)
 (./chapters/implementation/softwareComponents/Monitor.tex)
-(./chapters/implementation/softwareComponents/ZeroConfManager.tex [21])
+(./chapters/implementation/softwareComponents/ZeroConfManager.tex [20])
 (./chapters/implementation/softwareComponents/DiauproMessage.tex)
 (./chapters/implementation/softwareComponents/DiauproProcessor.tex)
 (./chapters/implementation/softwareComponents/DiauproVCOProcessor.tex)
 (./chapters/implementation/softwareComponents/DiauproVCAProcessor.tex)
-(./chapters/implementation.tex) [22] [23]
+(./chapters/implementation.tex) [21] [22]
 Chapter 5.
-(./chapters/conclusion.tex) (./main.bbl [24
+(./chapters/conclusion.tex) (./chapters/GlossaryOfTerms.tex) (./main.bbl
+[23
 
-]) [25
+]) [24
 
 ]
 Chapter 6.
@@ -772,27 +772,27 @@ ro=none --with-systemdsystemunitdir=no
  []
 
 ) (./chapters/evaluated_frameworks.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 3--76
+Underfull \hbox (badness 10000) in paragraph at lines 3--78
 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 77.
-[26
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 79.
+[25
 
-] [27]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 77.
+] [26]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 79.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 77.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 77.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 79.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 79.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: F01ED88CE9AC99280C33A966B4630570;2560.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 77.
+(rerunfilecheck)             Checksum: C49F91305BC12F982969A9DB7B995CA6;2495.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 79.
  ) 
 Here is how much of TeX's memory you used:
- 6392 strings out of 494501
- 95257 string characters out of 6167031
- 180185 words of memory out of 5000000
- 9386 multiletter control sequences out of 15000+600000
+ 6389 strings out of 494501
+ 95226 string characters out of 6167031
+ 180188 words of memory out of 5000000
+ 9385 multiletter control sequences out of 15000+600000
  27221 words of font info for 50 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
  29i,16n,28p,1073b,381s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -801,10 +801,10 @@ cal/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
 r/local/texlive/2015basic/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/loc
 al/texlive/2015basic/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/te
 xlive/2015basic/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (28 pages, 1892271 bytes).
+Output written on main.pdf (27 pages, 1891527 bytes).
 PDF statistics:
- 691 PDF objects out of 1000 (max. 8388607)
- 546 compressed objects within 6 object streams
- 101 named destinations out of 1000 (max. 500000)
- 361 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 682 PDF objects out of 1000 (max. 8388607)
+ 538 compressed objects within 6 object streams
+ 99 named destinations out of 1000 (max. 500000)
+ 353 words of extra memory for PDF output out of 10000 (max. 10000000)
 
