@@ -19,9 +19,9 @@
 \contentsline {subsection}{\numberline {3.5.1}Evaluated C++ Frameworks}{17}{subsection.3.5.1}
 \contentsline {chapter}{\numberline {4}Implementation}{18}{chapter.4}
 \contentsline {section}{\numberline {4.1}Architecture}{18}{section.4.1}
-\contentsline {section}{\numberline {4.2}Developement Environment}{19}{section.4.2}
-\contentsline {section}{\numberline {4.3}Networking Components}{19}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Socket Monitor}{19}{subsection.4.3.1}
+\contentsline {section}{\numberline {4.2}Developement Environment}{20}{section.4.2}
+\contentsline {section}{\numberline {4.3}Networking Components}{20}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Socket Monitor}{20}{subsection.4.3.1}
 \contentsline {subsection}{\numberline {4.3.2}ZeroConf Manager}{20}{subsection.4.3.2}
 \contentsline {subsection}{\numberline {4.3.3}AudioStream Manager}{20}{subsection.4.3.3}
 \contentsline {chapter}{\numberline {5}Conclusion}{21}{chapter.5}

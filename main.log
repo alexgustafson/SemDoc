@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.5)  9 OCT 2015 15:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.5)  9 OCT 2015 16:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -707,21 +707,23 @@ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.15 
-      <./assets/architecture_01.pdf>]
-<assets/architecture_02.pdf, id=475, 569.12625pt x 308.15125pt>
+l.16 T
+      he operating system provides an abstraction layer in the form of an AP...
+ <./assets/architecture_01.pdf>]
+<assets/architecture_02.pdf, id=475, 569.12625pt x 348.30125pt>
 File: assets/architecture_02.pdf Graphic file (type pdf)
 
 <use assets/architecture_02.pdf>
-Package pdftex.def Info: assets/architecture_02.pdf used on input line 20.
-(pdftex.def)             Requested size: 345.0pt x 186.80588pt.
-) (./chapters/implementation.tex [19pdfTeX warning (ext4): destination with the
- same identifier (name{figure.4.2}) has been already used, duplicate ignored
+Package pdftex.def Info: assets/architecture_02.pdf used on input line 24.
+(pdftex.def)             Requested size: 345.0pt x 211.14542pt.
+ [19pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.18 
-      <./assets/architecture_02.pdf>]) [20]
+l.33 W
+      hen a request for audio data is passed from the audio production softw...
+ <./assets/architecture_02.pdf>]) (./chapters/implementation.tex) [20]
 Chapter 5.
 (./chapters/conclusion.tex) (./main.bbl [21
 
@@ -771,16 +773,16 @@ Here is how much of TeX's memory you used:
  9372 multiletter control sequences out of 15000+600000
  27221 words of font info for 50 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 29i,16n,28p,1073b,385s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,16n,28p,1073b,381s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015basic/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/lo
 cal/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
 r/local/texlive/2015basic/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/loc
 al/texlive/2015basic/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/te
 xlive/2015basic/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (25 pages, 1862531 bytes).
+Output written on main.pdf (25 pages, 1864249 bytes).
 PDF statistics:
- 596 PDF objects out of 1000 (max. 8388607)
- 463 compressed objects within 5 object streams
+ 598 PDF objects out of 1000 (max. 8388607)
+ 465 compressed objects within 5 object streams
  88 named destinations out of 1000 (max. 500000)
  284 words of extra memory for PDF output out of 10000 (max. 10000000)
 
