@@ -18,14 +18,14 @@
 \contentsline {section}{\numberline {3.5}Software Requirements}{16}{section.3.5}
 \contentsline {subsection}{\numberline {3.5.1}Evaluated C++ Frameworks}{17}{subsection.3.5.1}
 \contentsline {chapter}{\numberline {4}Implementation}{18}{chapter.4}
-\contentsline {section}{\numberline {4.1}Architektur}{18}{section.4.1}
-\contentsline {section}{\numberline {4.2}Developement Environment}{18}{section.4.2}
-\contentsline {section}{\numberline {4.3}Networking Components}{18}{section.4.3}
+\contentsline {section}{\numberline {4.1}Architecture}{18}{section.4.1}
+\contentsline {section}{\numberline {4.2}Developement Environment}{19}{section.4.2}
+\contentsline {section}{\numberline {4.3}Networking Components}{19}{section.4.3}
 \contentsline {subsection}{\numberline {4.3.1}Socket Monitor}{19}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}ZeroConf Manager}{19}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}AudioStream Manager}{19}{subsection.4.3.3}
-\contentsline {chapter}{\numberline {5}Conclusion}{20}{chapter.5}
-\contentsline {chapter}{\numberline {6}Appendix A}{22}{chapter.6}
-\contentsline {section}{\numberline {6.1}Compiling the Source Code}{22}{section.6.1}
-\contentsline {section}{\numberline {6.2}Bonjour}{22}{section.6.2}
-\contentsline {section}{\numberline {6.3}Evaluated Frameworks}{22}{section.6.3}
+\contentsline {subsection}{\numberline {4.3.2}ZeroConf Manager}{20}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}AudioStream Manager}{20}{subsection.4.3.3}
+\contentsline {chapter}{\numberline {5}Conclusion}{21}{chapter.5}
+\contentsline {chapter}{\numberline {6}Appendix A}{23}{chapter.6}
+\contentsline {section}{\numberline {6.1}Compiling the Source Code}{23}{section.6.1}
+\contentsline {section}{\numberline {6.2}Bonjour}{23}{section.6.2}
+\contentsline {section}{\numberline {6.3}Evaluated Frameworks}{23}{section.6.3}
