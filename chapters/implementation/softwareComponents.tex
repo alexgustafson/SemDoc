@@ -1,1 +1,4 @@
 \section{Software Components}
+
+In an attempt to follow the separation of concerns principle the source code is divided into distinct classes that each manage thier own responsibilities. Where applicable, interaction with the class is defined in an associated "listener" class with specific callback methods that a client is expected to implement. A client class can then inherit from and override the listener class.
+
