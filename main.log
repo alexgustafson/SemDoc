@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.5)  9 OCT 2015 16:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.5)  9 OCT 2015 17:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -721,8 +721,20 @@ Package pdftex.def Info: assets/architecture_02.pdf used on input line 26.
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.34 
-      <./assets/architecture_02.pdf>]) (./chapters/implementation.tex) [20]
-[21]
+      <./assets/architecture_02.pdf>]
+<assets/architecture_03.pdf, id=547, 438.63875pt x 253.94875pt>
+File: assets/architecture_03.pdf Graphic file (type pdf)
+
+<use assets/architecture_03.pdf>
+Package pdftex.def Info: assets/architecture_03.pdf used on input line 43.
+(pdftex.def)             Requested size: 345.0pt x 199.74156pt.
+) (./chapters/implementation.tex [20pdfTeX warning (ext4): destination with the
+ same identifier (name{figure.4.3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.10 
+      <./assets/architecture_03.pdf>]) [21]
 Chapter 5.
 (./chapters/conclusion.tex) (./main.bbl [22
 
@@ -766,10 +778,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 68.
  ) 
 Here is how much of TeX's memory you used:
- 6340 strings out of 494501
- 93584 string characters out of 6167031
- 180133 words of memory out of 5000000
- 9374 multiletter control sequences out of 15000+600000
+ 6347 strings out of 494501
+ 93749 string characters out of 6167031
+ 180182 words of memory out of 5000000
+ 9379 multiletter control sequences out of 15000+600000
  27221 words of font info for 50 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
  29i,16n,28p,1073b,381s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -778,10 +790,10 @@ cal/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
 r/local/texlive/2015basic/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/loc
 al/texlive/2015basic/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/te
 xlive/2015basic/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (26 pages, 1865226 bytes).
+Output written on main.pdf (26 pages, 1887352 bytes).
 PDF statistics:
- 613 PDF objects out of 1000 (max. 8388607)
- 479 compressed objects within 5 object streams
- 91 named destinations out of 1000 (max. 500000)
- 300 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 646 PDF objects out of 1000 (max. 8388607)
+ 503 compressed objects within 6 object streams
+ 92 named destinations out of 1000 (max. 500000)
+ 305 words of extra memory for PDF output out of 10000 (max. 10000000)
 
