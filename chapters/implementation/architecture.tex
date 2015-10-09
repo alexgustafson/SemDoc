@@ -38,6 +38,8 @@ Within the process block the processor checks if a activeNode is available. If s
 
 \subsection{Networked SBCs}
 
+Figure \ref{fig:arch_03} illustrates the components of the networked SBD devices. A processing back application can hold any number of processors that each register thier services to the Zeroconf / Bonjour daemon installed on the devices operating system. The Zeroconf / Bonjour daemon broadcasts the availablilty, type and the port numbers of each of the processors available.
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{assets/architecture_03.pdf}
@@ -45,7 +47,7 @@ Within the process block the processor checks if a activeNode is available. If s
     \label{fig:arch_03}
 \end{figure}
 
-Figure \ref{fig:arch_03} illustrates the components of the networked SBD devices. A processing back application can hold any number of processors that each register thier services to the Zeroconf / Bonjour daemon installed on the devices operating system. The Zeroconf / Bonjour daemon broadcasts the availablilty, type and the port numbers of each of the processors available.
+
 
 The processor also registers an open socket and itself as that socket's listener at the appliation's socket monitor module. The socket monitor holds an array of sockets and a reference to each listener. It performs a select() on the array of sockets and waits. When data arrives at any of the sockets, the select() is unblocked and the socket monitor notifies the corresponding listener via callback that data is available.
 
