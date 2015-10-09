@@ -22,13 +22,19 @@
 \contentsline {subsection}{\numberline {4.1.1}Host CPU}{18}{subsection.4.1.1}
 \contentsline {subsection}{\numberline {4.1.2}Networked SBCs}{20}{subsection.4.1.2}
 \contentsline {section}{\numberline {4.2}Software Components}{21}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Monitor}{21}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}ZeroConfManager}{21}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}DiauproMessage}{21}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}DiauproProcessor}{21}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5}DiauproVCOProcessor}{21}{subsection.4.2.5}
+\contentsline {subsection}{\numberline {4.2.6}DiauproVCAProcessor}{21}{subsection.4.2.6}
 \contentsline {section}{\numberline {4.3}Developement Environment}{21}{section.4.3}
 \contentsline {section}{\numberline {4.4}Networking Components}{21}{section.4.4}
 \contentsline {subsection}{\numberline {4.4.1}Socket Monitor}{21}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}ZeroConf Manager}{21}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}AudioStream Manager}{21}{subsection.4.4.3}
-\contentsline {chapter}{\numberline {5}Conclusion}{22}{chapter.5}
-\contentsline {chapter}{\numberline {6}Appendix A}{24}{chapter.6}
-\contentsline {section}{\numberline {6.1}Compiling the Source Code}{24}{section.6.1}
-\contentsline {section}{\numberline {6.2}Bonjour}{24}{section.6.2}
-\contentsline {section}{\numberline {6.3}Evaluated Frameworks}{24}{section.6.3}
+\contentsline {subsection}{\numberline {4.4.2}ZeroConf Manager}{22}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}AudioStream Manager}{22}{subsection.4.4.3}
+\contentsline {chapter}{\numberline {5}Conclusion}{23}{chapter.5}
+\contentsline {chapter}{\numberline {6}Appendix A}{25}{chapter.6}
+\contentsline {section}{\numberline {6.1}Compiling the Source Code}{25}{section.6.1}
+\contentsline {section}{\numberline {6.2}Bonjour}{25}{section.6.2}
+\contentsline {section}{\numberline {6.3}Evaluated Frameworks}{25}{section.6.3}
