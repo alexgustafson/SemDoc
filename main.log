@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.5)  9 OCT 2015 21:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.5)  9 OCT 2015 21:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -740,16 +740,16 @@ l.15
       <./assets/architecture_03.pdf>])
 (./chapters/implementation/softwareComponents.tex)
 (./chapters/implementation/softwareComponents/Monitor.tex)
-(./chapters/implementation/softwareComponents/ZeroConfManager.tex)
+(./chapters/implementation/softwareComponents/ZeroConfManager.tex [21])
 (./chapters/implementation/softwareComponents/DiauproMessage.tex)
 (./chapters/implementation/softwareComponents/DiauproProcessor.tex)
 (./chapters/implementation/softwareComponents/DiauproVCOProcessor.tex)
 (./chapters/implementation/softwareComponents/DiauproVCAProcessor.tex)
-(./chapters/implementation.tex [21]) [22]
+(./chapters/implementation.tex) [22] [23]
 Chapter 5.
-(./chapters/conclusion.tex) (./main.bbl [23
+(./chapters/conclusion.tex) (./main.bbl [24
 
-]) [24
+]) [25
 
 ]
 Chapter 6.
@@ -777,20 +777,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--76
  []
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 77.
-[25
+[26
 
-] [26]
+] [27]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 77.
  (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 77.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 77.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 37238FE78CC398C4F986E610B6F0AF26;2553.
+(rerunfilecheck)             Checksum: F01ED88CE9AC99280C33A966B4630570;2560.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 77.
  ) 
 Here is how much of TeX's memory you used:
- 6391 strings out of 494501
- 95250 string characters out of 6167031
+ 6392 strings out of 494501
+ 95257 string characters out of 6167031
  180185 words of memory out of 5000000
  9386 multiletter control sequences out of 15000+600000
  27221 words of font info for 50 fonts, out of 8000000 for 9000
@@ -801,10 +801,10 @@ cal/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
 r/local/texlive/2015basic/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/loc
 al/texlive/2015basic/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/te
 xlive/2015basic/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (27 pages, 1890916 bytes).
+Output written on main.pdf (28 pages, 1892271 bytes).
 PDF statistics:
- 687 PDF objects out of 1000 (max. 8388607)
- 543 compressed objects within 6 object streams
- 100 named destinations out of 1000 (max. 500000)
+ 691 PDF objects out of 1000 (max. 8388607)
+ 546 compressed objects within 6 object streams
+ 101 named destinations out of 1000 (max. 500000)
  361 words of extra memory for PDF output out of 10000 (max. 10000000)
 
