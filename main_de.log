@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.5)  16 OCT 2015 14:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.5)  16 OCT 2015 14:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -607,12 +607,6 @@ wie GPU-Beschleunigungskarten,
 [6
 
 ]
-Overfull \hbox (0.28665pt too wide) in paragraph at lines 3--4
-\OT1/ptm/m/n/10 Musik-Produktion wird in der Regel mit Hilfe eines Dig-i-tal Au
--dio Work-sta-tions (DAW)
- []
-
-
 Overfull \hbox (25.73709pt too wide) in paragraph at lines 7--8
 []\OT1/ptm/m/n/10 ubergibt in regelm[]a^^Yigen Abst[]anden das Plug-in []uber e
 inen R[]uckruffunktion zu-verarbeitende
@@ -909,7 +903,7 @@ cal/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr
 b></usr/local/texlive/2015basic/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></u
 sr/local/texlive/2015basic/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/lo
 cal/texlive/2015basic/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main_de.pdf (28 pages, 1913003 bytes).
+Output written on main_de.pdf (28 pages, 1913013 bytes).
 PDF statistics:
  734 PDF objects out of 1000 (max. 8388607)
  587 compressed objects within 6 object streams
