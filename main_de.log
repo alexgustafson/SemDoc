@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.5)  16 OCT 2015 14:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.5)  16 OCT 2015 14:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -612,12 +612,6 @@ Overfull \hbox (25.73709pt too wide) in paragraph at lines 7--8
 inen R[]uckruffunktion zu-verarbeitende
  []
 
-
-Overfull \hbox (0.43724pt too wide) in paragraph at lines 11--12
-[]\OT1/ptm/m/n/10 Aus der Sicht des Pro-gram-mier-ers sind Plug-ins $\OML/cmm/m
-/it/10 Dynamic$ $Link$ $Libraries$ \OT1/ptm/m/n/10 (DLL),
- []
-
 ) (./chapters/de/einfuehrung/audio_over_ethernet.tex [7])
 (./chapters/de/einfuehrung/single_board_computers.tex)
 (./chapters/de/einfuehrung/virtual_analog_synthesis.tex [8]
@@ -904,7 +898,7 @@ fb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
 8.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/urw/times/utmb8a.pfb
 ></usr/local/texlive/2015basic/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></us
 r/local/texlive/2015basic/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main_de.pdf (28 pages, 1922766 bytes).
+Output written on main_de.pdf (28 pages, 1924391 bytes).
 PDF statistics:
  738 PDF objects out of 1000 (max. 8388607)
  590 compressed objects within 6 object streams
