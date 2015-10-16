@@ -12,3 +12,20 @@ Analog-Synthesizer verwenden üblicherweise Subtraktive Synthese. Ein oder mehre
     \caption{Blockschaltbild eines Subtraktive Synthesizer Stimme}
     \label{fig:synth_voice_block}
 \end{figure}
+
+Die spannungsgesteuerte Oszillatoren (voltage controlled oscillators, VCO) erzeugen einfache Wellenformen in der Tonhöhe, die auf der Tastatur gespielt wird. Der Benutzer kann in der Regel zwischen einer Kombination aus Sägezahn, Rechteck oder Dreieckwellenform wählen. Die Frequenzen oder die Klangfarbe der Wellenformen können dann durch die folgenden Filter und Amplituden Blöcke moduliert werden.
+
+Der erste Eindruck könnte sein, dass die Modellierung des Oszillators wäre einfach. Ein digital erzeugte Rechteck oder Sägezahn-Wellenform sollte trivial zu implementieren. Die 5 kHz Sägezahn Wellenform beispielsweise würde sich alle 8,82 Samples weiderholen bei einer Taktrate von 44,1 kHz. So würde die Wellenform linear von -1,0 bis 1,0 auf erhöhen, dann zurück auf -1.0 springen auf -1,0 und erneut anfangen. Was bedeutet aber 0,82 Samples in einer diskreten digitalen System? Abbildung ~\ref{fig:aliasing_sawtooth} veranschaulicht das Problem. Die linke Spalte zeigt einen Abschnitt eines idealisierten 5kHz Sägezahnwellenform und der entsprechenden Frequenzinhalt. Oberhalb der Grundfrequenz 5 kHz sind Oberwellen, die weit über 100 kHz hörbar sein werden. Die rechte Spalte zeigt den gleichen Abschnitt eines 5kHz Sägezahnwellenform in einem mit 44,1kHz getakteter diskreter Umgebung. Die Wellenform selbst ist verzerrt und die höheren Harmonischen sichtbar  vom 22,05 kHz Nyquist-Grenze nach unten reflektiert.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{plots/graphics/sawtooth.pdf}
+    \caption{Ideal and Aliased 5kHz Sawtooth waveform}
+    \label{fig:aliasing_sawtooth}
+\end{figure}
+
+Es gibt verschiedene Verfahren zur Beseitigung oder Verminderung von Aliasing. Die effektivste ist es, die Oberwellen mit einer Reihe von Sinus Wellen bis zu der Nyquist-Grenze oder die Hälfte der Abtastrate des Systems zu konstruieren, aber dies ist sehr rechenintensiv. Weniger CPU-intensive Strategien sind Oversampling, Bandlimiting oder andere Alias-Unterdrückungs Methoden\cite{virtual_analog_synthesis}.
+
+
+
+
