@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.5)  16 OCT 2015 14:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.5)  16 OCT 2015 15:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -613,9 +613,9 @@ inen R[]uckruffunktion zu-verarbeitende
  []
 
 ) (./chapters/de/einfuehrung/audio_over_ethernet.tex [7])
-(./chapters/de/einfuehrung/single_board_computers.tex)
-(./chapters/de/einfuehrung/virtual_analog_synthesis.tex [8]
-<assets/synth_voice_block.pdf, id=227, 694.595pt x 323.2075pt>
+(./chapters/de/einfuehrung/single_board_computers.tex [8])
+(./chapters/de/einfuehrung/virtual_analog_synthesis.tex
+<assets/synth_voice_block.pdf, id=228, 694.595pt x 323.2075pt>
 File: assets/synth_voice_block.pdf Graphic file (type pdf)
 
 <use assets/synth_voice_block.pdf>
@@ -626,9 +626,10 @@ Package pdftex.def Info: assets/synth_voice_block.pdf used on input line 11.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.19 
-      <./assets/synth_voice_block.pdf>]
-<plots/graphics/sawtooth.pdf, id=251, 722.7pt x 433.62pt>
+l.18 O
+      ne's first impression might be that modeling the oscillator would be s...
+ <./assets/synth_voice_block.pdf>]
+<plots/graphics/sawtooth.pdf, id=252, 722.7pt x 433.62pt>
 File: plots/graphics/sawtooth.pdf Graphic file (type pdf)
 
 <use plots/graphics/sawtooth.pdf>
@@ -646,14 +647,14 @@ Chapter 3.
 (./chapters/de/anforderungsanalyse/parallelisation.tex [11
 
 ]
-<assets/distribution_1to1.pdf, id=305, 829.0975pt x 257.96375pt>
+<assets/distribution_1to1.pdf, id=306, 829.0975pt x 257.96375pt>
 File: assets/distribution_1to1.pdf Graphic file (type pdf)
 
 <use assets/distribution_1to1.pdf>
 Package pdftex.def Info: assets/distribution_1to1.pdf used on input line 14.
 (pdftex.def)             Requested size: 345.0pt x 107.34029pt.
 
-<assets/distribution_perprocessor.pdf, id=306, 820.06375pt x 324.21124pt>
+<assets/distribution_perprocessor.pdf, id=307, 820.06375pt x 324.21124pt>
 File: assets/distribution_perprocessor.pdf Graphic file (type pdf)
 
 <use assets/distribution_perprocessor.pdf>
@@ -661,7 +662,7 @@ Package pdftex.def Info: assets/distribution_perprocessor.pdf used on input lin
 e 21.
 (pdftex.def)             Requested size: 345.0pt x 136.4003pt.
 
-<assets/distribute_byvoice.pdf, id=307, 831.105pt x 321.2pt>
+<assets/distribute_byvoice.pdf, id=308, 831.105pt x 321.2pt>
 File: assets/distribute_byvoice.pdf Graphic file (type pdf)
 
 <use assets/distribute_byvoice.pdf>
@@ -739,7 +740,7 @@ Overfull \hbox (27.75388pt too wide) in paragraph at lines 29--43
 ) [15]
 Chapter 4.
 (./chapters/de/implementation/architecture.tex
-<assets/architecture_01.pdf, id=383, 1705.37125pt x 697.60625pt>
+<assets/architecture_01.pdf, id=384, 1705.37125pt x 697.60625pt>
 File: assets/architecture_01.pdf Graphic file (type pdf)
 
 <use assets/architecture_01.pdf>
@@ -755,7 +756,7 @@ has been already used, duplicate ignored
                                                   \fi \fi 
 l.4 
      <./assets/architecture_01.pdf>]
-<assets/architecture_02.pdf, id=463, 607.26875pt x 348.30125pt>
+<assets/architecture_02.pdf, id=464, 607.26875pt x 348.30125pt>
 File: assets/architecture_02.pdf Graphic file (type pdf)
 
 <use assets/architecture_02.pdf>
@@ -770,7 +771,7 @@ l.22 W
       hen a request for audio data is passed from the audio production softw...
  <./assets/architecture_02.pdf>])
 (./chapters/de/implementation/architecture/networkedSBCs.tex
-<assets/architecture_03.pdf, id=526, 476.78125pt x 253.94875pt>
+<assets/architecture_03.pdf, id=527, 476.78125pt x 253.94875pt>
 File: assets/architecture_03.pdf Graphic file (type pdf)
 
 <use assets/architecture_03.pdf>
@@ -898,10 +899,10 @@ fb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
 8.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/urw/times/utmb8a.pfb
 ></usr/local/texlive/2015basic/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></us
 r/local/texlive/2015basic/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main_de.pdf (28 pages, 1924391 bytes).
+Output written on main_de.pdf (28 pages, 1923609 bytes).
 PDF statistics:
- 738 PDF objects out of 1000 (max. 8388607)
- 590 compressed objects within 6 object streams
+ 739 PDF objects out of 1000 (max. 8388607)
+ 591 compressed objects within 6 object streams
  154 named destinations out of 1000 (max. 500000)
  313 words of extra memory for PDF output out of 10000 (max. 10000000)
 
