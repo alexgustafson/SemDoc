@@ -6,7 +6,7 @@
 \contentsline {section}{\numberline {2.1}Background}{6}{section.2.1}
 \contentsline {section}{\numberline {2.2}Realtime Audio Plugins}{7}{section.2.2}
 \contentsline {section}{\numberline {2.3}Audio Over Ethernet}{8}{section.2.3}
-\contentsline {section}{\numberline {2.4}Single Board Computers}{9}{section.2.4}
+\contentsline {section}{\numberline {2.4}Single Board Computers}{8}{section.2.4}
 \contentsline {section}{\numberline {2.5}Virtual Analog Synthesis}{9}{section.2.5}
 \contentsline {chapter}{\numberline {3}Anforderungsanalyse}{12}{chapter.3}
 \contentsline {section}{\numberline {3.1}General Requirements}{12}{section.3.1}
