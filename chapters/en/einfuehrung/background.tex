@@ -1,0 +1,14 @@
+\section{Background}
+
+An audio engineer's typical job is to manage the balance of multiple tracks of audio signals. The dynamic range of a signal can be compressed, in order to give quiter passages more presence. Loud peaks can be limited to balance the overall loudness of a musical piece. Using equalizers an audio engineer can enhance or supress specific frequencies of a track to make it more present in a mix. Effects like reverb, echo, or chorus can be used to give a track more space in a mix and effect the mood or ambience of a music piece. It is typcial that each track in a recording session will be processed by a chain of several different audio processors.
+
+20 years ago the equipment needed for this kind of processing filled large racks. Today all of these tasks run as software plugins on the CPU.
+
+In 1996 Steinberg GmbH, the developers of Cubase, a popular audio production software (or DAW, digital audio workstation), released the VST interface specification and SDK.\cite{VST-wikipedia} The VST plugin standard was special because it allowed realtime processing of audio in the CPU and it allowed other developers to programm plugins which could be run from within Cubase. The VST plugin standard quickly had widespread industry acceptance and was adopted by competing DAWs. Although alternative standards exist, VST is still the most widely adopted crossplatform standard.
+
+The number of realtime plugins that could run on a CPU was limited by several factors, hard disc access speeds, bus speeds, amount of ram, and OS schedulers for instance\cite{brandt1998low}. User's didn't expect to be able to run more than 10 plugins at a time. Simply playing back multiple tracks of digital audio in realtime was so taxinig on the CPU that an application's graphical interface would quickly become unresponsive.
+
+Today it's possible to playback hundreds of channels of audio and hundreds of plugins in realtime. While the performance threshhold has risen, so have user expectations. The algorithms driving today's plugins are much more complex that those from 1996. Plugins are available today that model acoustic systems or emulate the analog circutry of popular vintage synthsizers. Even though CPU performance has increased significantly, it's still easy to reach the limits, especially with the more complex high qualtiy plugins.
+
+Serval DSP based systems exist that can alleviate the load on the CPU much in the same way that GPU accelerator cards work. Audio processing jobs are delegated to external specialized hardware via PCIe or Thunderbolt interfaces. However, these DSP based accelerators are proprietary and expensive. Developing plugins for a DSP chip is also significatly more complex than developing for the CPU.
+

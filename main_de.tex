@@ -1,0 +1,82 @@
+\documentclass{report}
+\usepackage[utf8]{inputenc}
+\usepackage{times}
+\usepackage{cite}
+\usepackage{hyperref}
+\usepackage{tablefootnote}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\input{codestyle}
+
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+\begin{document}
+
+\title{Distributed Audio Processing}
+\author{Alexander Gustafson\\
+  University of Applied Sciences,\\
+  Zürich,\\
+  Switzerland,\\
+  alex\_gustafson@yahoo.de}
+\date{\today}
+\maketitle
+
+\chapter*{Abstract}
+\input{chapters/de/abstract}
+
+
+\tableofcontents
+
+\chapter{Introduction}
+\input{chapters/de/introduction}
+
+
+\chapter{Einführung ins Thema}
+\input{chapters/de/einfuehrung/background}
+\input{chapters/de/einfuehrung/realtime}
+\input{chapters/de/einfuehrung/audio_over_ethernet}
+\input{chapters/de/einfuehrung/single_board_computers}
+\input{chapters/de/einfuehrung/virtual_analog_synthesis}
+
+\chapter{Anforderungsanalyse}
+\input{chapters/de/anforderungsanalyse/general}
+\input{chapters/de/anforderungsanalyse/parallelisation}
+\input{chapters/de/anforderungsanalyse/audioplugin}
+\input{chapters/de/anforderungsanalyse/remotenodes}
+\input{chapters/de/anforderungsanalyse/software}
+
+
+\chapter{Implementation}
+\input{chapters/de/implementation/architecture}
+\input{chapters/de/implementation/architecture/hostCPU}
+\input{chapters/de/implementation/architecture/networkedSBCs}
+\input{chapters/de/implementation/softwareComponents}
+\input{chapters/de/implementation/softwareComponents/Monitor}
+\input{chapters/de/implementation/softwareComponents/ZeroConfManager}
+\input{chapters/de/implementation/softwareComponents/DiauproMessage}
+\input{chapters/de/implementation/softwareComponents/DiauproProcessor}
+\input{chapters/de/implementation/softwareComponents/DiauproVCOProcessor}
+\input{chapters/de/implementation/softwareComponents/DiauproVCAProcessor}
+
+\chapter{Conclusion}
+\input{chapters/de/conclusion}
+
+\input{chapters/de/GlossaryOfTerms}
+
+\bibliography{references}{}
+\bibliographystyle{plain}
+
+\chapter{Appendix A}
+\input{chapters/de/compileFromSource}
+\input{chapters/de/bonjour}
+\input{chapters/de/evaluated_frameworks}
+
+\end{document}
