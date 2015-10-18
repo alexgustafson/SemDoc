@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.5)  17 OCT 2015 15:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.5)  18 OCT 2015 15:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -632,62 +632,62 @@ l.49 \chapter
              {Anforderungsanalyse} <./plots/graphics/sawtooth.pdf>]
 Chapter 3.
 (./chapters/en/anforderungsanalyse/general.tex)
-(./chapters/en/anforderungsanalyse/parallelisation.tex [11
-
-]
-<assets/distribution_1to1.pdf, id=312, 829.0975pt x 257.96375pt>
+(./chapters/en/anforderungsanalyse/parallelisation.tex
+<assets/distribution_1to1.pdf, id=306, 829.0975pt x 257.96375pt>
 File: assets/distribution_1to1.pdf Graphic file (type pdf)
 
 <use assets/distribution_1to1.pdf>
-Package pdftex.def Info: assets/distribution_1to1.pdf used on input line 14.
+Package pdftex.def Info: assets/distribution_1to1.pdf used on input line 11.
 (pdftex.def)             Requested size: 345.0pt x 107.34029pt.
+ [11
 
-<assets/distribution_perprocessor.pdf, id=313, 820.06375pt x 324.21124pt>
+]
+<assets/distribution_perprocessor.pdf, id=315, 820.06375pt x 324.21124pt>
 File: assets/distribution_perprocessor.pdf Graphic file (type pdf)
 
 <use assets/distribution_perprocessor.pdf>
 Package pdftex.def Info: assets/distribution_perprocessor.pdf used on input lin
-e 21.
+e 18.
 (pdftex.def)             Requested size: 345.0pt x 136.4003pt.
 
-<assets/distribute_byvoice.pdf, id=314, 831.105pt x 321.2pt>
+<assets/distribute_byvoice.pdf, id=316, 831.105pt x 321.2pt>
 File: assets/distribute_byvoice.pdf Graphic file (type pdf)
 
 <use assets/distribute_byvoice.pdf>
-Package pdftex.def Info: assets/distribute_byvoice.pdf used on input line 28.
+Package pdftex.def Info: assets/distribute_byvoice.pdf used on input line 25.
 (pdftex.def)             Requested size: 345.0pt x 133.33472pt.
- [12pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
-1}) has been already used, duplicate ignored
+)
+(./chapters/en/anforderungsanalyse/audioplugin.tex [12pdfTeX warning (ext4): de
+stination with the same identifier (name{figure.3.1}) has been already used, du
+plicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.32 
-     pdfTeX warning (ext4): destination with the same identifier (name{figure.3
-.2}) has been already used, duplicate ignored
+l.1 \section
+            {Audio Plugin}pdfTeX warning (ext4): destination with the same iden
+tifier (name{figure.3.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.32 
-      <./assets/distribution_1to1.pdf> <./assets/distribution_perprocessor.pdf>
-]) (./chapters/en/anforderungsanalyse/audioplugin.tex
-Underfull \hbox (badness 10000) in paragraph at lines 7--11
-
- []
-
-[13pdfTeX warning (ext4): destination with the same identifier (name{figure.3.3
-}) has been already used, duplicate ignored
+l.1 \section
+            {Audio Plugin}pdfTeX warning (ext4): destination with the same iden
+tifier (name{figure.3.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.19 \item t
-            he audio plugin must forward it's current state to the node <./asse
-ts/distribute_byvoice.pdf>]) (./chapters/en/anforderungsanalyse/remotenodes.tex
-
+l.1 \section
+            {Audio Plugin} <./assets/distribution_1to1.pdf> <./assets/distribut
+ion_perprocessor.pdf> <./assets/distribute_byvoice.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 5--9
 
  []
 
-) (./chapters/en/anforderungsanalyse/software.tex [14]
+) (./chapters/en/anforderungsanalyse/remotenodes.tex
+Underfull \hbox (badness 10000) in paragraph at lines 5--9
+
+ []
+
+[13]) (./chapters/en/anforderungsanalyse/software.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 9.
 
@@ -695,7 +695,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--15
 
  []
 
-
+[14]
 Underfull \hbox (badness 10000) in paragraph at lines 31--31
 []\OT1/ptm/m/n/10 High
  []
@@ -879,7 +879,7 @@ cal/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr
 b></usr/local/texlive/2015basic/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></u
 sr/local/texlive/2015basic/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/lo
 cal/texlive/2015basic/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (28 pages, 1913113 bytes).
+Output written on main.pdf (28 pages, 1912640 bytes).
 PDF statistics:
  743 PDF objects out of 1000 (max. 8388607)
  596 compressed objects within 6 object streams

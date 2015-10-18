@@ -12,9 +12,9 @@
 \contentsline {section}{\numberline {3.1}General Requirements}{11}{section.3.1}
 \contentsline {section}{\numberline {3.2}Distributed Processing}{11}{section.3.2}
 \contentsline {section}{\numberline {3.3}Audio Plugin}{13}{section.3.3}
-\contentsline {section}{\numberline {3.4}Remote Processing Node}{14}{section.3.4}
+\contentsline {section}{\numberline {3.4}Remote Processing Node}{13}{section.3.4}
 \contentsline {section}{\numberline {3.5}Software Requirements}{14}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Evaluated C++ Frameworks}{15}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.1}Evaluated C++ Frameworks}{14}{subsection.3.5.1}
 \contentsline {chapter}{\numberline {4}Implementation}{16}{chapter.4}
 \contentsline {section}{\numberline {4.1}Architecture}{16}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Host CPU}{16}{subsection.4.1.1}
