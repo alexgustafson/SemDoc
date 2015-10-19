@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=latex 2015.8.5)  19 OCT 2015 17:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=latex 2015.8.5)  19 OCT 2015 18:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1191,12 +1191,12 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 82.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 82.
  ) 
 Here is how much of TeX's memory you used:
- 11585 strings out of 494502
- 162491 string characters out of 6167057
- 381998 words of memory out of 5000000
- 14495 multiletter control sequences out of 15000+600000
+ 11578 strings out of 494502
+ 162386 string characters out of 6167057
+ 381977 words of memory out of 5000000
+ 14488 multiletter control sequences out of 15000+600000
  12246 words of font info for 35 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
  37i,12n,38p,1908b,1320s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main_de.dvi (51 pages, 141424 bytes).
+Output written on main_de.dvi (51 pages, 139292 bytes).

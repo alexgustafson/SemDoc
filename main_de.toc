@@ -24,8 +24,8 @@
 \contentsline {subsection}{\numberline {4.2.2}ZeroconfManager}{22}{subsection.4.2.2}
 \contentsline {subsection}{\numberline {4.2.3}DiauproMessage}{22}{subsection.4.2.3}
 \contentsline {subsection}{\numberline {4.2.4}DiauproProcessor}{23}{subsection.4.2.4}
-\contentsline {subsection}{\numberline {4.2.5}DiauproVCOProcessor}{24}{subsection.4.2.5}
-\contentsline {subsection}{\numberline {4.2.6}DiauproVCAProcessor}{25}{subsection.4.2.6}
+\contentsline {subsection}{\numberline {4.2.5}DiauproVCOProcessor}{23}{subsection.4.2.5}
+\contentsline {subsection}{\numberline {4.2.6}DiauproVCAProcessor}{24}{subsection.4.2.6}
 \contentsline {chapter}{\numberline {5}Conclusion}{26}{chapter.5}
 \contentsline {chapter}{\numberline {6}Glossary}{27}{chapter.6}
 \contentsline {chapter}{\numberline {7}Appendix A}{29}{chapter.7}

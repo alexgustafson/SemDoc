@@ -1,5 +1,5 @@
-\section{Software Components}
+\section{Software Komponenten}
 
-Die Anwendung ist in Komponenten (Klassen) aufgebaut welche jeweils die Verantwortung für einen teil bereich entkapselt. Jedes Modul wurde in einem "pseudo Test Driven" Methodik entwickelt. Die Tests wurden nicht zwingenderweise entwickelt, bevor der entsprechende Code geschrieben wurde, aber auf jeden Fall kurz danach. Dies führte zu stabilen Code, dass in jeder Iteration geprüft werden konnten, isoliert von anderen Komponenten.
+Die Anwendung ist in Komponenten (Klassen) aufgebaut welche jeweils die Verantwortung für einen Teilbereich entkapselt. Jedes Modul wurde in einem "pseudo Test Driven" Methodik entwickelt. Die Tests wurden nicht zwingenderweise entwickelt, bevor der entsprechende Code geschrieben wurde, aber auf jeden Fall kurz danach. Dies führte zu stabilen Code, dass in jeder Iteration geprüft werden konnte, isoliert von anderen Komponenten.
 
-Die Interaktion mit der Klasse wird in einer dazugehörenden "Zuhöhrer" Klasse definiert. In der "Zuhöhrer" Klasse sind Rückruffunkionen spezifiziert, die einer Client-Klasse zu implementieren hat. Ein Client-Klasse kann die Listener-Klasse erben und die Rückruffunktionen überladen.
+Die Interaktion mit einer Klasse wird in einer dazugehörenden "Zuhöhrer" Klasse definiert. In der "Zuhöhrer" Klasse sind Rückruffunkionen spezifiziert, die einer Client-Klasse zu implementieren hat. Ein Client-Klasse kann von der Listener-Klasse erben und die Rückruffunktionen überladen.

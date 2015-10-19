@@ -1,10 +1,10 @@
 \subsection{DiauproProcessor}
 
-The DiauproProcessor class is the base class that other Processors should inherit from. The DiauproProcessor inherits from the JUCE AudioProcessor class which encapsulates all the functionality of various audio plugin formats. Classes that inherit from AudioProcessor can be wrapped into a VST plugin directly. Classes that extend from the DiauproProcessor though are meant to be call from withing another processor class.
+Die DiauproProcessor-Klasse ist die Basisklasse, von der anderen Prozessoren erben sollen. Die DiauproProcessor-Klasse erbt wiederum von der JUCE Audioprocessor-Klasse, die alle Funktionen der verschiedenen Audio-Plugin-Formate kapselt. Klassen, die von Audioprocessor erben können direkt in ein VST-Plugin gewickelt (wrapped) werden.
 
-A class that inherits from DiauproProcessor must extend the localProcess and getServiceTag functions. The localProcess funciton performs the audio processing. getServiceTag returns a string that will be used to broadcast and browse for the specific service on the network.
+A class that inherits from DiauproProcessor must extend the localProcess and getServiceTag functions. The localProcess function performs the audio processing. getServiceTag returns a string that will be used to broadcast and browse for the specific service on the network.
 
-Classes that inherit from DiauproProcessor can be instansiated and setup to run in the audio plugin code or in the processing node. When run as plugin code the will browse for corresponding services on the network. If they dont find one then the localProcess function will be used locally. It they do find a networked service on all incoming audio and midi data will be forwarded to that service.
+Classes that inherit from DiauproProcessor can be instantiated and setup to run in the audio plugin  or in the processing node. When run as plugin code the will browse for corresponding services on the network. If they dont find one then the localProcess function will be used locally. It they do find a networked service on all incoming audio and midi data will be forwarded to that service.
 
 When run in a processing node, classes that inherit from DiauproProcessor will register themselves on the network and wait to incoming processing requests.
 
