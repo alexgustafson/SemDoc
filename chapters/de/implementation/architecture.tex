@@ -1,14 +1,12 @@
 \section{Architecture}
 
-Figure \ref{fig:arch_01} illustrates a high level overview of the distributed audio proessing environment. The user of the system interacts with the audio production software running on the host CPU and can choose to activate an audio processing plugin on a specific audio track. A single audio plugin might contain one or several individual processors. Processor that are enabled for distributed processing will search for a corresponding processor on a network SBC device.
+Abbildung \ref{fig:arch_01} zeigt einen Überblick über die Audioverarbeitungsumgebung. Der Benutzer des Systems arbeitet mit der DAW-Anwendung welches auf dem Host-CPU läuft, und kann einen Audio Plug-in auf eine bestimmte Audiospur aktivieren. Ein einzelner Audio Plug-in kann einer oder mehrere Audio Prozessoren enthalten. Prozessoren, die fähig sind ihre Aufgaben zu Verteilen suchen nach einem entsprechenden Rechenknoten auf einem Vernetztes SBC-Gerät.
 
-The devices are networked via gigabit ethernet. It is assumed that the network is not being used for any other significant traffic.
+Die Geräte werden über Gigabit-Ethernet vernetzt. Es wird angenommen, dass das Netzwerk nicht für sonstiges signifikanten Verkehr benützt werden.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{assets/architecture_01.pdf}
-    \caption{Architectural Overview}
+    \caption{Architectural Überblick}
     \label{fig:arch_01}
 \end{figure}
-
-

@@ -1,6 +1,5 @@
 \section{Software Components}
 
-The application is divided into module that each manage thier own responsibilities. Each module was developed in a pseudo test-driven methodology. The tests were not necessarily developed before the corresponding code was written, but definitly in conjuction thereof. This resulted in stable code that could be tested in isolation from other components at every code iteration.
+Die Anwendung ist in Komponenten (Klassen) aufgebaut welche jeweils die Verantwortung für einen teil bereich entkapselt. Jedes Modul wurde in einem "pseudo Test Driven" Methodik entwickelt. Die Tests wurden nicht zwingenderweise entwickelt, bevor der entsprechende Code geschrieben wurde, aber auf jeden Fall kurz danach. Dies führte zu stabilen Code, dass in jeder Iteration geprüft werden konnten, isoliert von anderen Komponenten.
 
- Where applicable, interaction with the class is defined in an associated "listener" class with specific callback methods that a client is expected to implement. A client class can then inherit from and override the listener class.
-
+Die Interaktion mit der Klasse wird in einer dazugehörenden "Zuhöhrer" Klasse definiert. In der "Zuhöhrer" Klasse sind Rückruffunkionen spezifiziert, die einer Client-Klasse zu implementieren hat. Ein Client-Klasse kann die Listener-Klasse erben und die Rückruffunktionen überladen.
