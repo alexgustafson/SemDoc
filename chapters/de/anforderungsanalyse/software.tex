@@ -1,25 +1,25 @@
 \section{Software Requirements}
 
-In realtime audio applications timing is critical. This may sound obvious, but to a programmer it means giving up many of the comforts of modern programming made available working with high level interpreted languages such as java or python. Most audio application interfaces and libraries such as the VST SDK are for C/C++.
+In Echtzeit-Audio-Anwendungen das Einhalten zeitlicher Vorgaben ist kritisch. Dies mag selbstverständlich klingen, aber für einen Programmierer bedeutet es den Verzicht auf viele Komforten der modernen Programmierung, besonders das Arbeiten mit High-Level Programmier-Sprachen wie Java oder Python. Echzeit-Audio ist ein "Hard Realtime" Aufgabe und dafür eignen sich nur Low-Level Sprachen wie C oder C++. Auch die meisten Audio-Anwendungsschnittstellen und Bibliotheken wie die VST SDK sind für C/C ++.
 
-Professional audio applications generally run on Mac OSX or Windows Operating Systems, therefore the audio plugin must be compileable on these systems. The processing node will be run on SBC devices which typically run with a Linux based OS. Yet both applications should share thier codebase since there is alot of crossover of responsibility between the audio plugin and the nodes.
+Professionelle Audio-Anwendungen laufen in der Regel auf Mac OSX oder Windows-Betriebssysteme, daher muss der Audio Plug-in auf diesen Systemen Kompilierbar sein. Die Rechenknoten, welche auf den SBC-Geräte laufen, müssen für Linux Kompilierbar sein. Doch beide Anwendungen sollten ein gross teil ihre Quellcode teilen können, da ihre Aufgaben sich grossteils überschneiden.
 
-There are many C++ libraries and framework that address the issue of cross platform compatibility while also giving the programmer access to high level constructs like smart pointers and reference counted objects that make C++ programming easier.
+Es gibt viele C ++ Bibliotheken und Frameworks, welche Cross-Plattform-Kompatibilität ermöglichen und nebenbei  auch den Programmierer Zugriff auf High-Level Konstrukte wie  automatischen Speicherbereinigung mittels intelligente Zeiger und Referenzzählung, die das Programmieren in C++ einfacher machen.
 
-\subsection{Evaluated C++ Frameworks}
+\subsection{Evaluierte C++ Frameworks}
 
-Boost is the most popular crossplatform C++ frameworks. Many of it's features have been added to the C++11 standard library. Other frameworks like Cinder and Open Frameworks offer many high level features to quickly build crossplatform media rich interactive applications. Two libraries of special note offer specific features to build crossplatform audio applications and plugins, Juce and WDL. Of these two Juce has a much larger community of users (including vendors of dsp based audio coprocessors) and has existed longer. \\
+Boost ist die beliebteste plattformübergreifende C ++ Framework. Viele Boost Funktionalitäten wurden sogar in die C ++ 11 Standard-Bibliothek hinzugefügt. Andere Frameworks wie Cinder und Open Frameworks bieten viele High-Level Funktionen, um schnell interaktive medien-reiche Anwendungen zu programmieren. Zwei Bibliotheken die hervorzuheben sind, JUCE und WDL, beiten besonders für Audio Plug-ins und DAW-Anwendungen zugeschnittene Funktionen und Klassen. Von diesen beiden hat Juce eine viel größere Benutzergemeinschaft (einschließlich Anbieter von DSP-basierten Audio-Coprozessoren). \\
 \\
 \noindent
-Software Framework Criteria:
+Software Framework Kriteria:
 
 \begin{itemize}
 
-\item Crossplatform for OSX, Linux, and Windows
-\item Offers high level constructs like smart pointers
-\item Support for crossplatform audio integration
-\item Should be well documented and have an active community
-\item Support for crossplatform network streaming
+\item Plattformübergreifend für OSX, Linux und Windows
+\item Bietet Hohe Konstrukte wie intelligente Zeiger
+\item Unterstützung für plattformübergreifende Audiointegration
+\item Sollte gut dokumentiert sein und eine aktive Benutzergemeinschaft haben
+\item Bietet plattformübergreifende Netzwerkzugriff
 
 \end{itemize}
 
@@ -30,7 +30,7 @@ Software Framework Criteria:
  \hline
  Framework & High Level Utilities & Audio Utilities & Network Utilities & VST Utilities & Community\\
  \hline
- Juce            & ja  & ja  & ja\tablefootnote{basic socket management classes} & ja  & gross \\
+ JUCE            & ja  & ja  & ja\tablefootnote{basic socket management classes} & ja  & gross \\
  WDL             & ja  & ja  & nein & ja\tablefootnote{enabled using one of the additional iplug libraries} & klein \\
  Open Frameworks & ja  & ja  & ja\tablefootnote{the ofxNetwork addon allow simple management of TCP or UDP sockets}&
  nein& gross \\
@@ -43,4 +43,4 @@ Software Framework Criteria:
 \end{center}
 \end{table}
 
-Based on the criteria comparison above and experience in previous projects Juce was chosen for this projects implmentation.
+Auf Grundlage der Kriterien Vergleich und früheren Erfahrungen bei andere Projekten wurde für diese Projekte JUCE für die Implementierung ausgewählt.

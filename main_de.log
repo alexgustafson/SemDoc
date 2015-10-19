@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.5)  18 OCT 2015 18:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.5)  19 OCT 2015 09:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -585,17 +585,29 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20.74> not available
 (./chapters/de/introduction.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
- [4
+
+Overfull \hbox (3.98627pt too wide) in paragraph at lines 13--16
+\OT1/ptm/m/n/10 Raspberry-Pi und []ahnliche SBC Ger[]ate gelegt wer-den, vor al
+lem unter Ber[]ucksichtigung
+ []
+
+
+Overfull \hbox (7.57594pt too wide) in paragraph at lines 13--16
+\OT1/ptm/m/n/10 miteinan-der kom-mu-nizieren k[]onnen. MIDI und OSC definieren 
+Pro-tokolle zur Steuerung
+ []
+
+[4
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 19.
-
-(/usr/local/texlive/2015basic/texmf-dist/tex/latex/psnfss/omsptm.fd
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 21.
+ (/usr/local/texlive/2015basic/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 19.
-) [5]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 21.
+)
+[5]
 Chapter 2.
 (./chapters/de/einfuehrung/background.tex)
 (./chapters/de/einfuehrung/realtime.tex
@@ -672,14 +684,14 @@ Overfull \hbox (1.57642pt too wide) in paragraph at lines 7--8
 dere har-monis-che Qualit[]aten.
  []
 
-<assets/synth_voice_block.pdf, id=229, 694.595pt x 323.2075pt>
+<assets/synth_voice_block.pdf, id=224, 694.595pt x 323.2075pt>
 File: assets/synth_voice_block.pdf Graphic file (type pdf)
 
 <use assets/synth_voice_block.pdf>
 Package pdftex.def Info: assets/synth_voice_block.pdf used on input line 11.
 (pdftex.def)             Requested size: 345.0pt x 160.53809pt.
  [9]
-<plots/graphics/sawtooth.pdf, id=237, 722.7pt x 433.62pt>
+<plots/graphics/sawtooth.pdf, id=232, 722.7pt x 433.62pt>
 File: plots/graphics/sawtooth.pdf Graphic file (type pdf)
 
 <use plots/graphics/sawtooth.pdf>
@@ -709,14 +721,14 @@ Speziell bei einer Virtuellen-Synthesizer-
 
 [12
 
-] <assets/distribution_1to1.pdf, id=312, 829.0975pt x 257.96375pt>
+] <assets/distribution_1to1.pdf, id=307, 829.0975pt x 257.96375pt>
 File: assets/distribution_1to1.pdf Graphic file (type pdf)
 
 <use assets/distribution_1to1.pdf>
 Package pdftex.def Info: assets/distribution_1to1.pdf used on input line 12.
 (pdftex.def)             Requested size: 345.0pt x 107.34029pt.
 
-<assets/distribution_perprocessor.pdf, id=313, 820.06375pt x 324.21124pt>
+<assets/distribution_perprocessor.pdf, id=308, 820.06375pt x 324.21124pt>
 File: assets/distribution_perprocessor.pdf Graphic file (type pdf)
 
 <use assets/distribution_perprocessor.pdf>
@@ -724,7 +736,7 @@ Package pdftex.def Info: assets/distribution_perprocessor.pdf used on input lin
 e 19.
 (pdftex.def)             Requested size: 345.0pt x 136.4003pt.
 
-<assets/distribute_byvoice.pdf, id=314, 831.105pt x 321.2pt>
+<assets/distribute_byvoice.pdf, id=309, 831.105pt x 321.2pt>
 File: assets/distribute_byvoice.pdf Graphic file (type pdf)
 
 <use assets/distribute_byvoice.pdf>
@@ -761,61 +773,43 @@ Overfull \hbox (7.85696pt too wide) in paragraph at lines 17--18
 chen-knoten []ubermitteln
  []
 
-) (./chapters/de/anforderungsanalyse/remotenodes.tex)
-(./chapters/de/anforderungsanalyse/software.tex
-Overfull \hbox (0.90735pt too wide) in paragraph at lines 3--1
+) (./chapters/de/anforderungsanalyse/remotenodes.tex
+Overfull \hbox (0.90735pt too wide) in paragraph at lines 3--4
 \OT1/ptm/m/n/10 knoten die gesamte Ve-r-ar-beitungsauf-gabe oder ein-fach nur e
 in Teil der Auf-gabe bekom-
  []
 
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 9.
 
-Underfull \hbox (badness 10000) in paragraph at lines 11--15
-
- []
-
-[15]
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
-[]\OT1/ptm/m/n/10 High
+Overfull \hbox (30.31586pt too wide) in paragraph at lines 5--9
+[]\OT1/ptm/m/n/10 Die Rechen-knoten soll-ten state-less sein. Jeder Zyk-lus des
+ Audio-Verarbeitungsalgorithmus
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
-\OT1/ptm/m/n/10 Level
+Underfull \hbox (badness 10000) in paragraph at lines 5--9
+
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
-[]\OT1/ptm/m/n/10 Audio
+Overfull \hbox (6.29727pt too wide) in paragraph at lines 12--13
+[]\OT1/ptm/m/n/10 gibt seine Verf[]ugbarkeit und Stan-dort im Net-zw-erk via Bo
+n-jour / Ze-ro-conf bekannt 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
-[]\OT1/ptm/m/n/10 Network
- []
-
-
-Overfull \hbox (5.11037pt too wide) in paragraph at lines 31--32
-[]\OT1/ptm/m/n/10 Community| 
- []
-
-
-Overfull \hbox (27.75388pt too wide) in paragraph at lines 29--43
- [] 
- []
-
-) [16]
+) (./chapters/de/anforderungsanalyse/software.tex) [15]
 Chapter 4.
 (./chapters/de/implementation/architecture.tex
-<assets/architecture_01.pdf, id=389, 1705.37125pt x 697.60625pt>
+<assets/architecture_01.pdf, id=374, 1705.37125pt x 697.60625pt>
 File: assets/architecture_01.pdf Graphic file (type pdf)
 
 <use assets/architecture_01.pdf>
 Package pdftex.def Info: assets/architecture_01.pdf used on input line 9.
 (pdftex.def)             Requested size: 345.0pt x 141.1261pt.
 )
-(./chapters/de/implementation/architecture/hostCPU.tex [17
+(./chapters/de/implementation/architecture/hostCPU.tex
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
+ [16
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1}) 
 has been already used, duplicate ignored
@@ -824,13 +818,13 @@ has been already used, duplicate ignored
                                                   \fi \fi 
 l.4 
      <./assets/architecture_01.pdf>]
-<assets/architecture_02.pdf, id=469, 607.26875pt x 348.30125pt>
+<assets/architecture_02.pdf, id=453, 607.26875pt x 348.30125pt>
 File: assets/architecture_02.pdf Graphic file (type pdf)
 
 <use assets/architecture_02.pdf>
 Package pdftex.def Info: assets/architecture_02.pdf used on input line 13.
 (pdftex.def)             Requested size: 345.0pt x 197.88007pt.
- [18pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+ [17pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
 2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -839,13 +833,13 @@ l.22 W
       hen a request for audio data is passed from the audio production softw...
  <./assets/architecture_02.pdf>])
 (./chapters/de/implementation/architecture/networkedSBCs.tex
-<assets/architecture_03.pdf, id=533, 476.78125pt x 253.94875pt>
+<assets/architecture_03.pdf, id=517, 476.78125pt x 253.94875pt>
 File: assets/architecture_03.pdf Graphic file (type pdf)
 
 <use assets/architecture_03.pdf>
 Package pdftex.def Info: assets/architecture_03.pdf used on input line 7.
 (pdftex.def)             Requested size: 345.0pt x 183.76906pt.
- [19pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+ [18pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
 3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -854,7 +848,7 @@ l.15
       <./assets/architecture_03.pdf>])
 (./chapters/de/implementation/softwareComponents.tex)
 (./chapters/de/implementation/softwareComponents/Monitor.tex)
-(./chapters/de/implementation/softwareComponents/ZeroConfManager.tex [20])
+(./chapters/de/implementation/softwareComponents/ZeroConfManager.tex [19])
 (./chapters/de/implementation/softwareComponents/DiauproMessage.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--6
 
@@ -868,7 +862,7 @@ Overfull \hbox (29.40381pt too wide) in paragraph at lines 24--26
  []
 
 ) (./chapters/de/implementation/softwareComponents/DiauproProcessor.tex
-[21]) (./chapters/de/implementation/softwareComponents/DiauproVCOProcessor.tex
+[20]) (./chapters/de/implementation/softwareComponents/DiauproVCOProcessor.tex
 LaTeX Font Info:    Try loading font information for OML+ptm on input line 18.
 
 (/usr/local/texlive/2015basic/texmf-dist/tex/latex/psnfss/omlptm.fd
@@ -891,21 +885,21 @@ Overfull \hbox (10.20361pt too wide) in paragraph at lines 30--31
 [][][][][][][][][][][][][][][][][][][] 
  []
 
-[22]
+[21]
 Overfull \hbox (87.0044pt too wide) in paragraph at lines 39--40
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 ) (./chapters/de/implementation/softwareComponents/DiauproVCAProcessor.tex)
-[23]
+[22]
 Chapter 5.
-(./chapters/de/conclusion.tex) (./chapters/de/GlossaryOfTerms.tex [24
+(./chapters/de/conclusion.tex) (./chapters/de/GlossaryOfTerms.tex [23
 
 ]
 Chapter 6.
-) (./main_de.bbl [25
+) (./main_de.bbl [24
 
-]) [26
+]) [25
 
 ]
 Chapter 7.
@@ -938,27 +932,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--81
 
  []
 
-[27
+[26
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 82.
- [28]
+ [27]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 82.
  (./main_de.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 82.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 82.
 Package rerunfilecheck Info: File `main_de.out' has not changed.
-(rerunfilecheck)             Checksum: 5E63A3CAC61A3FA445E640170F9C83FB;2134.
+(rerunfilecheck)             Checksum: C3BCE326D4FE73157E87356053321FDA;2056.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 82.
  ) 
 Here is how much of TeX's memory you used:
- 8437 strings out of 494501
- 121641 string characters out of 6167031
- 220054 words of memory out of 5000000
- 11360 multiletter control sequences out of 15000+600000
+ 8431 strings out of 494501
+ 121566 string characters out of 6167031
+ 220051 words of memory out of 5000000
+ 11359 multiletter control sequences out of 15000+600000
  27221 words of font info for 50 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 29i,16n,35p,1126b,1792s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,8n,35p,1126b,1794s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015basic/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/lo
 cal/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
 r/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><
@@ -967,10 +961,10 @@ fb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
 8.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/urw/times/utmb8a.pfb
 ></usr/local/texlive/2015basic/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></us
 r/local/texlive/2015basic/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main_de.pdf (29 pages, 1925291 bytes).
+Output written on main_de.pdf (28 pages, 1923996 bytes).
 PDF statistics:
- 744 PDF objects out of 1000 (max. 8388607)
- 595 compressed objects within 6 object streams
- 155 named destinations out of 1000 (max. 500000)
- 313 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 728 PDF objects out of 1000 (max. 8388607)
+ 580 compressed objects within 6 object streams
+ 150 named destinations out of 1000 (max. 500000)
+ 305 words of extra memory for PDF output out of 10000 (max. 10000000)
 
