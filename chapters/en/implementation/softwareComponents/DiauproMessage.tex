@@ -17,18 +17,5 @@ struct diapro_header {
 };
 \end{lstlisting}
 
-\noindent
-Given a socket that is ready to read from, message data can be retreived and deserialized using the following methods:
-
-\begin{lstlisting}
-int readFromSocket(DatagramSocket *sock, String &targetHost, int &targetPort);
-
-void getAudioData(AudioSampleBuffer *buffer);
-
-void getMidiData(MidiBuffer &buffer);
-
-void getStateData(void* state, &stateSize);
-\end{lstlisting}
-
 The DiaproMessage class makes an effort to use existing allocated memory when possible. Instances of DiauproMessage should not be created or allocated in the thread that calls the audio processing routines. Instead an instance of the DiauproMessage should be preallocated with enough memory to store the largest UPD Datagram possible ( 64 kilobytes ). The instance can be reused for each cycle and memory will not have to be reallocated during timing critical processes.
 

@@ -1,8 +1,8 @@
 \subsection{DiauproMessage}
 
-The DiauproMessage class manages the serialisation and deserialisation of data to datagram packets. The datagrams themselves are comprised of a fixed length header, and a varible length payload that contains the audio, midi, and state information.\\
+Die DiauproMessage Klasse verwaltet die Serialisierung und Deserialisierung von Daten zu respektiv von Datagramm-Pakete. Die Datagramme selbst bestehen aus einer Header mit festen Länge, und Nutzdaten mit variable Länge, welche die Audio-, MIDI- und Zustanddaten enthält.\\
 \\
-The header is defined as follows:
+Der Header wird wie folgt definiert:
 
 \begin{lstlisting}
 struct diapro_header {
@@ -17,18 +17,4 @@ struct diapro_header {
 };
 \end{lstlisting}
 
-\noindent
-Given a socket that is ready to read from, message data can be retreived and deserialized using the following methods:
-
-\begin{lstlisting}
-int readFromSocket(DatagramSocket *sock, String &targetHost, int &targetPort);
-
-void getAudioData(AudioSampleBuffer *buffer);
-
-void getMidiData(MidiBuffer &buffer);
-
-void getStateData(void* state, &stateSize);
-\end{lstlisting}
-
-The DiaproMessage class makes an effort to use existing allocated memory when possible. Instances of DiauproMessage should not be created or allocated in the thread that calls the audio processing routines. Instead an instance of the DiauproMessage should be preallocated with enough memory to store the largest UPD Datagram possible ( 64 kilobytes ). The instance can be reused for each cycle and memory will not have to be reallocated during timing critical processes.
-
+Die DiaproMessage Klasse bemüht sich, bestehende zugewiesenen Speicher zu verwenden, wenn möglich. Instanzen DiauproMessage sollte nicht alloziert werden in den Thread, der die Audio-Verarbeitungsroutinen aufruft. Sie sollten lieber voralloziert werden mit genügend Speicher, um einen UPD Datagram mit maximale Größe (64 KB) zu speichern. Dieser Instanz soll dann für jeden Aufruf-Zyklus wiederverwendet werden damit Speicher nicht neu alloziert werden muss während der Zeit kritische Prozess.
