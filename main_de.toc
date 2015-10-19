@@ -19,7 +19,7 @@
 \contentsline {section}{\numberline {4.1}Architecture}{18}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Host CPU}{18}{subsection.4.1.1}
 \contentsline {subsection}{\numberline {4.1.2}Vernetzte SBCs}{20}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}Software Components}{21}{section.4.2}
+\contentsline {section}{\numberline {4.2}Software Komponenten}{21}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Socket Monitor}{22}{subsection.4.2.1}
 \contentsline {subsection}{\numberline {4.2.2}ZeroconfManager}{22}{subsection.4.2.2}
 \contentsline {subsection}{\numberline {4.2.3}DiauproMessage}{22}{subsection.4.2.3}
