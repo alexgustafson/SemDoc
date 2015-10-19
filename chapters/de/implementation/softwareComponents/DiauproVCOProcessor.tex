@@ -1,8 +1,8 @@
 \subsection{DiauproVCOProcessor}
 
-The DiauproVCOProcessor extends the base DiauproProcessor and implements the oscillator block of a virtual synthsizer. The only functions from DiauproProcessor that need to be overrided are localProcess, getState, getStateSize, and getServiceTag.
+Die DiauproVCOProcessor erbt von DiauproProcessor und implementiert die Oszillatorblock eines virtuellen synthsizer. Es erzeugt einen Klang in der Tonhöhe einen gespielten MIDI-Note. Die einzigen Funktionen aus DiauproProcessor, die überladen werden müssen, sind "localProcess", "getState", "getStateSize" und "getServiceTag".
 
-localProcess is implemented as follows:
+"localProcess" wird wie folgt implementiert:
 \begin{lstlisting}[numbers=left]
 void DiauproVCOProcessor::localProcess(AudioSampleBuffer &buffer,
                                        MidiBuffer &midiMessages,
@@ -49,8 +49,8 @@ void DiauproVCOProcessor::localProcess(AudioSampleBuffer &buffer,
 \end{lstlisting}
 
 \noindent
-When the function is called it is passed a reference to the current audio sample buffer to be filled, a buffer of midi events for the corresponding time frame, and a pointer to a block of data that can be used to hold and state that needs to be persisted between calls.
+Wenn die Funktion aufgerufen wird, wird die aktuelle Audio-Puffer übergeben, ein Puffer von MIDI-Events für den korespondierende Zeitrahmen, und ein Zeiger auf einen Block von Daten, die verwendet werden, um den Zustand zu speichern, damit es zwischen Aufrufen beibehalten werden.
 
-If this function is called from a node processor then the audio, midi, and state data has been extracted from a DiauproMessage sent as a UDP packet from the master audio plugin.
+Wird diese Funktion innerhalb eines Rechenknotens ausgeführt dann werden Audio-, MIDI- und Zustandsdaten aus einem DiauproMessage, als UDP-Paket von der Master-Audio-Plugin gesendet, entnommen.
 
-In the example above a sin wave is create by calculating the sin value for each element in the audio sample buffer.
+Im obigen Beispiel wird einer Sinuswelle generiert, indem die Sinus Wert für jedes Element in der Audio-Puffer berechnet wird.
