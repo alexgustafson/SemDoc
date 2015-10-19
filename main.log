@@ -1,12 +1,15 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.5)  19 OCT 2015 10:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=latex 2015.8.5)  19 OCT 2015 14:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**main.tex
-(./main.tex
-LaTeX2e <2015/01/01>
-Babel <3.9l> and hyphenation patterns for 21 languages loaded.
-(/usr/local/texlive/2015basic/texmf-dist/tex/latex/base/report.cls
+**\makeatletter\def\HCode{\futurelet\HCode\HChar}\def\HChar{\ifx"\HCode\def\HCo
+de"##1"{\Link##1}\expandafter\HCode\else\expandafter\Link\fi}\def\Link#1.a.b.c.
+{\g@addto@macro\@documentclasshook{\RequirePackage[#1,html]{tex4ht}}\let\HCode\
+documentstyle\def\documentstyle{\let\documentstyle\HCode\expandafter\def\csname
+ tex4ht\endcsname{#1,html}\def\HCode####1{\documentstyle[tex4ht,}\@ifnextchar[{
+\HCode}{\documentstyle[tex4ht]}}}\makeatother\HCode html,word.a.b.c.\input  mai
+n.tex
+(./main.tex (/usr/local/texlive/2015basic/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/local/texlive/2015basic/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
@@ -24,10 +27,24 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/tex4ht.sty
+version 2008-10-27-17:23
+Package: tex4ht 
+--------------------------------------
+--- Note --- for _ at preamble, use the command line option `early_'
+--------------------------------------
+--------------------------------------
+--- Note --- for ^ at preamble, use the command line option `early^'
+--------------------------------------
+\tmp:toks=\toks14
+)
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/usepackage.4ht
+version 2009-05-21-09:32
+)
 (/usr/local/texlive/2015basic/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
-\inpenc@prehook=\toks14
-\inpenc@posthook=\toks15
+\inpenc@prehook=\toks15
+\inpenc@posthook=\toks16
 
 (/usr/local/texlive/2015basic/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2014/09/29 v1.1m UTF-8 support for inputenc
@@ -269,7 +286,7 @@ Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
+Package ifpdf Info: pdfTeX in PDF mode is not detected.
 Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
@@ -282,7 +299,7 @@ Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
+Package pdftexcmds Info: \pdfdraftmode is ignored in DVI mode.
 Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
 Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
 )
@@ -300,15 +317,19 @@ Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 ) (/usr/local/texlive/2015basic/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks16
+\KV@toks@=\toks17
 )
 (/usr/local/texlive/2015basic/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 (/usr/local/texlive/2015basic/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
-)
-(/usr/local/texlive/2015basic/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+
+
+Package auxhook Warning: Cannot patch \document,
+(auxhook)                using \AtBeginDocument instead.
+
+) (/usr/local/texlive/2015basic/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
 \@linkdim=\dimen103
@@ -325,6 +346,7 @@ Now handling font encoding PD1 ...
 (/usr/local/texlive/2015basic/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
+Package hyperref Info: Option `colorlinks' set `true' on input line 4319.
 Package hyperref Info: Hyper figures OFF on input line 4443.
 Package hyperref Info: Link nesting OFF on input line 4448.
 Package hyperref Info: Hyper index ON on input line 4451.
@@ -343,33 +365,28 @@ LaTeX Info: Redefining \url on input line 5041.
 \Fld@menulength=\count92
 \Field@Width=\dimen105
 \Fld@charsize=\dimen106
+\Field@toks=\toks18
 Package hyperref Info: Hyper figures OFF on input line 6295.
 Package hyperref Info: Link nesting OFF on input line 6300.
 Package hyperref Info: Hyper index ON on input line 6303.
 Package hyperref Info: backreferencing OFF on input line 6310.
-Package hyperref Info: Link coloring OFF on input line 6315.
+Package hyperref Info: Link coloring ON on input line 6313.
 Package hyperref Info: Link coloring with OCG OFF on input line 6320.
 Package hyperref Info: PDF/A mode OFF on input line 6325.
 LaTeX Info: Redefining \ref on input line 6365.
 LaTeX Info: Redefining \pageref on input line 6369.
 \Hy@abspage=\count93
-\c@Item=\count94
-\c@Hfootnote=\count95
+
+
+Package hyperref Message: Stopped early.
+
 )
 
-Package hyperref Message: Driver (autodetected): hpdftex.
+Package hyperref Message: Driver: htex4ht.
 
-(/usr/local/texlive/2015basic/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
-\Fld@listcount=\count96
-\c@bookmark@seq@number=\count97
-
-(/usr/local/texlive/2015basic/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
-Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
-82.
-)
-\Hy@SectionHShift=\skip43
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/hyperref/htex4ht.def
+File: htex4ht.def 2012/11/06 v6.83m Hyperref driver for TeX4ht
+Package hyperref Info: tex4ht is already loaded.
 )
 (/usr/local/texlive/2015basic/texmf-dist/tex/latex/tablefootnote/tablefootnote.
 sty
@@ -379,20 +396,20 @@ Package: xifthen 2009/04/17 v1.3 Extended ifthen features
 
 (/usr/local/texlive/2015basic/texmf-dist/tex/latex/etex-pkg/etex.sty
 Package: etex 2015/03/02 v2.1 eTeX basic definition package (PEB,DPC)
-\et@xins=\count98
+\et@xins=\count94
 )
 (/usr/local/texlive/2015basic/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count99
-\calc@Bcount=\count100
+\calc@Acount=\count95
+\calc@Bcount=\count96
 \calc@Adimen=\dimen107
 \calc@Bdimen=\dimen108
-\calc@Askip=\skip44
-\calc@Bskip=\skip45
+\calc@Askip=\skip43
+\calc@Bskip=\skip44
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count101
-\calc@Cskip=\skip46
+\calc@Ccount=\count97
+\calc@Cskip=\skip45
 )
 (/usr/local/texlive/2015basic/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
@@ -402,7 +419,7 @@ Package: ifmtarg 2009/09/02 v1.2a check for an empty argument
 ))
 (/usr/local/texlive/2015basic/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2015/05/04 v2.2 e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count102
+\etb@tempcnta=\count98
 ))
 (/usr/local/texlive/2015basic/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
@@ -416,41 +433,40 @@ Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 (/usr/local/texlive/2015basic/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: pdftex.def on input line 94.
+Package graphics Info: Driver file: dvips.def on input line 94.
 
-(/usr/local/texlive/2015basic/texmf-dist/tex/latex/pdftex-def/pdftex.def
-File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-\Gread@gobject=\count103
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/graphics/dvips.def
+File: dvips.def 2014/10/14 v3.0j Driver-dependent file (DPC,SPQR)
 ))
 \Gin@req@height=\dimen109
 \Gin@req@width=\dimen110
 )
 (/usr/local/texlive/2015basic/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count104
-\float@exts=\toks17
+\c@float@type=\count99
+\float@exts=\toks19
 \float@box=\box26
-\@float@everytoks=\toks18
+\@float@everytoks=\toks20
 \@floatcapt=\box27
 )
 (/usr/local/texlive/2015basic/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count105
+\lst@mode=\count100
 \lst@gtempboxa=\box28
-\lst@token=\toks19
-\lst@length=\count106
+\lst@token=\toks21
+\lst@length=\count101
 \lst@currlwidth=\dimen111
-\lst@column=\count107
-\lst@pos=\count108
+\lst@column=\count102
+\lst@pos=\count103
 \lst@lostspace=\dimen112
 \lst@width=\dimen113
-\lst@newlines=\count109
-\lst@lineno=\count110
+\lst@newlines=\count104
+\lst@lineno=\count105
 \lst@maxwidth=\dimen114
 
 (/usr/local/texlive/2015basic/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
-\c@lstnumber=\count111
-\lst@skipnumbers=\count112
+\c@lstnumber=\count106
+\lst@skipnumbers=\count107
 \lst@framebox=\box29
 )
 (/usr/local/texlive/2015basic/texmf-dist/tex/latex/listings/listings.cfg
@@ -464,9 +480,8 @@ Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 (/usr/local/texlive/2015basic/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Driver file: dvips.def on input line 225.
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
 Package xcolor Info: Model `RGB' extended on input line 1353.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
 Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
@@ -477,7 +492,461 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
 (./codestyle.tex)
 Package hyperref Info: Option `colorlinks' set `true' on input line 20.
- (./main.aux)
+
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/tex4ht.4ht
+version 2009-01-07-07:11
+--------------------------------------
+--- Note --- for additional information, use the command line option `info'
+--------------------------------------
+
+::::::::::::::::::::::::::::::::::::::::::
+ TeX4ht info is available in the log file 
+::::::::::::::::::::::::::::::::::::::::::
+) (/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/tex4ht.sty
+version 2008-10-27-17:23
+
+--- needs --- tex4ht main ---
+\tmp:cnt=\count108
+\openout15 = `main.tmp'.
+
+(./main.tmp)
+\tmp:dim=\skip46
+--------------------------------------
+--- Note --- for XML code, use the command line option `xml' or `xhtml'
+--------------------------------------
+ (./main.xref)
+\:refout=\write3
+\openout3 = `main.xref'.
+
+
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2015-09-29-15:23
+--------------------------------------
+--- Note --- to remove the <?xml version=...?> processing instruction use the c
+ommand line option `no-VERSION'
+--------------------------------------
+--------------------------------------
+--- Note --- to remove the DOCTYPE declaration use the command line option `no-
+DOCTYPE'
+--------------------------------------
+)
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+)
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/htmlw.4ht
+version 2009-04-06-21:08
+--------------------------------------
+--- Note --- for offline footnotes use command line option `fn-out'
+--------------------------------------
+)
+--------------------------------------
+--- Note --- for marking of the base font, use the command line option `fonts+'
+
+--------------------------------------
+--------------------------------------
+--- Note --- for non active _, use the command line option `no_'
+--------------------------------------
+--------------------------------------
+--- Note --- for _ of catcode 13, use the command line option `_13'
+--------------------------------------
+--------------------------------------
+--- Note --- for non active ^, use the command line option `no^'
+--------------------------------------
+--------------------------------------
+--- Note --- for ^ of catcode 13, use the command line option `^13'
+--------------------------------------
+
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2015-09-29-15:23
+--------------------------------------
+--- Note --- for alternative charset, use the command line option `charset=...'
+
+--------------------------------------
+--------------------------------------
+--- Note --- to ignore CSS font decoration, use the `NoFonts' command line opti
+on
+--------------------------------------
+--------------------------------------
+--- Note --- for jpg bitmaps of pictures, use the `jpg' command line option. (C
+haracter bitmaps are controled only by `g' records of tex4ht.env and `-g' switc
+hes of tex4ht.c) 
+--------------------------------------
+--------------------------------------
+--- Note --- for gif bitmaps of pictures, use the `gif' command line option. (C
+haracter bitmaps are controled only by `g' records of tex4ht.env and `-g' switc
+hes of tex4ht.c) 
+--------------------------------------
+--------------------------------------
+--- Note --- for content and toc in 2 frames, use the command line option `fram
+es'
+--------------------------------------
+--------------------------------------
+--- Note --- for content, toc, and footnotes in 3 frames, use the command line 
+option `frames-fn'
+--------------------------------------
+--------------------------------------
+--- Note --- for file extension name xht, use the command line option `xht'
+--------------------------------------
+TeX4ht package options: html,word,fn-in
+--------------------------------------
+--- Note --- to ignore CSS code, use the command line option `-css
+--------------------------------------
+--------------------------------------
+--- Note --- for inline CSS code, use the command line option `css-in'
+--------------------------------------
+--------------------------------------
+--- Note --- for pop ups on mouse over, use the command line option `mouseover'
+
+--------------------------------------
+--------------------------------------
+--- Note --- for addressing images in a subdirectory, use the command line opti
+on `imgdir:.../'
+--------------------------------------
+)
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+)
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/htmlw.4ht
+version 2009-04-06-21:08
+)
+\:tokwrite=\toks22
+\:tokpage=\toks23
+--------------------------------------
+--- Note --- for back links to toc, use the command line option `sections+'
+--------------------------------------
+--------------------------------------
+--- Note --- for linear crosslinks of pages, use the command line option `next'
+
+--------------------------------------
+\openout15 = `main.4ct'.
+
+\:tocout=\write4
+\openout4 = `main.4tc'.
+
+
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2015-09-29-15:23
+)
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+)
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/htmlw.4ht
+version 2009-04-06-21:08
+)
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/latex.4ht
+version 2009-05-21-09:32
+--------------------------------------
+--- Note --- for links into captions, instead of float heads, use the command l
+ine option `refcaption'
+--------------------------------------
+
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2015-09-29-15:23
+--------------------------------------
+--- Note --- For mini tocs immediately aftter the header use the command line o
+ption `minitoc<'
+--------------------------------------
+--------------------------------------
+--- Note --- for enumerated list elements with valued data, use the command lin
+e option `enumerate+'
+--------------------------------------
+--------------------------------------
+--- Note --- for enumerated list elements li's with value attributes, use the c
+ommand line option `enumerate-'
+--------------------------------------
+--------------------------------------
+--- Note --- for CSS2 code, use the command line option `css2'
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial tabular, use the command line option `pic-tabular'
+--------------------------------------
+--------------------------------------
+--- Note --- for bitmap fbox'es, use the command line option `pic-fbox'
+--------------------------------------
+--------------------------------------
+--- Note --- for bitmap framebox'es, use the command line option `pic-framebox'
+
+--------------------------------------
+\fn:box=\box30
+--------------------------------------
+--- Note --- for tracing of latex font commands, use the command line option `f
+onts'
+--------------------------------------
+--------------------------------------
+--- Note --- for width specifications of tabular p entries, use the `p-width' c
+ommand line option or a configuration similar to \Configure{HColWidth}{\HCode{ 
+style="width:\HColWidth"}}
+--------------------------------------
+)
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+--------------------------------------
+--- Note --- for pictorial eqnarray, use the command line option `pic-eqnarray'
+
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial array, use the command line option `pic-array'
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial $...$ environments, use the command line option `pic
+-m' (not recommended!!)
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial $...$ and $$...$$ environments with latex alt, use t
+he command line option `pic-m+' (not safe!!)
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial array, use the command line option `pic-array'
+--------------------------------------
+)
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/htmlw.4ht
+version 2009-04-06-21:08
+))
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/fontmath.4ht
+version 2009-05-21-09:32
+
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2015-09-29-15:23
+)
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+)
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/htmlw.4ht
+version 2009-04-06-21:08
+))
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/report.4ht
+version 2009-05-21-09:32
+
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2015-09-29-15:23
+--------------------------------------
+--- Note --- for automatic sectioning pagination, use the command line option `
+1', `2', `3', '4', '5', '6', or '7'
+--------------------------------------
+--------------------------------------
+--- Note --- for files named derived from section titles, use the command line 
+option `sec-filename'
+--------------------------------------
+--------------------------------------
+--- Note --- for i-columns index, use the command line option `index=i' (e.g., 
+index=2)
+--------------------------------------
+)
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+)
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/htmlw.4ht
+version 2009-04-06-21:08
+))
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/inputenc.4ht
+version 2009-05-21-09:32
+
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2015-09-29-15:23
+)
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+)
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/htmlw.4ht
+version 2009-04-06-21:08
+))
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/utf8.4ht
+version 2009-05-21-09:32
+
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2015-09-29-15:23
+)
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+)
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/htmlw.4ht
+version 2009-04-06-21:08
+))
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/hyperref.4ht
+version 2011-01-30-16:01
+
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/oberdiek/gettitlestring.st
+y
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count109
+) (/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/nameref.4ht
+version 2013-06-28-15:01
+
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2015-09-29-15:23
+)
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+)
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/htmlw.4ht
+version 2009-04-06-21:08
+))
+LaTeX Info: Redefining \autoref on input line 100.
+\Hy@SectionHShift=\skip47
+
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2015-09-29-15:23
+)
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+)
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/htmlw.4ht
+version 2009-04-06-21:08
+))
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/pd1enc.4ht
+version 2009-05-21-09:32
+
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2015-09-29-15:23
+)
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+)
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/htmlw.4ht
+version 2009-04-06-21:08
+))
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/url.4ht
+version 2009-05-21-09:32
+
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2015-09-29-15:23
+--------------------------------------
+--- Note --- for URL encoding within href use the command line option `url-enc'
+
+--------------------------------------
+)
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+)
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/htmlw.4ht
+version 2009-04-06-21:08
+))
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/ifthen.4ht
+version 2009-05-21-09:32
+
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2015-09-29-15:23
+)
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+)
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/htmlw.4ht
+version 2009-04-06-21:08
+))
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/graphicx.4ht
+version 2015-08-05-15:37
+
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2015-09-29-15:23
+)
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+)
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/htmlw.4ht
+version 2009-04-06-21:08
+))
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/graphics.4ht
+version 2009-05-21-09:32
+
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2015-09-29-15:23
+--------------------------------------
+--- Note --- if included graphics are of degraded quality, try the command line
+ options `graphics-num' or `graphics-'. The `num' should provide the density of
+ pixels in the bitmaps (e.g., 110). 
+--------------------------------------
+--------------------------------------
+--- Note --- for key dimensions try the option `Gin-dim'; for key dimensions wh
+en bounding box is unavailable try `Gin-dim+'; neither is recommended
+--------------------------------------
+)
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+)
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/htmlw.4ht
+version 2009-04-06-21:08
+))
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/dvips.4ht
+version 2009-05-21-09:32
+
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2015-09-29-15:23
+)
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+)
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/htmlw.4ht
+version 2009-04-06-21:08
+))
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/float.4ht
+version 2009-05-21-09:32
+
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2015-09-29-15:23
+)
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+)
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/htmlw.4ht
+version 2009-04-06-21:08
+))
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/listings.4ht
+version 2014-07-13-16:08
+
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2015-09-29-15:23
+--------------------------------------
+--- Note --- to ensure proper alignments use fixed size fonts (see listings.dtx
+)
+--------------------------------------
+)
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+)
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/htmlw.4ht
+version 2009-04-06-21:08
+))
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/xcolor.4ht
+version 2009-05-21-09:32
+
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/color.4ht
+version 2009-05-21-09:32
+
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2015-09-29-15:23
+)
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+)
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/htmlw.4ht
+version 2009-04-06-21:08
+))
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2015-09-29-15:23
+)
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+)
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/htmlw.4ht
+version 2009-04-06-21:08
+))
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/color.4ht
+version 2009-05-21-09:32
+)
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2015-09-29-15:23
+)
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+)
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/htmlw.4ht
+version 2009-04-06-21:08
+))
+(./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
@@ -499,93 +968,40 @@ LaTeX Font Info:    Try loading font information for OT1+ptm on input line 21.
 (/usr/local/texlive/2015basic/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
-\AtBeginShipoutBox=\box30
+\AtBeginShipoutBox=\box31
 Package hyperref Info: Link coloring ON on input line 21.
-
-(/usr/local/texlive/2015basic/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
-
-(/usr/local/texlive/2015basic/texmf-dist/tex/generic/oberdiek/gettitlestring.st
-y
-Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
-)
-\c@section@level=\count113
-)
 LaTeX Info: Redefining \ref on input line 21.
 LaTeX Info: Redefining \pageref on input line 21.
 LaTeX Info: Redefining \nameref on input line 21.
- (./main.out) (./main.out)
-\@outlinefile=\write3
-\openout3 = `main.out'.
-
-
-(/usr/local/texlive/2015basic/texmf-dist/tex/context/base/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count114
-\scratchdimen=\dimen115
-\scratchbox=\box31
-\nofMPsegments=\count115
-\nofMParguments=\count116
-\everyMPshowfont=\toks20
-\MPscratchCnt=\count117
-\MPscratchDim=\dimen116
-\MPnumerator=\count118
-\makeMPintoPDFobject=\count119
-\everyMPtoPDFconversion=\toks21
-) (/usr/local/texlive/2015basic/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
-(/usr/local/texlive/2015basic/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
-)
-Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 452.
-
-(/usr/local/texlive/2015basic/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
-\c@lstlisting=\count120
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 31.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 31.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 31.
+\c@lstlisting=\count110
+--- file main.css ---
  [1
 
-{/usr/local/texlive/2015basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 30.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 30.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 30.
+
+[1] [1]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 32.
- (./chapters/en/abstract.tex)pdfTeX warning (ext4): destination with the same i
-dentifier (name{page.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.36 \tableofcontents
-                      [1
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 32.
+ (/usr/local/texlive/2015basic/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+(./chapters/en/abstract.tex) [2
 
-] (./main.toc
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 2.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 2.
- [2
+] (./main.4ct) [3
 
-])
-\tf@toc=\write4
-\openout4 = `main.toc'.
-
- [3]
+] [4]
 Chapter 1.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20.74> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
 (./chapters/en/introduction.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
- [4
+ [5
 
 ]
 LaTeX Font Info:    Try loading font information for OMS+ptm on input line 19.
@@ -595,200 +1011,148 @@ File: omsptm.fd
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 19.
-) [5]
+) [6]
 Chapter 2.
-(./chapters/en/einfuehrung/background.tex [6
+(./chapters/en/einfuehrung/background.tex)
+(./chapters/en/einfuehrung/realtime.tex [7
 
 ])
-(./chapters/en/einfuehrung/realtime.tex [7])
-(./chapters/en/einfuehrung/audio_over_ethernet.tex)
-(./chapters/en/einfuehrung/single_board_computers.tex [8])
-(./chapters/en/einfuehrung/virtual_analog_synthesis.tex
-<assets/synth_voice_block.pdf, id=234, 694.595pt x 323.2075pt>
-File: assets/synth_voice_block.pdf Graphic file (type pdf)
-
-<use assets/synth_voice_block.pdf>
-Package pdftex.def Info: assets/synth_voice_block.pdf used on input line 11.
-(pdftex.def)             Requested size: 345.0pt x 160.53809pt.
- [9pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.17 
-      <./assets/synth_voice_block.pdf>]
-<plots/graphics/sawtooth.pdf, id=258, 722.7pt x 433.62pt>
-File: plots/graphics/sawtooth.pdf Graphic file (type pdf)
-
-<use plots/graphics/sawtooth.pdf>
-Package pdftex.def Info: plots/graphics/sawtooth.pdf used on input line 22.
-(pdftex.def)             Requested size: 345.0pt x 206.9972pt.
-) [10pdfTeX warning (ext4): destination with the same identifier (name{figure.2
-.2}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.49 \chapter
-             {Anforderungsanalyse} <./plots/graphics/sawtooth.pdf>]
-Chapter 3.
-(./chapters/en/anforderungsanalyse/general.tex)
-(./chapters/en/anforderungsanalyse/parallelisation.tex
-<assets/distribution_1to1.pdf, id=306, 829.0975pt x 257.96375pt>
-File: assets/distribution_1to1.pdf Graphic file (type pdf)
-
-<use assets/distribution_1to1.pdf>
-Package pdftex.def Info: assets/distribution_1to1.pdf used on input line 11.
-(pdftex.def)             Requested size: 345.0pt x 107.34029pt.
- [11
+(./chapters/en/einfuehrung/audio_over_ethernet.tex [8])
+(./chapters/en/einfuehrung/single_board_computers.tex)
+(./chapters/en/einfuehrung/virtual_analog_synthesis.tex [9] [10] [11
 
 ]
-<assets/distribution_perprocessor.pdf, id=315, 820.06375pt x 324.21124pt>
-File: assets/distribution_perprocessor.pdf Graphic file (type pdf)
+l. 11 Writing main.idv[1] (main0x.png)
 
-<use assets/distribution_perprocessor.pdf>
-Package pdftex.def Info: assets/distribution_perprocessor.pdf used on input lin
-e 18.
-(pdftex.def)             Requested size: 345.0pt x 136.4003pt.
+l.11 --- TeX4ht warning --- Cannot determine size of graphic in assets/synth_vo
+ice_block.pdf (no BoundingBox) ---
+File: assets/synth_voice_block.pdf Graphic file (type eps)
+<assets/synth_voice_block.pdf> [12
 
-<assets/distribute_byvoice.pdf, id=316, 831.105pt x 321.2pt>
-File: assets/distribute_byvoice.pdf Graphic file (type pdf)
+] [13
 
-<use assets/distribute_byvoice.pdf>
-Package pdftex.def Info: assets/distribute_byvoice.pdf used on input line 25.
-(pdftex.def)             Requested size: 345.0pt x 133.33472pt.
-)
-(./chapters/en/anforderungsanalyse/audioplugin.tex [12pdfTeX warning (ext4): de
-stination with the same identifier (name{figure.3.1}) has been already used, du
-plicate ignored
+] [14
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1 \section
-            {Audio Plugin}pdfTeX warning (ext4): destination with the same iden
-tifier (name{figure.3.2}) has been already used, duplicate ignored
+]
+l. 22 Writing main.idv[2] (main1x.png)
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1 \section
-            {Audio Plugin}pdfTeX warning (ext4): destination with the same iden
-tifier (name{figure.3.3}) has been already used, duplicate ignored
+l.22 --- TeX4ht warning --- Cannot determine size of graphic in plots/graphics/
+sawtooth.pdf (no BoundingBox) ---
+File: plots/graphics/sawtooth.pdf Graphic file (type eps)
+<plots/graphics/sawtooth.pdf> [15
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1 \section
-            {Audio Plugin} <./assets/distribution_1to1.pdf> <./assets/distribut
-ion_perprocessor.pdf> <./assets/distribute_byvoice.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 5--9
+]) [16
 
- []
+]
+Chapter 3.
+(./chapters/en/anforderungsanalyse/general.tex)
+(./chapters/en/anforderungsanalyse/parallelisation.tex [17
 
-) (./chapters/en/anforderungsanalyse/remotenodes.tex
-Underfull \hbox (badness 10000) in paragraph at lines 5--9
+] [18
 
- []
+]
+l. 11 Writing main.idv[3] (main2x.png)
 
-[13]) (./chapters/en/anforderungsanalyse/software.tex
+l.11 --- TeX4ht warning --- Cannot determine size of graphic in assets/distribu
+tion_1to1.pdf (no BoundingBox) ---
+File: assets/distribution_1to1.pdf Graphic file (type eps)
+<assets/distribution_1to1.pdf> [19
+
+] [20
+
+] [21
+
+]
+l. 18 Writing main.idv[4] (main3x.png)
+
+l.18 --- TeX4ht warning --- Cannot determine size of graphic in assets/distribu
+tion_perprocessor.pdf (no BoundingBox) ---
+File: assets/distribution_perprocessor.pdf Graphic file (type eps)
+<assets/distribution_perprocessor.pdf> [22
+
+] [23
+
+] [24
+
+]
+l. 25 Writing main.idv[5] (main4x.png)
+
+l.25 --- TeX4ht warning --- Cannot determine size of graphic in assets/distribu
+te_byvoice.pdf (no BoundingBox) ---
+File: assets/distribute_byvoice.pdf Graphic file (type eps)
+<assets/distribute_byvoice.pdf> [25
+
+])
+(./chapters/en/anforderungsanalyse/audioplugin.tex)
+(./chapters/en/anforderungsanalyse/remotenodes.tex [26
+
+])
+(./chapters/en/anforderungsanalyse/software.tex [27]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 9.
+ [28] [29
 
-Underfull \hbox (badness 10000) in paragraph at lines 11--15
+]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 29.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 29.
+ [30
 
- []
+]) [31
 
-[14]
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
-[]\OT1/ptm/m/n/10 High
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
-\OT1/ptm/m/n/10 Level
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
-[]\OT1/ptm/m/n/10 Audio
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
-[]\OT1/ptm/m/n/10 Network
- []
-
-
-Overfull \hbox (5.11037pt too wide) in paragraph at lines 31--32
-[]\OT1/ptm/m/n/10 Community| 
- []
-
-
-Overfull \hbox (27.75388pt too wide) in paragraph at lines 29--43
- [] 
- []
-
-) [15]
+]
 Chapter 4.
-(./chapters/en/implementation/architecture.tex
-<assets/architecture_01.pdf, id=390, 1705.37125pt x 697.60625pt>
-File: assets/architecture_01.pdf Graphic file (type pdf)
+(./chapters/en/implementation/architecture.tex [32
 
-<use assets/architecture_01.pdf>
-Package pdftex.def Info: assets/architecture_01.pdf used on input line 9.
-(pdftex.def)             Requested size: 345.0pt x 141.1261pt.
-)
-(./chapters/en/implementation/architecture/hostCPU.tex [16
+] [33
 
-pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1}) 
-has been already used, duplicate ignored
+]
+l. 9 Writing main.idv[6] (main5x.png)
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.4 
-     <./assets/architecture_01.pdf>]
-<assets/architecture_02.pdf, id=470, 607.26875pt x 348.30125pt>
-File: assets/architecture_02.pdf Graphic file (type pdf)
+l.9 --- TeX4ht warning --- Cannot determine size of graphic in assets/architect
+ure_01.pdf (no BoundingBox) ---
+File: assets/architecture_01.pdf Graphic file (type eps)
+<assets/architecture_01.pdf> [34
 
-<use assets/architecture_02.pdf>
-Package pdftex.def Info: assets/architecture_02.pdf used on input line 13.
-(pdftex.def)             Requested size: 345.0pt x 197.88007pt.
- [17pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
-2}) has been already used, duplicate ignored
+])
+(./chapters/en/implementation/architecture/hostCPU.tex [35
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.22 W
-      hen a request for audio data is passed from the audio production softw...
- <./assets/architecture_02.pdf>])
-(./chapters/en/implementation/architecture/networkedSBCs.tex
-<assets/architecture_03.pdf, id=533, 476.78125pt x 253.94875pt>
-File: assets/architecture_03.pdf Graphic file (type pdf)
+] [36
 
-<use assets/architecture_03.pdf>
-Package pdftex.def Info: assets/architecture_03.pdf used on input line 7.
-(pdftex.def)             Requested size: 345.0pt x 183.76906pt.
- [18pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
-3}) has been already used, duplicate ignored
+]
+l. 13 Writing main.idv[7] (main6x.png)
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.15 
-      <./assets/architecture_03.pdf>])
+l.13 --- TeX4ht warning --- Cannot determine size of graphic in assets/architec
+ture_02.pdf (no BoundingBox) ---
+File: assets/architecture_02.pdf Graphic file (type eps)
+<assets/architecture_02.pdf> [37
+
+])
+(./chapters/en/implementation/architecture/networkedSBCs.tex [38
+
+] [39
+
+]
+l. 7 Writing main.idv[8] (main7x.png)
+
+l.7 --- TeX4ht warning --- Cannot determine size of graphic in assets/architect
+ure_03.pdf (no BoundingBox) ---
+File: assets/architecture_03.pdf Graphic file (type eps)
+<assets/architecture_03.pdf> [40
+
+])
 (./chapters/en/implementation/softwareComponents.tex)
 (./chapters/en/implementation/softwareComponents/Monitor.tex)
-(./chapters/en/implementation/softwareComponents/ZeroConfManager.tex [19])
+(./chapters/en/implementation/softwareComponents/ZeroConfManager.tex [41
+
+])
 (./chapters/en/implementation/softwareComponents/DiauproMessage.tex
-Underfull \hbox (badness 10000) in paragraph at lines 3--6
-
- []
-
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <8> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 8.
-
-Overfull \hbox (29.40381pt too wide) in paragraph at lines 24--26
-[][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-) (./chapters/en/implementation/softwareComponents/DiauproProcessor.tex
-[20]) (./chapters/en/implementation/softwareComponents/DiauproVCOProcessor.tex
+)
+(./chapters/en/implementation/softwareComponents/DiauproProcessor.tex [42])
+(./chapters/en/implementation/softwareComponents/DiauproVCOProcessor.tex
 LaTeX Font Info:    Try loading font information for OML+ptm on input line 18.
 
 (/usr/local/texlive/2015basic/texmf-dist/tex/latex/psnfss/omlptm.fd
@@ -796,93 +1160,39 @@ File: omlptm.fd
 )
 LaTeX Font Info:    Font shape `OML/ptm/m/n' in size <8> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 18.
-
-Overfull \hbox (10.20361pt too wide) in paragraph at lines 22--23
-[][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (96.60449pt too wide) in paragraph at lines 29--30
-[][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (10.20361pt too wide) in paragraph at lines 30--31
-[][][][][][][][][][][][][][][][][][][] 
- []
-
-[21]
-Overfull \hbox (87.0044pt too wide) in paragraph at lines 39--40
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-) (./chapters/en/implementation/softwareComponents/DiauproVCAProcessor.tex)
-[22]
+)
+(./chapters/en/implementation/softwareComponents/DiauproVCAProcessor.tex
+[43]) [44]
 Chapter 5.
-(./chapters/en/conclusion.tex) (./chapters/en/GlossaryOfTerms.tex [23
+(./chapters/en/conclusion.tex) (./chapters/en/GlossaryOfTerms.tex [45
 
 ]
 Chapter 6.
-) (./main.bbl [24
+) (./main.bbl [46
 
-]) [25
+] [47
+
+]) [48]
+Chapter 7.
+(./chapters/en/compileFromSource.tex) (./chapters/en/bonjour.tex)
+(./chapters/en/evaluated_frameworks.tex)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 82.
+ [49
 
 ]
-Chapter 7.
-(./chapters/en/compileFromSource.tex) (./chapters/en/bonjour.tex
-Overfull \hbox (15.31595pt too wide) in paragraph at lines 8--9
-[]\OT1/ptm/m/n/10 ./configure --prefix=/usr --enable-compat-libdns[]sd --syscon
-fdir=/etc --localstatedir=/var
- []
-
-
-Overfull \hbox (6.02618pt too wide) in paragraph at lines 8--9
-\OT1/ptm/m/n/10 --disable-static --disable-mono --disable-monodoc --disable-pyt
-hon --disable-qt3 --disable-
- []
-
-
-Overfull \hbox (57.40556pt too wide) in paragraph at lines 8--9
-\OT1/ptm/m/n/10 qt4 --disable-gtk --disable-gtk3 --enable-core-docs --with-dist
-ro=none --with-systemdsystemunitdir=no 
- []
-
-) (./chapters/en/evaluated_frameworks.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 3--81
-
- []
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 82.
-[26
-
-] [27]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 82.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 82.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 82.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: B16A3511F6101DDA38A1FD8142CB6D4E;2134.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 82.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 82.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 82.
  ) 
 Here is how much of TeX's memory you used:
- 8439 strings out of 494501
- 121630 string characters out of 6167031
- 220063 words of memory out of 5000000
- 11360 multiletter control sequences out of 15000+600000
- 27221 words of font info for 50 fonts, out of 8000000 for 9000
+ 11601 strings out of 494502
+ 162607 string characters out of 6167057
+ 382021 words of memory out of 5000000
+ 14511 multiletter control sequences out of 15000+600000
+ 12246 words of font info for 35 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 29i,16n,35p,1086b,1792s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2015basic/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/lo
-cal/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr
-/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
-/usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pf
-b></usr/local/texlive/2015basic/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></u
-sr/local/texlive/2015basic/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/lo
-cal/texlive/2015basic/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (28 pages, 1912596 bytes).
-PDF statistics:
- 743 PDF objects out of 1000 (max. 8388607)
- 596 compressed objects within 6 object streams
- 157 named destinations out of 1000 (max. 500000)
- 313 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 37i,12n,38p,1905b,1320s stack positions out of 5000i,500n,10000p,200000b,80000s
 
+Output written on main.dvi (51 pages, 132424 bytes).
