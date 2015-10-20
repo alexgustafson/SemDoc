@@ -1,13 +1,9 @@
 \subsection{ZeroconfManager}
 
-Zeroconf (short for Zero Configuration Network and also know as Bonjour on OSX ) is a specification that allows services to broadcast their availability and location on a network. Printer and Multimedia devices use Zeroconf in order to allow networked computers to easily find and use their services.
+Zeroconf (kurz für Zero Configuration Netzwerking, auch als Bonjour auf OSX bekannt) ist einer Technologie, die es einen Softwaredienstleistung erlaubt ihre Verfügbarkeit und Standort über einen Netzwerk bekannt zu machen. Drucker und Multimedia-Geräte verwenden Zeroconf z.B., damit sie für andere Netzwerkteilnehmer leicht zu finden und nutzen sind.
 
-Bonjour on OSX and the compatibile features implemented by Avahi on Linux define a callback based API that interfaces to a bonjour or avahi daemon running on the OS. The Bonjour API is in C. The ZeroConfManager class encapsulates communication to the bonjour or avahi deamon in an object oriented manner. Clients that want to interface with this class must extend and override the ZeroConfListener class, they register themselves with the class along with the service tag they are browsing for.
+Bonjour auf OSX und den compatibile Funktionen von Avahi unter Linux definieren eine Rückruff-basiertes API zu der Bonjour oder Avahi Daemon-Prozess. Die API ist in C. Die ZeroConfManager-Klasse kapselt die API in einer objektorientierten Weise. Andere Klassen, welche die Zeroconfigdienste ansprechen müssen können von der ZeroConfListenere-Klasse erben, und können sich bei der ZeroConfManager-Klasse als Zuhörer registrieren.
 
-When new services are registered on the network, or removed from the network. The corresponding listeners are notified with a list of all active services. If they are currently connected with a service that is no longer available, it is the clienst responsibility to disconnect from that service.
+Wird ein neuer Software-Dienst im Netzwerk registriert, oder verschwindet ein Bestehender aus dem Netzwerk, werden die entsprechenden Zuhörer einer Liste aller aktiven Services mitgeteilt. Wenn sie noch mit einem Software-Dienst, der nicht mehr verfügbar ist, verbunden sind, muss es sich von diesem Dienst trennen.
 
-In order to resolve a service to a specific IP address and port number serveral asyncronous calls must be made to the Bonjour daemon, saving and updating the state of each result between call. The ZeroConfManager hides this complexity from it's clients and only notifies them when all the information is final.
-
-
-
-
+Um einen Dienst an eine bestimmte IP-Adresse und Port-Nummer aufzulösen, müssen mehrere asynchrone Aufrufe an der Bonjour-Daemon vorgenommen werden. Zwischen den Aufrufen müssen die Ergebnisse gespeichert werden und den Zustand aktuallisiert. Die ZeroConfManager verbirgt diese Komplexität von den Zuhörern und benachrichtigt sie nur, wenn alle Informationen vorhanden sind.
