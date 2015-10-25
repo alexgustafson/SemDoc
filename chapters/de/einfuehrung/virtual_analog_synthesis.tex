@@ -17,7 +17,6 @@ Die spannungsgesteuerte Oszillatoren (voltage controlled oscillators, VCO) erzeu
 
 Der erste Eindruck könnte sein, dass die Modellierung des Oszillators einfach ist. Eine digital erzeugte Rechteck- oder Sägezahn-Wellenform sollte leicht zu implementieren sein. Die 5-kHz-Sägezahn-Wellenform beispielsweise würde sich alle 8,82 Samples wiederholen bei einer Taktrate von 44,1 kHz. So würde die Wellenform sich linear von -1,0 auf 1,0 erhöhen, dann zurückspringen auf -1.0 und wieder von vorn beginnen.  Was bedeutet aber 0,82 Samples in einem diskreten digitalen System? A veranschaulicht das Problem. Die linke Spalte zeigt einen Abschnitt einer idealisierten 5kHz-Sägezahnwellenform und den entsprechenden Frequenzinhalt. Oberhalb der Grundfrequenz 5 kHz sind Oberwellen, die weit über 100 kHz hörbar sein werden. Die rechte Spalte zeigt den gleichen Abschnitt einer 5kHz-Sägezahnwellenform in einer mit 44,1kHz getakteten diskreten Umgebung. Die Wellenform selbst ist verzerrt und die höheren Harmonien sichtbar von der 22,05 kHz Nyquist-Grenze nach unten reflektiert.
 
-
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{plots/graphics/sawtooth.pdf}
