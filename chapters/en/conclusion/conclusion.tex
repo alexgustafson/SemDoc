@@ -6,6 +6,8 @@ Increasing the buffer size, increases the amount of time that the CPU has to pro
 
 If a single plugin requires 1.0ms to complete its processing then it will not finish in time if the buffer size is set too low. If the buffer size is just high enough, then there still might not be enough CPU resources left for other plugins to complete their tasks.
 
+\subsection{Synchronous Performance}
+
 This project offloads the processing to an external SBC device. However, no resources are saved if the audio plugin is blocked while it waits for the results from the SBC device. Since the external SBC devices are slower than the main CPU, the processing time will take longer. Adding the time it takes to serialise and deserialise the Datagram packet at each end will degrade performance even more.
 
 Figure~\ref{fig:local_vs_remote} illustrates the problem in more detail.
@@ -22,3 +24,26 @@ The example shows the audio hardware polling the operating system in intervals o
 With synchronous remote processing the time between states 1 and 2 in the Remote Process Flow will add directly to the time between D and E. If that time is significantly higher than the local processing then the ability of the DAW and the OS to perform other critical tasks is impaired.
 
 \input{chapters/en/conclusion/sync_results}
+
+Table~\ref{tab:latency_comp} shows the measured times for various buffer sizes in a remote synchronous environment that does no actually audio processing. An audio system running with a buffer size of 64 samples has 1.451ms to complete all tasks and provide the audio hardware with the resulting buffer. "rtTime" is the total round trip time. This corresponds to the time between states D and E of the Synchronous Remote Process Flow diagram in Figure~\ref{fig:local_vs_remote}. "pTime" is time interval between states 1 and 2 on the SBC device, the time spent processing the data. In this case there was no processing so this is only the measures the time spent deserialiseing and serialising the datagrams into audio and midi data. "tTime" is the "rtTime" subtracted by the "pTime" and is the packaging overhead required to send and receive data from the SBC device.
+
+The last column, "\% of limit", shows how much time was spent in total as a percentage of the limit. At a buffer size of 64 samples 39.59\% percent of the total time available was spent by a single plugin. This does not leave much time for other processes on the CPU. For a buffer size of 512 samples the "\% of limit" value is much lower. The total system latency is slightly higher that the stated 10ms maximum though, and the synchronous design has not reduced the processing load on the CPU at all.
+
+
+\subsection{Asynchronous Performance}
+
+Instead of waiting for a response from the SBC device as in the synchronous method described above the asyncronous
+method checks if a response is available, if so process it, if not immediately return. The initial request for
+audio data would return empty, but by the time the second buffer is requested, the first respose from the SBC device
+might have returned. In both cases the only time spent by the audio plugin itself is the time is takes to serialise and
+send the data, and to receive and deserialise the data. These are the intervals between the states D and E
+and M and N represented in the figure~\ref{fig:async_remote}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{assets/conclusion/async_flow.pdf}
+    \caption{Local vs Remote Synchronous Processing}
+    \label{fig:async_remote}
+\end{figure}
+
+\input{chapters/en/conclusion/async_results}
