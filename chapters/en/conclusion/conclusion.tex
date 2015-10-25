@@ -1,14 +1,14 @@
 \section{Performance Evaluation}
 
-An Audio Plugin runs in an environment with many other components, sharing CPU resources. Processing of audio data must be completed within discrete time intervals dictated by the audio hardware and some setting the user can configure. Typical audio sampling frequencies are 44.1kHz, 48kHz, 88.2kHz and 96kHz. Using 44.1kHz as an example, this means that all the calculations required for a single sample must be completed within 0,023 ms. Interrupts would be received from the audio hardware at intervals of 0.023ms as well, and this would put too much of a strain on the Operating System of the CPU though. Instead, requests for new audio data are bundled into buffers of samples. The size of the buffers is a parameter that the user can modify, it's usually set at 512 samples, but can be as low as 16 samples.
+An Audio Plugin runs in an environment with many other components, sharing CPU resources. Processing of audio data must be completed within discrete time intervals dictated by the audio hardware. Typical audio sampling frequencies are 44.1kHz, 48kHz, 88.2kHz and 96kHz. Using 44.1kHz as an example, this means that all the calculations required for a single sample must be completed within 0,023 ms. Interrupts would be received from the audio hardware at intervals of 0.023ms as well, and this would put too much of a strain on the Operating System of the CPU though. Instead, requests for new audio data are bundled into buffers of samples. The size of the buffers is a parameter that the user can modify, it's usually set at 512 samples, but can be as low as 16 samples.
 
-Increasing the buffer size, increases the amount of time that the CPU has to provide the audio data to the audio hardware, this introduces latency into the system though. A buffer size of 512 samples equates to a latency of 11.60ms. A 16 sample buffer size equates to 0.36ms.
+Increasing the buffer size, increases the amount of time that the CPU has to process audio data. This introduces latency into the system though. A buffer size of 512 samples equates to a latency of 11.60ms. A 16 sample buffer size equates to 0.36ms.
 
 If a single plugin requires 1.0ms to complete its processing then it will not finish in time if the buffer size is set too low. If the buffer size is just high enough, then there still might not be enough CPU resources left for other plugins to complete their tasks.
 
 \subsection{Synchronous Performance}
 
-This project offloads the processing to an external SBC device. However, no resources are saved if the audio plugin is blocked while it waits for the results from the SBC device. Since the external SBC devices are slower than the main CPU, the processing time will take longer. Adding the time it takes to serialise and deserialise the Datagram packet at each end will degrade performance even more.
+This project offloads the processing external SBC devices. However, no resources are saved if the audio plugin is blocked while it waits for the results from the SBC device. Since the external SBC devices are slower than the main CPU, the processing time will take longer. Adding the time it takes to serialise and deserialise the Datagram packet at each end will degrade performance even more.
 
 Figure~\ref{fig:local_vs_remote} illustrates the problem in more detail.
 
@@ -19,9 +19,9 @@ Figure~\ref{fig:local_vs_remote} illustrates the problem in more detail.
     \label{fig:local_vs_remote}
 \end{figure}
 
-The example shows the audio hardware polling the operating system in intervals of 5.8 ms. This corresponds to a buffer size of 256 samples. The time interval between states D and E represents the time it takes for a plugin to process a buffer of 256 sample. The DAW can perform other audio processing functions ( including passing the buffer to other plugins ) in the interval between F and G. After states G and H the DAW and OS are free to be able to do other things, like update the GUI or check for email.
+The example shows the audio hardware polling the operating system in intervals of 5.8 ms. This corresponds to a buffer size of 256 samples. The time interval between states D and E represents the time it takes for a plugin to process a buffer of 256 sample. The DAW  performs other necessary audio processing functions in the interval between F and G. After states G and H the DAW and OS are free to be able to do other things, like update the GUI.
 
-With synchronous remote processing the time between states 1 and 2 in the Remote Process Flow will add directly to the time between D and E. If that time is significantly higher than the local processing then the ability of the DAW and the OS to perform other critical tasks is impaired.
+With synchronous remote processing the state E is blocked until states 1 and 2 have completed. If that time is significant then the ability of the DAW and the OS to perform other critical tasks is impaired.
 
 \input{chapters/en/conclusion/sync_results}
 
