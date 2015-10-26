@@ -32,7 +32,7 @@ Die letzte Spalte, "\% of limit", zeigt wieviel Zeit insgesamt als prozentualer 
 
 \subsection{Asynchronous Performance}
 
-Anstatt auf eine Antwort von dem SBC zu Warten wie im obigen synchrone Methode, prüfft die asynchrone Methode ob Daten vorhanden sind. Falls Daten vorhanden sind, gibt es diese zurück, falls nicht gibt es leere Daten zurück. Die erste Anfrage für Audiodaten würde leere Daten zurück geben, aber in der Zeit bis zweite Puffer angefordert wird, kommt die erste Antwort von der SBC-Gerät zurückgekehrt. In beiden Fällen ist die einzige Zeit, die der Audio-Plugin selbst verbraucht, ist die Zeit das es braucht, für die Serialisierung, Deserialisierung, und Transport der Daten. Das sind die Abstände zwischen den Zuständen D und E und M und N dargestellt in Abbildung~\ref{fig:async_remote}.
+Anstatt auf eine Antwort von dem SBC zu Warten wie im obigen synchrone Methode, prüfft die asynchrone Methode zuerst ob Daten vorhanden sind. Falls doch, gibt es diese zurück, falls nicht gibt es leere Daten zurück. Die erste Anfrage für Audiodaten würde leere Daten zurück geben, aber in der Zeit bis die zweite Puffer angefordert wird, kommen der Erste von der SBC-Gerät zurück. In beiden Fällen ist die einzige Zeit, die der Audio-Plugin selbst verbraucht, nur für die Serialisierung, Deserialisierung, und Transport der Daten. Das sind die Zeitabstände zwischen den Zuständen D und E und M und N dargestellt in Abbildung~\ref{fig:async_remote}.
 
 \begin{figure}[H]
     \centering
@@ -56,5 +56,9 @@ Es gibt zwei Bereiche, wo unnötige Operationen durchgeführt werden und optimie
 Die zweite Optimierung ist ähnlich, aber komplizierter zu implementieren. In einer Kette, nacheinandergeschalteten Prozessen müssten die Daten nicht nach jedem Schritt an das Master Plug-in zurückgeschickt werden, sondern direkt an den nächsten Knoten. Wenn der nächste Knoten auf dem gleichen SBC-Geräts befindet wird eine zusätzliche schritt über Ethernet ersparrt. Außerdem könnte auch die Serialisierungs Schritten zwischen den Knoten übersprungen werden, wenn die Knoten ihre Berechnungen direkt auf die Daten in dem DiauproMessage ausführen. Hierzu müsste die DiauproMessage erweitert werden, um Routing-Informationen zu erfassen, so dass jeder Rechennoten weiß, wo die Daten als nächstes geschickt werden müssen.
 
 Obwohl komplexer, die zweite Optimierung hat den zusätzlichen Vorteil, dass die Latenzzeit sich nicht um ein Vielfaches der vollen Zykluszeit zwischen Interrupt-Aufrufe multipliziert wird. Die endgültigen Daten könnten nach einem einzigen Interrupt-Zyklus zurück gegeben werden.
+
+\section{Summary}
+
+Die asynchrone Umsetzung bietet deutliche Potenzial. Die Latenz scheint der von kommerziellen DSP-basierten Systemen zu entsprechen\cite{UAD2-review} . Dies ist ermutigend, insbesondere unter Berücksichtigung der Erweiterbarkeit des SBC-basiertes System, und die Kompatibilität der Codebasis. Zwei entscheidende Vorteile, die der SBC-System über DSP-basierten Systemen hat.
 
 

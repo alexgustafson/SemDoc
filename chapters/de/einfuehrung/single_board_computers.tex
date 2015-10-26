@@ -6,6 +6,6 @@ Aktuelle High-end-SBCs werden sogar mit Gigabit-Ethernet ausgestattet und Quad-C
 
 Zwei SBCs sind es wert, in Betracht gezogen zu werden, da sie möglicherweise eine noch bessere Performance als Audio-Koprozessoren bieten. Das Parallella-Board hat einen 16 Core Epiphany-Koprozessor welcher verwendet werden kann, um die Audioverarbeitung parallel auszuführen. Standard-Frameworks wie OpenCL, MPI oder OpenMP können verwendet werden, um die Epiphany-Cores zu benützen. Der ODROID-XU4 SBC enthält einen Mali-T628-GPU-Koprozessor, der auch OpenCL- kompatibel ist. Beide sind für weniger als \$ 100 erhältlich.
 
-Die Programmierung von Audioverarbeitungsalgorithmen als OpenCL Kernels könnte einiges komplexer sein als in C++, aber OpenCL bietet herstellerunabhängigen Zugriff auf GPGPU-Computing und hat den zusätzlichen Vorteil, dass es auch auf einem CPU ohne GPU-Beschleunigung verwendet werden kann.
+Die Programmierung von Audioverarbeitungsalgorithmen als OpenCL Kernels könnte einiges komplexer sein als in C++, aber OpenCL bietet herstellerunabhängigen Zugriff auf GPGPU-Computing und hat den zusätzlichen Vorteil, dass es auch auf einem CPU ohne GPU-Beschleunigung verwendet werden kann\cite{vst-gpu}.
 
 Die Untersuchung dieser und anderer OpenCL-fähiger SBCs könnte ein interessantes Folgeprojekt sein.
