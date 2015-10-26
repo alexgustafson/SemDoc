@@ -1,0 +1,40 @@
+\select@language {ngerman}
+\contentsline {chapter}{\numberline {1}Introduction}{4}{chapter.1}
+\contentsline {section}{\numberline {1.1}Ausgangslage}{4}{section.1.1}
+\contentsline {section}{\numberline {1.2}Ziel der Arbeit}{5}{section.1.2}
+\contentsline {section}{\numberline {1.3}Aufgabenstellung}{5}{section.1.3}
+\contentsline {chapter}{\numberline {2}Einf\IeC {\"u}hrung in die Thematik}{6}{chapter.2}
+\contentsline {section}{\numberline {2.1}Hintergrund}{6}{section.2.1}
+\contentsline {section}{\numberline {2.2}Echtzeit-Audio-Plug-ins}{7}{section.2.2}
+\contentsline {section}{\numberline {2.3}Audio via Ethernet}{8}{section.2.3}
+\contentsline {section}{\numberline {2.4}Single-Board-Computer}{9}{section.2.4}
+\contentsline {section}{\numberline {2.5}Virtuelle analoge Synthese}{9}{section.2.5}
+\contentsline {chapter}{\numberline {3}Anforderungsanalyse}{12}{chapter.3}
+\contentsline {section}{\numberline {3.1}Allgemeine Anforderungen}{12}{section.3.1}
+\contentsline {section}{\numberline {3.2}Verteilte Datenverarbeitung}{12}{section.3.2}
+\contentsline {section}{\numberline {3.3}Audio-Plug-in}{14}{section.3.3}
+\contentsline {section}{\numberline {3.4}Externer Rechenknoten}{15}{section.3.4}
+\contentsline {section}{\numberline {3.5}Software-Anforderungen}{15}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Evaluierte C++ Frameworks}{16}{subsection.3.5.1}
+\contentsline {chapter}{\numberline {4}Implementation}{18}{chapter.4}
+\contentsline {section}{\numberline {4.1}Architecture}{18}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Host CPU}{18}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Vernetzte SBCs}{20}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Software Komponenten}{21}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Socket Monitor}{22}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}ZeroconfManager}{22}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}DiauproMessage}{23}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}DiauproProcessor}{23}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5}DiauproVCOProcessor}{24}{subsection.4.2.5}
+\contentsline {subsection}{\numberline {4.2.6}DiauproVCAProcessor}{25}{subsection.4.2.6}
+\contentsline {chapter}{\numberline {5}Conclusion}{26}{chapter.5}
+\contentsline {section}{\numberline {5.1}Performance Evaluation}{26}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Synchronous Performance}{26}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Asynchronous Performance}{28}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}M\IeC {\"o}gliche Optimierungen}{30}{subsection.5.1.3}
+\contentsline {section}{\numberline {5.2}Summary}{30}{section.5.2}
+\contentsline {chapter}{\numberline {6}Glossary}{31}{chapter.6}
+\contentsline {chapter}{\numberline {7}Appendix A}{33}{chapter.7}
+\contentsline {section}{\numberline {7.1}Compiling the Source Code}{33}{section.7.1}
+\contentsline {section}{\numberline {7.2}Bonjour}{33}{section.7.2}
+\contentsline {section}{\numberline {7.3}Evaluated Frameworks}{34}{section.7.3}
