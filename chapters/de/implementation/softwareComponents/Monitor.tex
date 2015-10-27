@@ -1,7 +1,7 @@
-\subsection{Socket Monitor}
+\subsection{SocketMonitor}
 
-Die Monitor-Klasse wurde entwickelt, um Sockets effizient zu verwalten. Client-Klassen erben von der FileDescriptorListener Klasse, um benachrichtet zu werden, wenn Daten verfügbar sind auf einer dazugehörendes Socket.
+Die Monitor-Klasse wurde entwickelt, um Sockets effizient zu verwalten. Client-Klassen erben von der "FileDescriptorListener"-Klasse, um benachrichtig zu werden, wenn Daten auf einem dazugehörigen Socket verfügbar sind.
 
-Die Monitor-Klasse hat einen Thread, welches eine select-Funktion aufruft. Die select-funktion wird einen Array von Sockets als Filedescriptors übergeben, dann blockiert es. Sobald Daten auf einer der Sockets eintreffen, fird die select-Funktion wieter fahren. Der Thread geht prüfft in einer Schleife alle Filedescriptors bis er das richtige gefunden hat und benachrichtigt das entsprechende FileDescriptorListener Objekt.
+Die Monitor-Klasse hat einen Thread, welcher eine Select-Funktion aufruft. Die Select-Funktion wird einem Array von Sockets als File-Deskriptor übergeben, dann blockiert sie. Sobald Daten auf einem der Sockets eintreffen, fährt die Select-Funktion fort. Der Thread prüft alle File-Deskriptoren bis er den richtigen gefunden hat und benachrichtigt das entsprechende FileDescriptorListener-Objekt.
 
-Eine der Sockets welches an die select-Funktion übergeben wird der Monitor-Klasse eigenen control\_listener Socket. Die Monitor-Klasse kann ein Signal an dieser Socket schicken, um den blockierten Thread aus dem select-Funktion zu wecken und den Zustand aktualisieren. Die Monitor-Klasse tut dies, wenn eine neue Client sich registriert bzw. sich entfernt, und wenn der Monitor-Klasse heruntergefahren werden muss.
+Einer der Sockets, welcher an die Select-Funktion übergeben wird, wird der Monitor-Klasse-eigene (control-listener) Socket. Die Monitor-Klasse kann ein Signal an diesen Socket senden, um den blockierten Thread aus der Select-Funktion zu wecken und den Zustand zu aktualisieren. Die Monitor-Klasse tut dies, wenn ein neuer Client sich registriert bzw. entfernt, und wenn die Monitor-Klasse heruntergefahren werden muss.

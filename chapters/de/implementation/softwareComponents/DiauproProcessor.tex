@@ -1,11 +1,11 @@
-\subsection{DiauproProcessor}
+\subsection{Diaupro-Prozessor}
 
-Die DiauproProcessor-Klasse ist die Basisklasse, von der anderen Prozessoren erben sollen. Die DiauproProcessor-Klasse erbt wiederum von der JUCE Audioprocessor-Klasse, die alle Funktionen der verschiedenen Audio-Plugin-Formate kapselt. Klassen, die von Audioprocessor erben können direkt in ein VST-Plugin gewickelt (wrapped) werden.
+Die DiauproProzessor-Klasse ist die Basisklasse, von der andere Prozessoren erben sollen. Die DiauproProzessor-Klasse erbt ihrerseits  von der JUCE Audioprozessor-Klasse, die alle Funktionen der verschiedenen Audio-Plug-in-Formate einkapselt. Klassen, die von Audioprozessoren erben, können direkt in ein VST-Plug-in implementiert werden.
 
-Eine Klasse, die von DiauproProcessor erbt muss die Funktionen "localProcess" und "getServiceTag" überladen. Die "localProcess" Funktion führt die Audio-Verarbeitung aus. "getServiceTag" gibt einer Zeichenfolge zurück, die verwendet wird, um seine Dienste im Netzwerk bekannt zu machen oder danach zu suchen.
+Eine Klasse, die vom Diaupro-Prozessor erbt, muss die Funktionen „localProcess” und „getServiceTag” überschreiben. Die „localProcess”- Funktion führt die Audio-Datenverarbeitung aus. Die „getServiceTag”-Funktion liefert eine Zeichenkette, die verwendet wird, um ihre Dienste im Netzwerk anzuzeigen oder danach zu suchen.
 
-Klassen, die von DiauproProcessor erben können instanziert und eingerichtet werden so, dass sie entweder in der Audio Plug-in oder in der Rechenknoten laufen. Im Plug-in ausführt wird es ein entsprechendes Rechenknoten im Netzwerk suchen. Falls nichts passendes gefunden wird, wird das "localProcess" Funktion lokal verwendet. Es sie finden eine vernetzte Service für alle ankommenden Audio- und MIDI-Daten werden auf diesen Dienst weitergeleitet.
+Klassen, die vom Diaupro-Prozessor erben, können instanziiert und eingerichtet werden, sodass sie entweder im Audio-Plug-in oder im Rechenknoten laufen. Im Plug-in-Code ausgeführt, suchen sie einen entsprechenden Rechenknoten im Netzwerk. Falls nichts Passendes gefunden wird, wird die „localProcess”- Funktion lokal verwendet. Finden sie einen entsprechenden vernetzten Service, werden alle ankommenden Audio- und MIDI-Daten an diesen weitergeleitet.
 
-Wenn in einem Rechenknoten ausgeführt, werden Klassen, die von DiauproProcessor erben sich im Netzwerk anmelden und warten, um ankommende Verarbeitungsanforderungen.
+Wenn in einem Rechenknoten ausgeführt, melden sich Klassen, die vom Diaupro-Prozessor erben, im Netzwerk an und warten auf ankommende Verarbeitungsanforderungen.
 
-Beispiele für Klassen, die von DiauproProcessor erben sind DiauproVCOProcessor und DiauproVCAProcessor. Sie werden unten in Detail beschrieben.
+Beispiele für Klassen, die vom Diaupro-Prozessor erben, sind die Diaupro-VCO- und  Diaupro-VCA-Prozessoren. Sie werden weiter unten detailliert beschrieben.

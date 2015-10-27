@@ -7,7 +7,7 @@
 <meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)"> 
 <!-- html,word,fn-in --> 
 <meta name="src" content="main.tex"> 
-<meta name="date" content="2015-10-26 13:45:00"> 
+<meta name="date" content="2015-10-27 11:49:00"> 
 <link rel="stylesheet" type="text/css" href="main.css"> 
 </head><body 
 >
@@ -30,7 +30,7 @@ class="ptmr7t-x-x-120">Switzerland,</span>
 class="ptmr7t-x-x-120">alex</span><span 
 class="ptmr7t-x-x-120">_gustafson@yahoo.de</span></div><br />
 <div class="date" ><span 
-class="ptmr7t-x-x-120">October 26, 2015</span></div>
+class="ptmr7t-x-x-120">October 27, 2015</span></div>
                                                                   
 
                                                                   
@@ -56,11 +56,11 @@ clones.
    <span class="chapterToc" >1 <a 
 href="#x1-30001" id="QQ2-1-3">Introduction</a></span>
 <br />    <span class="sectionToc" >1.1 <a 
-href="#x1-40001.1" id="QQ2-1-4">Ausgangslage</a></span>
+href="#x1-40001.1" id="QQ2-1-4">Background</a></span>
 <br />    <span class="sectionToc" >1.2 <a 
-href="#x1-50001.2" id="QQ2-1-5">Ziel der Arbeit</a></span>
+href="#x1-50001.2" id="QQ2-1-5">Motivation</a></span>
 <br />    <span class="sectionToc" >1.3 <a 
-href="#x1-60001.3" id="QQ2-1-6">Aufgabenstellung</a></span>
+href="#x1-60001.3" id="QQ2-1-6">Goals</a></span>
 <br />   <span class="chapterToc" >2 <a 
 href="#x1-70002" id="QQ2-1-7">Background</a></span>
 <br />    <span class="sectionToc" >2.1 <a 
@@ -124,18 +124,20 @@ href="#x1-360005.1.3" id="QQ2-1-49">Potential Optimisations </a></span>
 <br />    <span class="sectionToc" >5.2 <a 
 href="#x1-370005.2" id="QQ2-1-50">Summary</a></span>
 <br />   <span class="chapterToc" >6 <a 
-href="#x1-380006" id="QQ2-1-51">Glossary</a></span>
+href="#x1-390006" id="QQ2-1-52">Appendix</a></span>
                                                                   
 
                                                                   
-<br />   <span class="chapterToc" >7 <a 
-href="#x1-470007" id="QQ2-1-60">Appendix A</a></span>
-<br />    <span class="sectionToc" >7.1 <a 
-href="#x1-480007.1" id="QQ2-1-61">Compiling the Source Code</a></span>
-<br />    <span class="sectionToc" >7.2 <a 
-href="#x1-490007.2" id="QQ2-1-62">Bonjour</a></span>
-<br />    <span class="sectionToc" >7.3 <a 
-href="#x1-500007.3" id="QQ2-1-63">Evaluated Frameworks</a></span>
+<br />    <span class="sectionToc" >6.1 <a 
+href="#x1-400006.1" id="QQ2-1-53">Compiling the Source Code</a></span>
+<br />     <span class="subsectionToc" >6.1.1 <a 
+href="#x1-410006.1.1" id="QQ2-1-54">Download and Build the DiauproPlugin on OSX</a></span>
+<br />     <span class="subsectionToc" >6.1.2 <a 
+href="#x1-420006.1.2" id="QQ2-1-55">Download and Build the DiauproProject AudioProcessorNode on Ubuntu</a></span>
+<br />     <span class="subsectionToc" >6.1.3 <a 
+href="#x1-430006.1.3" id="QQ2-1-56">Install Avahi with Bonjour Compatibility Mode on Ubuntu</a></span>
+<br />    <span class="sectionToc" >6.2 <a 
+href="#x1-440006.2" id="QQ2-1-57">Evaluated Frameworks</a></span>
    </div>
                                                                   
 
@@ -143,7 +145,7 @@ href="#x1-500007.3" id="QQ2-1-63">Evaluated Frameworks</a></span>
    <h2 class="chapterHead"><span class="titlemark">Chapter 1</span><br /><a 
  id="x1-30001"></a>Introduction</h2>
    <h3 class="sectionHead"><span class="titlemark">1.1    </span> <a 
- id="x1-40001.1"></a>Ausgangslage</h3>
+ id="x1-40001.1"></a>Background</h3>
 <!--l. 3--><p class="noindent" >20 years ago the CPU was just one component of a typical music studio. It was generally
 used to control and synchronize other equipement such as mixing boards, multitrack
 recorders, synthsizers and effects processors. Today all of the other equipement exists as
@@ -170,7 +172,7 @@ inexpensive CPUs connected via standard gigabit ethernet could offer a competiti
 alternative.
 <!--l. 11--><p class="noindent" >
    <h3 class="sectionHead"><span class="titlemark">1.2    </span> <a 
- id="x1-50001.2"></a>Ziel der Arbeit</h3>
+ id="x1-50001.2"></a>Motivation</h3>
 <!--l. 13--><p class="noindent" >The purpose of this semester project is to design a software based music synthesiser that will
 run on a network of low cost banana pi devices. Limitations in polyphony will be alleviated
 by adding a new device to the network. In order to be compatible with existing music
@@ -187,24 +189,26 @@ software.
                                                                   
 <!--l. 15--><p class="noindent" >
    <h3 class="sectionHead"><span class="titlemark">1.3    </span> <a 
- id="x1-60001.3"></a>Aufgabenstellung</h3>
+ id="x1-60001.3"></a>Goals</h3>
      <ul class="itemize1">
-     <li class="itemize">Anforderungsanalyse mit Priorit&#x00E4;tsbewertung
+     <li class="itemize">Establishment of the Requirements
      </li>
-     <li class="itemize">Vergleich von mehreren CPUs und Embedded Systems ( Banana Pi, Adapteva,
-     Odroid) hinsichtlich ihrer Nutzbarkeit als Echtzeit Audioverarbeitungsmodule.
-     Mit   dem   System,   das   die   Anforderungen   am   besten   erf&#x00FC;llt,   wird   die
-     Implementierung gemacht.
+     <li class="itemize">Comparison of various Embedded Systems ( Banana Pi, Adapteva, Odroid) in
+     the context of ditributed audio processing.
      </li>
-     <li class="itemize">Entwicklung der Audioverarbeitungssoftware in C ++.
+     <li class="itemize">Development of an audio processing software in C++
      </li>
-     <li class="itemize">Entwicklung eines VST-Plugins in C++, das als Schnittstelle zwischen g&#x00E4;ngigen
-     Audio-Software und den Audioverarbeitungsmodule (pkt 3) dient.
+     <li class="itemize">Development  of  a  VST-Plugin  in  C++,  that  will  pass  data  from  a  host  audio
+     production software (DAW) to the distributed processor.
      </li>
      <li class="itemize">Analyse  der  Implementierung,  um  die  N&#x00FC;tzlichkeit  und  Skalierbarkeit  zu
      bewerten.  Es  ergeben  sich  dadurch  verschiedene  Fragestellungen  wie  z.B.
      folgende: Kann die Leistung und Polyphonie durch Hinzuf&#x00FC;gen weiterer Module
      erh&#x00F6;ht werden, oder wird der Kommunikations-Overhead schlie&#x00DF;lich zu gross?
+     </li>
+     <li class="itemize">Analysis of the implementation in order to evaluate its usefullness. For instance,
+     can more processing power and polyphony be achieved by simply adding a new
+     processing node to the network?
      </li></ul>
                                                                   
 
@@ -221,7 +225,7 @@ processing filled large racks. Today all of these tasks run as software plugins 
 CPU.
 <!--l. 6--><p class="indent" >   In 1996 Steinberg GmbH, the developers of Cubase, a popular audio production software
 (or DAW, digital audio workstation), released the VST interface specification and SDK.<span class="cite"> [<a 
-href="#XVST-wikipedia">10</a>]</span>
+href="#XVST-wikipedia">8</a>]</span>
 The VST plugin standard was special because it allowed realtime processing of audio in the
 CPU and it allowed other developers to programm plugins which could be run from within
 Cubase. The VST plugin standard quickly had widespread industry acceptance and was
@@ -230,7 +234,7 @@ widely adopted crossplatform standard.
 <!--l. 8--><p class="indent" >   The number of realtime plugins that could run on a CPU was limited by several
 factors, hard disc access speeds, bus speeds, amount of ram, and OS schedulers
 for instance<span class="cite"> [<a 
-href="#Xbrandt1998low">3</a>]</span>. User’s didn’t expect to be able to run more than 10 plugins at
+href="#Xbrandt1998low">2</a>]</span>. User’s didn’t expect to be able to run more than 10 plugins at
 a time. Simply playing back multiple tracks of digital audio in realtime was so
 taxinig on the CPU that an application’s graphical interface would quickly become
 unresponsive.
@@ -275,7 +279,7 @@ filter, or the delay time of a reverb effect, for example.
 <!--l. 11--><p class="indent" >   From a programmer’s point of view audio plugins are always compiled as dynamically
 loadable libraries that implement a standard’s specific API. The host DAW application can
 load then at run time and stream audio data through them<span class="cite"> [<a 
-href="#Xrealtime-architectures">6</a>]</span>.On the Windows platform VST
+href="#Xrealtime-architectures">4</a>]</span>.On the Windows platform VST
 plugins are compiled to Dynamic Link Libraries, on Mac OSX they are Mach-O Bundles.
 The native apple Audio Unit plugins are also compiled as Mach-O bundles, they have almost
 identical functionality, but differ in their API implementation. Other alternative plugin
@@ -288,7 +292,7 @@ audio system’s latency. The total delay between the time an audio signal enters 
 the analog to digital converter for example), is processed, and leaves the system (at the digital
 to analog conterver) is the latency. The maximum acceptable latency is considered to be
 around 10ms<span class="cite"> [<a 
-href="#XAES67-2013">7</a>]</span>. Any higher and the latency becomes disturbing and not acceptable for live
+href="#XAES67-2013">5</a>]</span>. Any higher and the latency becomes disturbing and not acceptable for live
 performance applications.
 <!--l. 15--><p class="indent" >   Any process will introduce some amount of delay. However within the audio
 processing function, the programmer must take care not to introduce any unneccessary or
@@ -297,7 +301,7 @@ working in the context of a high-proirity system thread. Nothing in the process 
 lock or wait for resources provided by other lower-priority threads. Examples of things to
 avoid are memory allocations or deallocation, waiting or locking a mutex conditional
 expressions inside loops that might break pipe-lining optimizations<span class="cite"> [<a 
-href="#Xrealtime-architectures">6</a>]</span>, or updating the
+href="#Xrealtime-architectures">4</a>]</span>, or updating the
 graphic interface directly.
 <!--l. 1--><p class="noindent" >
    <h3 class="sectionHead"><span class="titlemark">2.3    </span> <a 
@@ -352,7 +356,7 @@ Both are available for under $100.
 complex than in C++, but OpenCL offers vendor-independent access to GPGPU
 computing and has the added benefit that it can also be used on a CPU without GPU
 acceleration<span class="cite"> [<a 
-href="#Xvst-gpu">5</a>]</span>.
+href="#Xvst-gpu">3</a>]</span>.
 <!--l. 11--><p class="indent" >   Investigating these, and other OpenCL enabled SBCs might be an interesting followup
 project.
                                                                   
@@ -442,7 +446,7 @@ generate the harmonics using a series of sin waves up to the nyquist limit or ha
 of the system’s sampling rate, but this also very processing intensive. Less CPU
 intensive strategies involve using oversampling, bandlimiting, or other alias-supressing
 methods<span class="cite"> [<a 
-href="#Xvirtual_analog_synthesis">9</a>]</span>.
+href="#Xvirtual_analog_synthesis">7</a>]</span>.
                                                                   
 
                                                                   
@@ -457,7 +461,7 @@ processed audio data back to the audio plugin, which in turn streams it back to
 the host audio application. The total round-trip time, including processing, should
 not exceed 10ms. This is the maxium allowed latency for live sound applications.
 <span class="cite"> [<a 
-href="#XAES67-2013">7</a>]</span>
+href="#XAES67-2013">5</a>]</span>
 <!--l. 5--><p class="indent" >   The application must be self contained and work without the user needing to install any system libraries,
 frameworks or servers.<a 
 href="#fn1x4" id="fn1x4-bk"><span class="MsoFootnoteReference"><sup class="textsuperscript">1</sup></span></a><a 
@@ -1813,8 +1817,8 @@ sound.
 
                                                                   
 <!--l. 3--><p class="noindent" >The DiauproPlugin is the plugin that runs in the host DAW application. It passes audio data
-from the host DAW application to three internall processors. The first processor is a ”Null
-Process Block” that does no actual audio processing but is usefull for gathering data
+from the host DAW application to three internal processors in series. The first processor is a
+”Null Process Block” that does no actual audio processing but is usefull for gathering data
 regarding timing. The second processor is the VCO block that generates a tone based on
 recieved midi data. The third block is the VCA that shapes the amplitude of the tone over
 time.
@@ -1884,9 +1888,9 @@ tasks.
 <!--l. 9--><p class="noindent" >
    <h4 class="subsectionHead"><span class="titlemark">5.1.1    </span> <a 
  id="x1-340005.1.1"></a>Synchronous Performance</h4>
-<!--l. 11--><p class="noindent" >This project offloads the processing external SBC devices. However, no resources are saved if
-the audio plugin is blocked while it waits for the results from the SBC device. Since the
-external SBC devices are slower than the main CPU, the processing time will take longer.
+<!--l. 11--><p class="noindent" >This project offloads the processing to external SBC devices. However, no resources are
+saved if the audio plugin is blocked while it waits for the results from the SBC devices. Since
+the external SBC devices are slower than the main CPU, the processing time will take longer.
 Adding the time it takes to serialise and deserialise the Datagram packet at each end will
 degrade performance even more.
 <!--l. 13--><p class="indent" >   Figure <a 
@@ -1947,11 +1951,14 @@ class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><
  style="vertical-align:baseline;" id="TBL-3-1-"><td  style="white-space:wrap; text-align:left;" id="TBL-3-1-1"  
 class="td11"><!--l. 5--><p class="noindent" >buffer
 size          </td><td  style="white-space:wrap; text-align:left;" id="TBL-3-1-2"  
-class="td11"><!--l. 5--><p class="noindent" >limit (ms) </td><td  style="white-space:wrap; text-align:left;" id="TBL-3-1-3"  
+class="td11"><!--l. 5--><p class="noindent" >buffer
+time (ms)  </td><td  style="white-space:wrap; text-align:left;" id="TBL-3-1-3"  
 class="td11"><!--l. 5--><p class="noindent" >rtTime (ms)</td><td  style="white-space:wrap; text-align:left;" id="TBL-3-1-4"  
 class="td11"><!--l. 5--><p class="noindent" >pTime (ms) </td><td  style="white-space:wrap; text-align:left;" id="TBL-3-1-5"  
 class="td11"><!--l. 5--><p class="noindent" >tTime (ms)</td><td  style="white-space:wrap; text-align:left;" id="TBL-3-1-6"  
-class="td11"><!--l. 5--><p class="noindent" >% of limit</td>
+class="td11"><!--l. 5--><p class="noindent" >%
+of   buffer
+time         </td>
 </tr><tr 
 class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
  style="vertical-align:baseline;" id="TBL-3-2-"><td  style="white-space:wrap; text-align:left;" id="TBL-3-2-1"  
@@ -1960,14 +1967,15 @@ class="td11"><!--l. 7--><p class="noindent" >1.451247  </td><td  style="white-sp
 class="td11"><!--l. 7--><p class="noindent" >0.574672    </td><td  style="white-space:wrap; text-align:left;" id="TBL-3-2-4"  
 class="td11"><!--l. 7--><p class="noindent" >0.015857    </td><td  style="white-space:wrap; text-align:left;" id="TBL-3-2-5"  
 class="td11"><!--l. 7--><p class="noindent" >0.558815   </td><td  style="white-space:wrap; text-align:left;" id="TBL-3-2-6"  
-class="td11"><!--l. 7--><p class="noindent" >39.59       </td></tr><tr  
+class="td11"><!--l. 7--><p class="noindent" >39.59       </td>
+</tr><tr  
  style="vertical-align:baseline;" id="TBL-3-3-"><td  style="white-space:wrap; text-align:left;" id="TBL-3-3-1"  
-class="td11"><!--l. 8--><p class="noindent" >96 </td><td  style="white-space:wrap; text-align:left;" id="TBL-3-3-2"  
-class="td11"><!--l. 8--><p class="noindent" >2.176870 </td><td  style="white-space:wrap; text-align:left;" id="TBL-3-3-3"  
-class="td11"><!--l. 8--><p class="noindent" >0.575419 </td><td  style="white-space:wrap; text-align:left;" id="TBL-3-3-4"  
-class="td11"><!--l. 8--><p class="noindent" >0.015851 </td><td  style="white-space:wrap; text-align:left;" id="TBL-3-3-5"  
-class="td11"><!--l. 8--><p class="noindent" >0.559568 </td><td  style="white-space:wrap; text-align:left;" id="TBL-3-3-6"  
-class="td11"><!--l. 8--><p class="noindent" >26.43</td>
+class="td11"><!--l. 8--><p class="noindent" >96             </td><td  style="white-space:wrap; text-align:left;" id="TBL-3-3-2"  
+class="td11"><!--l. 8--><p class="noindent" >2.176870  </td><td  style="white-space:wrap; text-align:left;" id="TBL-3-3-3"  
+class="td11"><!--l. 8--><p class="noindent" >0.575419    </td><td  style="white-space:wrap; text-align:left;" id="TBL-3-3-4"  
+class="td11"><!--l. 8--><p class="noindent" >0.015851    </td><td  style="white-space:wrap; text-align:left;" id="TBL-3-3-5"  
+class="td11"><!--l. 8--><p class="noindent" >0.559568   </td><td  style="white-space:wrap; text-align:left;" id="TBL-3-3-6"  
+class="td11"><!--l. 8--><p class="noindent" >26.43       </td>
 </tr><tr  
  style="vertical-align:baseline;" id="TBL-3-4-"><td  style="white-space:wrap; text-align:left;" id="TBL-3-4-1"  
 class="td11"><!--l. 9--><p class="noindent" >128           </td><td  style="white-space:wrap; text-align:left;" id="TBL-3-4-2"  
@@ -2014,9 +2022,9 @@ class="content">Measured Times for Synchronous Processing</span></div><!--tex4ht
    </div>
 <!--l. 28--><p class="indent" >   Table <a 
 href="#x1-34002r1">5.1<!--tex4ht:ref: tab:latency_comp --></a> shows the measured times for various buffer sizes for the synchronous
-implementation that does no actually audio processing. Only the preparation transport
-times are taken into account. An audio system running with a buffer size of 64
-samples has 1.451ms to complete all tasks. ”rtTime” is the meassured total round trip
+implementation that does no actually audio processing. Only the preparation and transport
+times are taken into account. An audio system running with a buffer size of 64 samples has
+1.451ms to complete all tasks, the ”buffer time”. ”rtTime” is the meassured total round trip
 time. This corresponds to the time between states D and E of the Synchronous
 Remote Process Flow diagram in Figure <a 
 href="#x1-34001r1">5.1<!--tex4ht:ref: fig:local_vs_remote --></a>. ”pTime” is time interval between
@@ -2025,10 +2033,10 @@ there was no processing so this is only the measures the time spent deserialisei
 and serialising the datagrams into audio and midi data. ”tTime” is the ”rtTime”
 subtracted by the ”pTime” and is the packaging overhead required to send and receive
 data.
-<!--l. 30--><p class="indent" >   The last column, ”% of limit”, shows how much time was spent in total as a percentage of
-the limit. At a buffer size of 64 samples 39.59% percent of the total time available was
-spent by a single plugin. This does not leave much time for other processes on the
-CPU. For a buffer size of 512 samples the ”% of limit” value is much lower. The
+<!--l. 30--><p class="indent" >   The last column, ”% of buffer time”, shows what percent of the available time was
+used for the plugin. At a buffer size of 64 samples 39.59% percent of the total time
+available was spent by the plugin. This does not leave much time for other processes
+on the CPU. For a buffer size of 512 samples the percentage is much lower. The
 total system latency is slightly higher that the stated 10ms maximum though. The
 synchronous implementation has not reduced the processing load on the CPU at
 all.
@@ -2059,7 +2067,7 @@ name="main9x.png" src="assets/conclusion/async_flow.pdf"
 -->
 <br /> <div class="caption" 
 ><span class="id">Figure 5.2: </span><span  
-class="content">Local vs Remote Synchronous Processing</span></div><!--tex4ht:label?: x1-35001r2 -->
+class="content">Asynchronous Processing</span></div><!--tex4ht:label?: x1-35001r2 -->
                                                                   
 
                                                                   
@@ -2096,11 +2104,14 @@ class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><
  style="vertical-align:baseline;" id="TBL-4-1-"><td  style="white-space:wrap; text-align:left;" id="TBL-4-1-1"  
 class="td11"><!--l. 5--><p class="noindent" >buffer
 size          </td><td  style="white-space:wrap; text-align:left;" id="TBL-4-1-2"  
-class="td11"><!--l. 5--><p class="noindent" >limit (ms) </td><td  style="white-space:wrap; text-align:left;" id="TBL-4-1-3"  
+class="td11"><!--l. 5--><p class="noindent" >buffer
+time (ms)  </td><td  style="white-space:wrap; text-align:left;" id="TBL-4-1-3"  
 class="td11"><!--l. 5--><p class="noindent" >rtTime (ms)</td><td  style="white-space:wrap; text-align:left;" id="TBL-4-1-4"  
 class="td11"><!--l. 5--><p class="noindent" >pTime (ms) </td><td  style="white-space:wrap; text-align:left;" id="TBL-4-1-5"  
 class="td11"><!--l. 5--><p class="noindent" >tTime (ms)</td><td  style="white-space:wrap; text-align:left;" id="TBL-4-1-6"  
-class="td11"><!--l. 5--><p class="noindent" >% of limit</td>
+class="td11"><!--l. 5--><p class="noindent" >%
+of   buffer
+time         </td>
 </tr><tr 
 class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
  style="vertical-align:baseline;" id="TBL-4-2-"><td  style="white-space:wrap; text-align:left;" id="TBL-4-2-1"  
@@ -2109,14 +2120,15 @@ class="td11"><!--l. 7--><p class="noindent" >1.451247  </td><td  style="white-sp
 class="td11"><!--l. 7--><p class="noindent" >0.031683    </td><td  style="white-space:wrap; text-align:left;" id="TBL-4-2-4"  
 class="td11"><!--l. 7--><p class="noindent" >0.015633    </td><td  style="white-space:wrap; text-align:left;" id="TBL-4-2-5"  
 class="td11"><!--l. 7--><p class="noindent" >0.016050   </td><td  style="white-space:wrap; text-align:left;" id="TBL-4-2-6"  
-class="td11"><!--l. 7--><p class="noindent" >2.18         </td></tr><tr  
+class="td11"><!--l. 7--><p class="noindent" >2.18         </td>
+</tr><tr  
  style="vertical-align:baseline;" id="TBL-4-3-"><td  style="white-space:wrap; text-align:left;" id="TBL-4-3-1"  
-class="td11"><!--l. 8--><p class="noindent" >96 </td><td  style="white-space:wrap; text-align:left;" id="TBL-4-3-2"  
-class="td11"><!--l. 8--><p class="noindent" >2.176870 </td><td  style="white-space:wrap; text-align:left;" id="TBL-4-3-3"  
-class="td11"><!--l. 8--><p class="noindent" >0.046585 </td><td  style="white-space:wrap; text-align:left;" id="TBL-4-3-4"  
-class="td11"><!--l. 8--><p class="noindent" >0.016076 </td><td  style="white-space:wrap; text-align:left;" id="TBL-4-3-5"  
-class="td11"><!--l. 8--><p class="noindent" >0.030509 </td><td  style="white-space:wrap; text-align:left;" id="TBL-4-3-6"  
-class="td11"><!--l. 8--><p class="noindent" >2.14</td>
+class="td11"><!--l. 8--><p class="noindent" >96             </td><td  style="white-space:wrap; text-align:left;" id="TBL-4-3-2"  
+class="td11"><!--l. 8--><p class="noindent" >2.176870  </td><td  style="white-space:wrap; text-align:left;" id="TBL-4-3-3"  
+class="td11"><!--l. 8--><p class="noindent" >0.046585    </td><td  style="white-space:wrap; text-align:left;" id="TBL-4-3-4"  
+class="td11"><!--l. 8--><p class="noindent" >0.016076    </td><td  style="white-space:wrap; text-align:left;" id="TBL-4-3-5"  
+class="td11"><!--l. 8--><p class="noindent" >0.030509   </td><td  style="white-space:wrap; text-align:left;" id="TBL-4-3-6"  
+class="td11"><!--l. 8--><p class="noindent" >2.14         </td>
 </tr><tr  
  style="vertical-align:baseline;" id="TBL-4-4-"><td  style="white-space:wrap; text-align:left;" id="TBL-4-4-1"  
 class="td11"><!--l. 9--><p class="noindent" >128           </td><td  style="white-space:wrap; text-align:left;" id="TBL-4-4-2"  
@@ -2171,18 +2183,18 @@ available.
 lighting the load on the CPU. The price of the benefit though is an increase in the latency of
 the plugin. The processed audio data is always one delayed by one buffer cycle. Another
 disadvantage is that if several distributed processors are chained in series, as is
-the case in the demo application, then the latency is cumulative. This results in a
-total latency that is the limit time multiplied by the number of processors in the
+the case in the demo application, then the latency is cumulative. This results is a
+total latency that is the ”buffer time” multiplied by the number of processors in the
 plugin.
    <h4 class="subsectionHead"><span class="titlemark">5.1.3    </span> <a 
  id="x1-360005.1.3"></a>Potential Optimisations </h4>
-<!--l. 54--><p class="noindent" >There are two areas of the application where unnecessary operations are performed and could
+<!--l. 55--><p class="noindent" >There are two areas of the application where unnecessary operations are performed and could
 be optimized. The first is the deserializsation of data when it is returned from the SBC. If
 serveral processes in the Plugin are chained in series, then the returned DiauproMessage
 could be sent directly to the following process without unnecessarily deserialising and the
 reserialising the data in between steps. This would be a relatively simple optimization to
 implement.
-<!--l. 56--><p class="indent" >   The second optimisation is similar but more complicated to implement. In a chain to
+<!--l. 57--><p class="indent" >   The second optimisation is similar but more complicated to implement. In a chain to
 processes the data would not need to be returned to the master plugin between each step,
 instead it could be sent to the next node directly. If the next node is located on the same SBC
 device then an additional hop over ethernet could be skipped as well. In addition serialisation
@@ -2190,161 +2202,268 @@ steps between nodes could also be skipped if the nodes performed the operations 
 the data in the DiauproMessage. For this the DiauproMessage would need to be
 extended to include routing information so that each node knows the next destination
 point.
-<!--l. 58--><p class="indent" >   Although more complex, the second optimization would have the added benefit that the
+<!--l. 59--><p class="indent" >   Although more complex, the second optimization would have the added benefit that the
 latency would no longer be a multiple of the full cycle time between interrupt calls. The final
 data could be gathered after a single cycle.
-<!--l. 60--><p class="noindent" >
+<!--l. 61--><p class="noindent" >
    <h3 class="sectionHead"><span class="titlemark">5.2    </span> <a 
  id="x1-370005.2"></a>Summary</h3>
-<!--l. 62--><p class="noindent" >The asynchronous implementation offers definite potential. The latency seems to be
-inline with commercial DSP based systems<span class="cite"> [<a 
-href="#XUAD2-review">8</a>]</span>. This is encouraging, especially
-considering the expandability of the SBC based system, and the compatibilty of
-the codebase. Two definite advantages that the SBC system has over DSP based
-systems.
+<!--l. 63--><p class="noindent" >The asynchronous implementation offers definite potential. The latency seems to be identical
+to commercial DSP based systems<span class="cite"> [<a 
+href="#XUAD2-review">6</a>]</span>. This is interesting as it suggests that the DSP and
+SBC based systems share some limitations and that these cannot simply be overcome by
+simply connecting a more powerful DSP or SBC device. The real barrier is getting the
+data back from the device as fast as possible without blocking the audio thread. If
                                                                   
 
                                                                   
-                                                                  
-
-                                                                  
-   <h2 class="chapterHead"><span class="titlemark">Chapter 6</span><br /><a 
- id="x1-380006"></a>Glossary</h2>
-   <h4 class="likesubsectionHead"><a 
- id="x1-390006"></a>MIDI</h4>
-<!--l. 4--><p class="noindent" >The Musical Instrument Digital Interface specification, first introduced in 1983 defines an
-8-bit standard for encoding and transmitting music notes. It’s original purpose was to allow
-one keyboard based synthesizer to controll other music devices.<span class="cite"> [<a 
-href="#XBoulanger:2011">2</a>]</span> Allthough the
-specification also describes the hardware and wiring for daisy chaining instruments in a midi
-”network” most midi communication today transmitted via usb or virtually between audio
-software.
-<!--l. 6--><p class="noindent" >
-   <h4 class="likesubsectionHead"><a 
- id="x1-400006"></a>Zeroconf</h4>
-<!--l. 7--><p class="noindent" >Zeroconf is a network service discovery protocl. It is also known as Bonjour, and
-occasionally refered to as Rendezvous, from the Apple implementations. Howl and Avahi are
-alternative open source Zeroconf implementations for Linux. Application can use Zeroconf to
-register or browse for service on a network without the need for a user to provide a specific IP
-Adress or port number. <span class="cite"> [<a 
-href="#Xzeroconf">4</a>]</span>
-<!--l. 9--><p class="noindent" >
-   <h4 class="likesubsectionHead"><a 
- id="x1-410006"></a>AES67</h4>
-<!--l. 11--><p class="noindent" >
-   <h4 class="likesubsectionHead"><a 
- id="x1-420006"></a>Latency</h4>
-<!--l. 13--><p class="noindent" >
-   <h4 class="likesubsectionHead"><a 
- id="x1-430006"></a>VST</h4>
-<!--l. 14--><p class="noindent" >
-   <h4 class="likesubsectionHead"><a 
- id="x1-440006"></a>SBC</h4>
-<!--l. 15--><p class="noindent" >
-   <h4 class="likesubsectionHead"><a 
- id="x1-450006"></a>AVB</h4>
+the audio thread is blocked for 10% or 30% of the time is irrelevant. By resigning
+to a method that skips a full cycle of the audio thread there is no need to block
+it. The difference in bandwidth between Thunderbolt, PCIe, or Gigabit-Ethernet
+connectivity only effects that number of plugins that can be run simultaneously but not the
+latency.
+<!--l. 65--><p class="indent" >   This is encouraging, especially considering the expandability of the SBC based system,
+and the compatibilty of the codebase. Two definite advantages that the SBC system has over
+DSP based systems.
                                                                   
 
                                                                   
    <h2 class="likechapterHead"><a 
- id="x1-460006"></a>Bibliography</h2>
-    <div class="thebibliography">
-    <p class="bibitem" ><span class="biblabel">
-  [1]<span class="bibsp">   </span></span><a 
+ id="x1-380005.2"></a>Bibliography</h2>
+   <div class="thebibliography">
+   <p class="bibitem" ><span class="biblabel">
+ [1]<span class="bibsp">   </span></span><a 
  id="Xbouillot2009aes"></a>Nicolas Bouillot, Elizabeth Cohen, Jeremy R. Cooperstock, Andreas Floros,
-    Nuno  Fonseca,  Richard  Foss,  Michael  Goodman,  John  Grant,  Kevin  Gross,
-    Steven Harris, Brent Harshbarger, Joffrey Heyraud, Lars Jonsson, John Narus,
-    Michael Page, Tom Snook, Atau Tanaka, Justin Trieger, and Umberto Zanghieri.
-    Aes  white  paper:  Best  practices  in  network  audio.      <span 
-class="ptmri7t-">J.  Audio  Eng.  Soc</span>,
-    57(9):729—741, 2009.
-    </p>
-    <p class="bibitem" ><span class="biblabel">
-  [2]<span class="bibsp">   </span></span><a 
- id="XBoulanger:2011"></a>Richard Boulanger and Victor Lazzarini. <span 
-class="ptmri7t-">The Audio Programming Book</span>. The
-    MIT Press, 2011.
-    </p>
-    <p class="bibitem" ><span class="biblabel">
-  [3]<span class="bibsp">   </span></span><a 
+   Nuno Fonseca, Richard Foss, Michael Goodman, John Grant, Kevin Gross, Steven
+   Harris, Brent Harshbarger, Joffrey Heyraud, Lars Jonsson, John Narus, Michael
+   Page, Tom Snook, Atau Tanaka, Justin Trieger, and Umberto Zanghieri. Aes white
+   paper: Best practices in network audio. <span 
+class="ptmri7t-">J. Audio Eng. Soc</span>, 57(9):729—741, 2009.
+   </p>
+   <p class="bibitem" ><span class="biblabel">
+ [2]<span class="bibsp">   </span></span><a 
  id="Xbrandt1998low"></a>Eli  Brandt  and  Roger B  Dannenberg.    Low-latency  music  software  using
-    off-the-shelf operating systems. 1998.
-    </p>
-    <p class="bibitem" ><span class="biblabel">
-  [4]<span class="bibsp">   </span></span><a 
- id="Xzeroconf"></a>Stuart Cheshire and Daniel H. Steinberg.   <span 
-class="ptmri7t-">Zero Configuration Networking:</span>
-    <span 
-class="ptmri7t-">The Definitive Guide</span>. O’Reilly Media, Inc., first edition edition, 2006.
-    </p>
-    <p class="bibitem" ><span class="biblabel">
-  [5]<span class="bibsp">   </span></span><a 
- id="Xvst-gpu"></a>Wolfgang  Fohl  and  Julia  Dessecker.   Realtime  computation  of  a  vst  audio
-    effect  plugin  on  the  graphics  processor.      In  <span 
-class="ptmri7t-">CONTENT  2011,  The  Third</span>
-    <span 
-class="ptmri7t-">International Conference on Creative Content Technologies,</span>, pages 58—62, 2011.
-    </p>
-    <p class="bibitem" ><span class="biblabel">
-  [6]<span class="bibsp">   </span></span><a 
- id="Xrealtime-architectures"></a>Vincent Goudard and Remy Muller.  Real-time audio plugin architectures, a
-    comparative study. pages 10, 22, 9 2003.
-    </p>
-                                                                  
-
-                                                                  
-    <p class="bibitem" ><span class="biblabel">
-  [7]<span class="bibsp">   </span></span>
-    <a 
- id="XAES67-2013"></a>AES Standards Committee Gross, Kevin.  <span 
+   off-the-shelf operating systems. 1998.
+   </p>
+   <p class="bibitem" ><span class="biblabel">
+ [3]<span class="bibsp">   </span></span><a 
+ id="Xvst-gpu"></a>Wolfgang Fohl and Julia Dessecker. Realtime computation of a vst audio effect
+   plugin  on  the  graphics  processor.   In  <span 
+class="ptmri7t-">CONTENT  2011,  The  Third  International</span>
+   <span 
+class="ptmri7t-">Conference on Creative Content Technologies,</span>, pages 58—62, 2011.
+   </p>
+   <p class="bibitem" ><span class="biblabel">
+ [4]<span class="bibsp">   </span></span><a 
+ id="Xrealtime-architectures"></a>Vincent Goudard and Remy Muller.   Real-time audio plugin architectures, a
+   comparative study. pages 10, 22, 9 2003.
+   </p>
+   <p class="bibitem" ><span class="biblabel">
+ [5]<span class="bibsp">   </span></span><a 
+ id="XAES67-2013"></a>AES Standards Committee Gross, Kevin. <span 
 class="ptmri7t-">AES standard for audio applications</span>
-    <span 
-class="ptmri7t-">of networks - High-performance streaming audio-over-IP interoperability</span>. Audio
-    Engineering Society, Inc., 60 East 42nd Street, New York, NY., US., 2013.
-    </p>
-    <p class="bibitem" ><span class="biblabel">
-  [8]<span class="bibsp">   </span></span><a 
- id="XUAD2-review"></a>Hugh Robjohns.  Review : Universal audio apollo, 2012.  [Online; accessed
-    06-August-2015].
-    </p>
-    <p class="bibitem" ><span class="biblabel">
-  [9]<span class="bibsp">   </span></span><a 
- id="Xvirtual_analog_synthesis"></a>Vesa V&#x00E4;lim&#x00E4;ki and Antti Huovilainen.   Oscillator and filter algorithms for
-    virtual analog synthesis. <span 
-class="ptmri7t-">Computer Music Journal</span>, 30(2):pp. 19—31, 2006.
-    </p>
-    <p class="bibitem" ><span class="biblabel">
- [10]<span class="bibsp">   </span></span><a 
- id="XVST-wikipedia"></a>Wikipedia.   Virtual studio technology ˜ Wikipedia, the free encyclopedia,
-    2015. [Online; accessed 05-August-2015].
-</p>
-    </div>
+   <span 
+class="ptmri7t-">of networks - High-performance streaming audio-over-IP interoperability</span>.  Audio
+   Engineering Society, Inc., 60 East 42nd Street, New York, NY., US., 2013.
+   </p>
+   <p class="bibitem" ><span class="biblabel">
+ [6]<span class="bibsp">   </span></span><a 
+ id="XUAD2-review"></a>Hugh Robjohns.   Review : Universal audio apollo, 2012.   [Online; accessed
+   06-August-2015].
+   </p>
                                                                   
 
                                                                   
-   <h2 class="chapterHead"><span class="titlemark">Chapter 7</span><br /><a 
- id="x1-470007"></a>Appendix A</h2>
-   <h3 class="sectionHead"><span class="titlemark">7.1    </span> <a 
- id="x1-480007.1"></a>Compiling the Source Code</h3>
-<!--l. 3--><p class="noindent" >Download the Juce C++ Library from GitHub
-<!--l. 5--><p class="indent" >   github.com/julianstorer/JUCE
-<!--l. 7--><p class="indent" >   Additionally download and install the DrowAudio Juce Module Extensions
-<!--l. 9--><p class="indent" >   github.com/drowaudio/drowaudio.git
-   <h3 class="sectionHead"><span class="titlemark">7.2    </span> <a 
- id="x1-490007.2"></a>Bonjour</h3>
-<!--l. 3--><p class="noindent" >Instructions for installing bonjour:
-<!--l. 5--><p class="indent" >   If bonjour / zeroconfig is not installed on the SBC device you will get a ”fatal error:
-dns_sd.h: No such file or directory” error. You can fix this by installing the Avahi
-library
-<!--l. 8--><p class="indent" >   ./configure —prefix=/usr —enable-compat-libdns_sd —sysconfdir=/etc —localstatedir=/var
-—disable-static —disable-mono —disable-monodoc —disable-python —disable-qt3
-—disable-qt4 —disable-gtk —disable-gtk3 —enable-core-docs —with-distro=none
-—with-systemdsystemunitdir=no
-<!--l. 14--><p class="indent" >   Requirements: sudo apt-get install intltool sudo apt-get install libperl-dev sudo apt-get
-install libgtk2.0-dev sudo apt-get install libgtk3.0-dev sudo apt-get install libgdbm-dev sudo
-apt-get install libdaemon-dev
-   <h3 class="sectionHead"><span class="titlemark">7.3    </span> <a 
- id="x1-500007.3"></a>Evaluated Frameworks</h3>
+   <p class="bibitem" ><span class="biblabel">
+ [7]<span class="bibsp">   </span></span><a 
+ id="Xvirtual_analog_synthesis"></a>Vesa  V&#x00E4;lim&#x00E4;ki  and  Antti  Huovilainen.    Oscillator  and  filter  algorithms  for
+   virtual analog synthesis. <span 
+class="ptmri7t-">Computer Music Journal</span>, 30(2):pp. 19—31, 2006.
+   </p>
+   <p class="bibitem" ><span class="biblabel">
+ [8]<span class="bibsp">   </span></span><a 
+ id="XVST-wikipedia"></a>Wikipedia.   Virtual  studio  technology  ˜  Wikipedia,  the  free  encyclopedia,
+   2015. [Online; accessed 05-August-2015].
+</p>
+   </div>
+                                                                  
+
+                                                                  
+   <h2 class="chapterHead"><span class="titlemark">Chapter 6</span><br /><a 
+ id="x1-390006"></a>Appendix</h2>
+   <h3 class="sectionHead"><span class="titlemark">6.1    </span> <a 
+ id="x1-400006.1"></a>Compiling the Source Code</h3>
+<!--l. 3--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">6.1.1    </span> <a 
+ id="x1-410006.1.1"></a>Download and Build the DiauproPlugin on OSX</h4>
+<!--l. 5--><p class="noindent" >Download the JUCE Library: <hr class="figure"><div class="figure" 
+>
+                                                                  
+
+                                                                  
+                                                                  
+
+                                                                  
+<!--l. 9--><p class="noindent" ><img 
+src="main10x.png" alt="PIC" class="graphics"><!--tex4ht:graphics  
+name="main10x.png" src="assets/code/download_JUCE.pdf"  
+-->
+                                                                  
+
+                                                                  
+<!--l. 12--><p class="indent" >   </div><hr class="endfigure">
+<!--l. 14--><p class="noindent" >Download and install the DrowAudio Juce Module Extensions: <hr class="figure"><div class="figure" 
+>
+                                                                  
+
+                                                                  
+                                                                  
+
+                                                                  
+<!--l. 19--><p class="noindent" ><img 
+src="main11x.png" alt="PIC" class="graphics"><!--tex4ht:graphics  
+name="main11x.png" src="assets/code/download_DROW.pdf"  
+-->
+                                                                  
+
+                                                                  
+<!--l. 22--><p class="indent" >   </div><hr class="endfigure">
+<!--l. 23--><p class="noindent" >Install the VST SDK Library: <hr class="figure"><div class="figure" 
+>
+                                                                  
+
+                                                                  
+                                                                  
+
+                                                                  
+<!--l. 28--><p class="noindent" ><img 
+src="main12x.png" alt="PIC" class="graphics"><!--tex4ht:graphics  
+name="main12x.png" src="assets/code/download_VST.pdf"  
+-->
+                                                                  
+
+                                                                  
+<!--l. 31--><p class="indent" >   </div><hr class="endfigure">
+<!--l. 32--><p class="noindent" >Download the DiauproProject: <hr class="figure"><div class="figure" 
+>
+                                                                  
+
+                                                                  
+                                                                  
+
+                                                                  
+<!--l. 37--><p class="noindent" ><img 
+src="main13x.png" alt="PIC" class="graphics"><!--tex4ht:graphics  
+name="main13x.png" src="assets/code/download_DIAUPRO.pdf"  
+-->
+                                                                  
+
+                                                                  
+<!--l. 40--><p class="indent" >   </div><hr class="endfigure">
+<!--l. 41--><p class="noindent" >open the xCode Project File located ”DiauproProject/DiauproPlugin/Builds/MaxOSX/DiauproPlugin.xcodeproj”
+directory and build the project in the xCode IDE.
+   <h4 class="subsectionHead"><span class="titlemark">6.1.2    </span> <a 
+ id="x1-420006.1.2"></a>Download and Build the DiauproProject AudioProcessorNode on Ubuntu</h4>
+<!--l. 47--><p class="noindent" >Download the JUCE Library: <hr class="figure"><div class="figure" 
+>
+                                                                  
+
+                                                                  
+                                                                  
+
+                                                                  
+<!--l. 51--><p class="noindent" ><img 
+src="main14x.png" alt="PIC" class="graphics"><!--tex4ht:graphics  
+name="main14x.png" src="assets/code/download_JUCE.pdf"  
+-->
+                                                                  
+
+                                                                  
+<!--l. 54--><p class="indent" >   </div><hr class="endfigure">
+<!--l. 55--><p class="noindent" >Install JUCE requirements on Linux: <hr class="figure"><div class="figure" 
+>
+                                                                  
+
+                                                                  
+                                                                  
+
+                                                                  
+<!--l. 60--><p class="noindent" ><img 
+src="main15x.png" alt="PIC" class="graphics"><!--tex4ht:graphics  
+name="main15x.png" src="assets/code/install_requirements.pdf"  
+-->
+                                                                  
+
+                                                                  
+<!--l. 63--><p class="indent" >   </div><hr class="endfigure">
+<!--l. 64--><p class="noindent" >Build on Linux: <hr class="figure"><div class="figure" 
+>
+                                                                  
+
+                                                                  
+                                                                  
+
+                                                                  
+<!--l. 69--><p class="noindent" ><img 
+src="main16x.png" alt="PIC" class="graphics"><!--tex4ht:graphics  
+name="main16x.png" src="assets/code/build_linux.pdf"  
+-->
+                                                                  
+
+                                                                  
+<!--l. 72--><p class="indent" >   </div><hr class="endfigure">
+   <h4 class="subsectionHead"><span class="titlemark">6.1.3    </span> <a 
+ id="x1-430006.1.3"></a>Install Avahi with Bonjour Compatibility Mode on Ubuntu</h4>
+<!--l. 75--><p class="noindent" >Install the Avahi requirements: <hr class="figure"><div class="figure" 
+>
+                                                                  
+
+                                                                  
+                                                                  
+
+                                                                  
+<!--l. 79--><p class="noindent" ><img 
+src="main17x.png" alt="PIC" class="graphics"><!--tex4ht:graphics  
+name="main17x.png" src="assets/code/avahi_req.pdf"  
+-->
+                                                                  
+
+                                                                  
+<!--l. 82--><p class="indent" >   </div><hr class="endfigure">
+<!--l. 83--><p class="noindent" >Download Avahi: <hr class="figure"><div class="figure" 
+>
+                                                                  
+
+                                                                  
+                                                                  
+
+                                                                  
+<!--l. 88--><p class="noindent" ><img 
+src="main18x.png" alt="PIC" class="graphics"><!--tex4ht:graphics  
+name="main18x.png" src="assets/code/avahi_download.pdf"  
+-->
+                                                                  
+
+                                                                  
+<!--l. 91--><p class="indent" >   </div><hr class="endfigure">
+<!--l. 92--><p class="noindent" >Configure and Install Avahi: <hr class="figure"><div class="figure" 
+>
+                                                                  
+
+                                                                  
+                                                                  
+
+                                                                  
+<!--l. 97--><p class="noindent" ><img 
+src="main19x.png" alt="PIC" class="graphics"><!--tex4ht:graphics  
+name="main19x.png" src="assets/code/avahi_build.pdf"  
+-->
+                                                                  
+
+                                                                  
+<!--l. 100--><p class="indent" >   </div><hr class="endfigure">
+   <h3 class="sectionHead"><span class="titlemark">6.2    </span> <a 
+ id="x1-440006.2"></a>Evaluated Frameworks</h3>
 <!--l. 3--><p class="noindent" >WDL : http://www.cockos.com/wdl/ ( +iplug library ) <br 
 class="newline" />Juce : http://www.juce.com <br 
 class="newline" />Open Frameworks : http://openframeworks.cc <br 

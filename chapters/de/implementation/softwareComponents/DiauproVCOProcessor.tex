@@ -1,6 +1,6 @@
 \subsection{DiauproVCOProcessor}
 
-Die DiauproVCOProcessor erbt von DiauproProcessor und implementiert die Oszillatorblock eines virtuellen synthsizer. Es erzeugt einen Klang in der Tonhöhe einen gespielten MIDI-Note. Die einzigen Funktionen aus DiauproProcessor, die überladen werden müssen, sind "localProcess", "getState", "getStateSize" und "getServiceTag".
+Der DiauproVCOProzessor erbt vom DiauproProzessor und implementiert den Oszillatorblock eines virtuellen Synthesizers. Er erzeugt einen Klang in der Tonhöhe einer gespielten MIDI-Note. Die einzigen Funktionen, die vom Diaupro-Prozessor überschrieben werden müssen, sind ”localProcess”, ”getState”, ”getStateSize” und ”getServiceTag”.
 
 "localProcess" wird wie folgt implementiert:
 \begin{lstlisting}[numbers=left]
@@ -49,8 +49,8 @@ void DiauproVCOProcessor::localProcess(AudioSampleBuffer &buffer,
 \end{lstlisting}
 
 \noindent
-Wenn die Funktion aufgerufen wird, wird die aktuelle Audio-Puffer übergeben, ein Puffer von MIDI-Events für den korespondierende Zeitrahmen, und ein Zeiger auf einen Block von Daten, die verwendet werden, um den Zustand zu speichern, damit es zwischen Aufrufen beibehalten werden.
+Wenn die Funktion aufgerufen wird, wird der aktuelle Audio-Puffer übergeben, ein Puffer von MIDI-Events für den entsprechenden Zeitrahmen und ein Zeiger auf einen Block von Daten, die zur Zustandsspeicherung zwischen den Aufrufen verwendet werden? ??
 
-Wird diese Funktion innerhalb eines Rechenknotens ausgeführt dann werden Audio-, MIDI- und Zustandsdaten aus einem DiauproMessage, als UDP-Paket von der Master-Audio-Plugin gesendet, entnommen.
+Wird diese Funktion innerhalb eines Rechenknotens ausgeführt, dann werden Audio-, MIDI- und Zustandsdaten aus einer DiauproMessage, die als UDP-Paket vom Master-Audio-Plug-in gesendet wurde, entnommen.
 
-Im obigen Beispiel wird einer Sinuswelle generiert, indem die Sinus Wert für jedes Element in der Audio-Puffer berechnet wird.
+Im obigen Beispiel wird eine Sinuswelle generiert, indem der Sinus-Wert für jedes Element im Audio-Puffer berechnet wird.

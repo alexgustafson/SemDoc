@@ -8,7 +8,7 @@ If a single plugin requires 1.0ms to complete its processing then it will not fi
 
 \subsection{Synchronous Performance}
 
-This project offloads the processing external SBC devices. However, no resources are saved if the audio plugin is blocked while it waits for the results from the SBC device. Since the external SBC devices are slower than the main CPU, the processing time will take longer. Adding the time it takes to serialise and deserialise the Datagram packet at each end will degrade performance even more.
+This project offloads the processing to external SBC devices. However, no resources are saved if the audio plugin is blocked while it waits for the results from the SBC devices. Since the external SBC devices are slower than the main CPU, the processing time will take longer. Adding the time it takes to serialise and deserialise the Datagram packet at each end will degrade performance even more.
 
 Figure~\ref{fig:local_vs_remote} illustrates the problem in more detail.
 
@@ -25,9 +25,9 @@ With synchronous remote processing the state E is blocked until states 1 and 2 h
 
 \input{chapters/en/conclusion/sync_results}
 
-Table~\ref{tab:latency_comp} shows the measured times for various buffer sizes for the synchronous implementation that does no actually audio processing. Only the preparation transport times are taken into account. An audio system running with a buffer size of 64 samples has 1.451ms to complete all tasks. "rtTime" is the meassured total round trip time. This corresponds to the time between states D and E of the Synchronous Remote Process Flow diagram in Figure~\ref{fig:local_vs_remote}. "pTime" is time interval between states 1 and 2 on the SBC device, the time spent processing the data. In this case there was no processing so this is only the measures the time spent deserialiseing and serialising the datagrams into audio and midi data. "tTime" is the "rtTime" subtracted by the "pTime" and is the packaging overhead required to send and receive data.
+Table~\ref{tab:latency_comp} shows the measured times for various buffer sizes for the synchronous implementation that does no actually audio processing. Only the preparation and transport times are taken into account. An audio system running with a buffer size of 64 samples has 1.451ms to complete all tasks, the "buffer time". "rtTime" is the meassured total round trip time. This corresponds to the time between states D and E of the Synchronous Remote Process Flow diagram in Figure~\ref{fig:local_vs_remote}. "pTime" is time interval between states 1 and 2 on the SBC device, the time spent processing the data. In this case there was no processing so this is only the measures the time spent deserialiseing and serialising the datagrams into audio and midi data. "tTime" is the "rtTime" subtracted by the "pTime" and is the packaging overhead required to send and receive data.
 
-The last column, "\% of limit", shows how much time was spent in total as a percentage of the limit. At a buffer size of 64 samples 39.59\% percent of the total time available was spent by a single plugin. This does not leave much time for other processes on the CPU. For a buffer size of 512 samples the "\% of limit" value is much lower. The total system latency is slightly higher that the stated 10ms maximum though. The synchronous implementation has not reduced the processing load on the CPU at all.
+The last column, "\% of buffer time", shows what percent of the available time was used for the plugin. At a buffer size of 64 samples 39.59\% percent of the total time available was spent by the plugin. This does not leave much time for other processes on the CPU. For a buffer size of 512 samples the percentage is much lower. The total system latency is slightly higher that the stated 10ms maximum though. The synchronous implementation has not reduced the processing load on the CPU at all.
 
 
 \subsection{Asynchronous Performance}
@@ -37,7 +37,7 @@ Instead of waiting for a response from the SBC device, as in the synchronous met
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{assets/conclusion/async_flow.pdf}
-    \caption{Local vs Remote Synchronous Processing}
+    \caption{Asynchronous Processing}
     \label{fig:async_remote}
 \end{figure}
 
@@ -47,7 +47,8 @@ By the time the second cycle begins (J in figure~\ref{fig:async_remote}) process
 
 In the table above "rtTime" is no longer the actual round trip total processing time. Since data is already available at the time the interrupt request is triggered, the plugin can return it's data immediately. This comes at the cost of a delay equal to one interrupt cycle, but the user can set the audio system's buffer size low enough that this is well below the 10ms limit, without needing to use more than 1.2\% of the processing time available.
 
-The asynchronous method brings a real benefit to distributed processing in terms of lighting the load on the CPU. The price of the benefit though is an increase in the latency of the plugin. The processed audio data is always one delayed by one buffer cycle. Another disadvantage is that if several distributed processors are chained in series, as is the case in the demo application, then the latency is cumulative. This results in a total latency that is the limit time multiplied by the number of processors in the plugin.
+The asynchronous method brings a real benefit to distributed processing in terms of lighting the load on the CPU. The price of the benefit though is an increase in the latency of the plugin. The processed audio data is always one delayed by one buffer cycle. Another disadvantage is that if several distributed processors are chained in series, as is the case in the demo application, then the latency is cumulative. This results is a total latency that is the "buffer time" multiplied by the number of processors in the
+plugin.
 
 \subsection{Potential Optimisations }
 
@@ -59,6 +60,12 @@ Although more complex, the second optimization would have the added benefit that
 
 \section{Summary}
 
-The asynchronous implementation offers definite potential. The latency seems to be inline with commercial DSP based systems\cite{UAD2-review}. This is encouraging, especially considering the expandability of the SBC based system, and the compatibilty of the codebase. Two definite advantages that the SBC system has over DSP based systems.
+The asynchronous implementation offers definite potential. The latency seems to be identical to commercial DSP based systems\cite{UAD2-review}. This is interesting as it suggests that the DSP and SBC based systems share some limitations and that these cannot simply be overcome by simply connecting a more powerful DSP or SBC device. The real barrier is getting the data back from the device as fast as possible without blocking the audio thread. If the audio thread is blocked for 10\% or 30\% of the time is irrelevant. By resigning to a method that skips a full cycle of the audio thread there is no need to block it. The difference in bandwidth between Thunderbolt, PCIe, or Gigabit-Ethernet connectivity only effects that number of plugins that can be run simultaneously but not the latency.
+
+This is encouraging, especially considering the expandability of the SBC based system, and the compatibilty of the codebase. Two definite advantages that the SBC system has over DSP based systems.
+
+
+
+
 
 

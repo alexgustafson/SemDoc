@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=latex 2015.8.5)  26 OCT 2015 13:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=latex 2015.8.5)  27 OCT 2015 11:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -491,7 +491,7 @@ Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
 (./codestyle.tex)
-Package hyperref Info: Option `colorlinks' set `true' on input line 20.
+Package hyperref Info: Option `colorlinks' set `true' on input line 21.
 
 (/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/tex4ht.4ht
 version 2009-01-07-07:11
@@ -946,49 +946,73 @@ version 2009-05-18-23:01
 (/usr/local/texlive/2015basic/texmf-dist/tex/generic/tex4ht/htmlw.4ht
 version 2009-04-06-21:08
 ))
-(./main.aux)
+(./main.aux
+
+LaTeX Warning: Label `fig:drow' multiply defined.
+
+
+LaTeX Warning: Label `fig:drow' multiply defined.
+
+
+LaTeX Warning: Label `fig:juce' multiply defined.
+
+
+LaTeX Warning: Label `fig:juce' multiply defined.
+
+
+LaTeX Warning: Label `fig:juce' multiply defined.
+
+
+LaTeX Warning: Label `fig:juce' multiply defined.
+
+
+LaTeX Warning: Label `fig:juce' multiply defined.
+
+
+LaTeX Warning: Label `fig:juce' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 21.
-
-(/usr/local/texlive/2015basic/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 22.
+ (/usr/local/texlive/2015basic/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 \AtBeginShipoutBox=\box31
-Package hyperref Info: Link coloring ON on input line 21.
-LaTeX Info: Redefining \ref on input line 21.
-LaTeX Info: Redefining \pageref on input line 21.
-LaTeX Info: Redefining \nameref on input line 21.
+Package hyperref Info: Link coloring ON on input line 22.
+LaTeX Info: Redefining \ref on input line 22.
+LaTeX Info: Redefining \pageref on input line 22.
+LaTeX Info: Redefining \nameref on input line 22.
 \c@lstlisting=\count110
 --- file main.css ---
  [1
 
 ]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 30.
+(Font)              <12> on input line 31.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 30.
+(Font)              <8> on input line 31.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 30.
+(Font)              <6> on input line 31.
 
 [1] [1]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 32.
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 32.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 33.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 33.
  (/usr/local/texlive/2015basic/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
@@ -1214,36 +1238,156 @@ File: assets/conclusion/async_flow.pdf Graphic file (type eps)
 
 ] [59
 
-]))
-(./chapters/en/GlossaryOfTerms.tex [60
+]) [60
 
-] [61]
+]) (./main.bbl
+[61] [62
+
+]) [63]
 Chapter 6.
-) (./main.bbl [62
+(./chapters/en/compileFromSource.tex [64
 
-] [63
-
-]) [64]
-Chapter 7.
-(./chapters/en/compileFromSource.tex) (./chapters/en/bonjour.tex)
-(./chapters/en/evaluated_frameworks.tex)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 83.
- [65
+] [65
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 83.
+l. 9 Writing main.idv[11] (main10x.png)
+
+l.9 --- TeX4ht warning --- Cannot determine size of graphic in assets/code/down
+load_JUCE.pdf (no BoundingBox) ---
+File: assets/code/download_JUCE.pdf Graphic file (type eps)
+<assets/code/download_JUCE.pdf> [66
+
+] [67
+
+] [68
+
+]
+l. 19 Writing main.idv[12] (main11x.png)
+
+l.19 --- TeX4ht warning --- Cannot determine size of graphic in assets/code/dow
+nload_DROW.pdf (no BoundingBox) ---
+File: assets/code/download_DROW.pdf Graphic file (type eps)
+<assets/code/download_DROW.pdf> [69
+
+] [70
+
+] [71
+
+]
+l. 28 Writing main.idv[13] (main12x.png)
+
+l.28 --- TeX4ht warning --- Cannot determine size of graphic in assets/code/dow
+nload_VST.pdf (no BoundingBox) ---
+File: assets/code/download_VST.pdf Graphic file (type eps)
+<assets/code/download_VST.pdf> [72
+
+] [73
+
+] [74
+
+]
+l. 37 Writing main.idv[14] (main13x.png)
+
+l.37 --- TeX4ht warning --- Cannot determine size of graphic in assets/code/dow
+nload_DIAUPRO.pdf (no BoundingBox) ---
+File: assets/code/download_DIAUPRO.pdf Graphic file (type eps)
+<assets/code/download_DIAUPRO.pdf> [75
+
+] [76
+
+] [77
+
+]
+l. 51 Writing main.idv[15] (main14x.png)
+
+l.51 --- TeX4ht warning --- Cannot determine size of graphic in assets/code/dow
+nload_JUCE.pdf (no BoundingBox) ---
+File: assets/code/download_JUCE.pdf Graphic file (type eps)
+<assets/code/download_JUCE.pdf> [78
+
+] [79
+
+] [80
+
+]
+l. 60 Writing main.idv[16] (main15x.png)
+
+l.60 --- TeX4ht warning --- Cannot determine size of graphic in assets/code/ins
+tall_requirements.pdf (no BoundingBox) ---
+File: assets/code/install_requirements.pdf Graphic file (type eps)
+<assets/code/install_requirements.pdf> [81
+
+] [82
+
+] [83
+
+]
+l. 69 Writing main.idv[17] (main16x.png)
+
+l.69 --- TeX4ht warning --- Cannot determine size of graphic in assets/code/bui
+ld_linux.pdf (no BoundingBox) ---
+File: assets/code/build_linux.pdf Graphic file (type eps)
+<assets/code/build_linux.pdf> [84
+
+] [85
+
+] [86
+
+]
+l. 79 Writing main.idv[18] (main17x.png)
+
+l.79 --- TeX4ht warning --- Cannot determine size of graphic in assets/code/ava
+hi_req.pdf (no BoundingBox) ---
+File: assets/code/avahi_req.pdf Graphic file (type eps)
+<assets/code/avahi_req.pdf> [87
+
+] [88
+
+] [89
+
+]
+l. 88 Writing main.idv[19] (main18x.png)
+
+l.88 --- TeX4ht warning --- Cannot determine size of graphic in assets/code/ava
+hi_download.pdf (no BoundingBox) ---
+File: assets/code/avahi_download.pdf Graphic file (type eps)
+<assets/code/avahi_download.pdf> [90
+
+] [91
+
+] [92
+
+]
+l. 97 Writing main.idv[20] (main19x.png)
+
+l.97 --- TeX4ht warning --- Cannot determine size of graphic in assets/code/ava
+hi_build.pdf (no BoundingBox) ---
+File: assets/code/avahi_build.pdf Graphic file (type eps)
+<assets/code/avahi_build.pdf> [93
+
+]) (./chapters/en/evaluated_frameworks.tex)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 81.
+
+[94
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 81.
  (./main.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 83.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 83.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 83.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 81.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 81.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 81.
  ) 
 Here is how much of TeX's memory you used:
- 11707 strings out of 494502
- 164655 string characters out of 6167057
- 382129 words of memory out of 5000000
- 14601 multiletter control sequences out of 15000+600000
+ 11722 strings out of 494502
+ 165169 string characters out of 6167057
+ 382108 words of memory out of 5000000
+ 14612 multiletter control sequences out of 15000+600000
  12246 words of font info for 35 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
  37i,12n,38p,1905b,1320s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (67 pages, 171860 bytes).
+Output written on main.dvi (96 pages, 180192 bytes).
